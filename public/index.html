@@ -91,7 +91,99 @@
     </style>
 
 <style>
+.cta-container {
+  width: 100%;
+  height: auto;
+  background-color: #1d9146; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.cta-content {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.cta-text {
+  width: 70%; /* Takes 70% of the space */
+}
+
+.cta-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cta-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button-container {
+  width: 30%; /* Takes 30% of the space */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cta-button {
+  padding: 14px 25px;
+  font-size: 18px; 
+  background-color: #3f66b0; 
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px; 
+  cursor: pointer;
+  width: auto;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.cta-button:hover {
+  background-color: #31528d; 
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+
+.cta-button:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(63, 102, 176, 0.5); 
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
   
+  .cta-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cta-button {
+    width: 100%;
+  }
+}
+
     .liver-care-services     .main-container {
         background-color: white;
         border-radius: 10px;
@@ -517,7 +609,7 @@
     </section>
     <!-- BANNER SECTION END -->
 
-    <section class="testimonial-main-sec w-100 padding-top position-relative padding-bottom">
+    <section class="testimonial-main-sec w-100 padding-top position-relative padding-bottom light-bg">
         <div class="container" style="text-align: justify;">
             <div class="about-txt-con">
                 <div><p>Located in the heart of&nbsp;<strong>Delhi</strong>,&nbsp;<i>Liver Surgeons</i> is a beacon of hope for patients battling complex liver diseases, cancers, and end-stage organ failure. As one of the&nbsp;<strong>best liver hospitals in Delhi</strong> and&nbsp;<strong>India</strong>, we specialize in cutting-edge&nbsp;<strong>liver transplantation</strong>,&nbsp;<strong>hepatobiliary surgeries</strong>, and comprehensive liver care. Under the leadership of&nbsp;<strong>Dr. Ashish George</strong>, a distinguished&nbsp;<strong>liver transplant specialist in Delhi</strong>, our center combines world-class expertise, advanced technology, and compassionate care to deliver life-saving outcomes.</p><p>Whether you’re seeking treatment for&nbsp;<strong>cirrhosis</strong>,&nbsp;<strong>hepatocellular carcinoma</strong>,&nbsp;<strong>acute liver failure</strong>, or need a&nbsp;<strong>liver transplant in Delhi</strong>, our multidisciplinary team ensures personalized care tailored to your needs. Recognized for our&nbsp;<strong>high liver transplant success rate in India</strong>, we prioritize affordability without compromising quality, offering transparent&nbsp;<strong>liver transplant costs in Delhi</strong> and end-to-end support.</p></div>
@@ -527,7 +619,7 @@
 
 
         <!-- ABOUT SECTION START -->
-        <section class="about-main-section padding-top w-100  position-relative light-bg">
+        <section class="about-main-section padding-top w-100  position-relative ">
             <div class="container position-relative">
                 <div class="about-inner-con">
                     <div class="about-img-con" data-aos="fade-up" data-aos-duration="700">
@@ -542,7 +634,13 @@
                         </div>
                         <p data-aos="fade-up" data-aos-duration="700">Dr. Ashish George is an accomplished liver transplant surgeon, currently serving as the Principal Consultant and Unit Head in the Department of Liver Transplantation Surgery. With over 15 years of experience in liver transplantation and Hepato Pancreatic Biliary surgery (HPB), Dr. George has played a pivotal role in numerous life-saving surgeries, including pediatric and adult liver transplants, complex hepatobiliary surgeries, and innovative techniques like auxiliary partial orthotopic liver transplantation.</p>
                   
-                        <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
+
+                        <ul class="list-unstyled" >
+                            <li>Liver Transplant Society of India (LTSI)</li>
+                            <li>Association of Surgeons of India (ASI)</li>
+                    
+                        </ul>
+                        <div class="generic-btn" >
                             <a href="javascript:void(0);" id="toggleReadMore">Read More</a>
                         </div>
                     </div>
@@ -568,7 +666,7 @@
 
             <div class="container">
 
-            <div class="col-md-12 about-inner-con about-txt-con readmore-section" style="display: none; margin-top: -170px; gap: 10px;                  grid-template-columns: 100%;">
+            <div class="col-md-12 about-inner-con about-txt-con readmore-section" style="display: none; margin-top: -100px; gap: 10px;                  grid-template-columns: 100%;">
                 <h3>Credentials:</h3>
                 <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
                     <li>MBBS, MS (General Surgery) from the University College of Medical Sciences, Delhi</li>
@@ -592,6 +690,8 @@
             <div id="fade1" onClick="lightbox_close();"></div>
         </section>
         <!-- ABOUT SECTION END -->
+
+
 
 
         <section class="liver-care-services padding-top padding-bottom" style="background-color: #FAFAFA;">
@@ -946,6 +1046,128 @@
         </section>
 
 
+            <!-- TESTIMONIAL SECTION START -->
+    <section class="testimonial-main-sec w-100  padding-top position-relative padding-bottom light-bg">
+        <div class="container">
+            <div class="generic-title text-center mb-0">
+                <span class="d-block small-text" data-aos="fade-up" data-aos-duration="700">Testimonials</span>
+                <h2 data-aos="fade-up" data-aos-duration="700">What Our Patients are Saying</h2>
+            </div>
+            <div class="testimonial-inner-sec" data-aos="fade-up" data-aos-duration="700">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner carousel-fade">
+                        <div class="carousel-item active text-center">
+                            <div class="review-details-box">
+                                <figure class="d-inline-block">
+                                    <img src="assets/images/stars-img.png" alt="stars-img">
+                                </figure>
+                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
+                                    dolores
+                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
+                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
+                                <div class="customer-status">
+                                    <h5>Jonathan Andrew</h5>
+                                    <span class="d-block">Happy Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="review-details-box">
+                                <figure class="d-inline-block">
+                                    <img src="assets/images/stars-img.png" alt="stars-img">
+                                </figure>
+                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
+                                    dolores
+                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
+                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
+                                <div class="customer-status">
+                                    <h5>Alice Waters</h5>
+                                    <span class="d-block">Happy Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="review-details-box">
+                                <figure class="d-inline-block">
+                                    <img src="assets/images/stars-img.png" alt="stars-img">
+                                </figure>
+                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
+                                    dolores
+                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
+                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
+                                <div class="customer-status">
+                                    <h5>Jamie Oliver</h5>
+                                    <span class="d-block">Happy Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="review-details-box">
+                                <figure class="d-inline-block">
+                                    <img src="assets/images/stars-img.png" alt="stars-img">
+                                </figure>
+                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
+                                    dolores
+                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
+                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
+                                <div class="customer-status">
+                                    <h5>Clare Smyth</h5>
+                                    <span class="d-block">Happy Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="review-details-box">
+                                <figure class="d-inline-block">
+                                    <img src="assets/images/stars-img.png" alt="stars-img">
+                                </figure>
+                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
+                                    dolores
+                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
+                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
+                                <div class="customer-status">
+                                    <h5>Hekim Rswana</h5>
+                                    <span class="d-block">Happy Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONIAL SECTION END -->
+
+
+    <div class="cta-container">
+        <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h2>Consult Dr. Ashish George Today</h2>
+            <p>Get Your Discount By Appointment From 14 Aug 2024</p>
+          </div>
+          <div class="cta-button-container">
+            <button class="cta-button">BOOK NOW</button>
+          </div>
+        </div>
+    </div>
+      </div>
+      
         <section class="index3-service-section w-100  padding-top padding-bottom">
             <div class="container">
                 <div class="generic-title text-center">
@@ -982,8 +1204,133 @@
             </div>
         </section>
 
+
+         <!-- TEAM SECTION START -->
+      <section class="team-main-section w-100  padding-top padding-bottom light-bg">
+        <div class="container">
+            <div class="generic-title text-center">
+                <span class="small-text" data-aos="fade-up" data-aos-duration="700">Team Members</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-duration="700">Our Proffesional Team</h2>
+            </div>
+            <div class="team-inner-section">
+                <div class="member-con text-center">
+                    <div class="member-img-details position-relative">
+                        <figure data-aos="fade-up" data-aos-duration="700">
+                            <img src="assets/images/team-img1.jpg" alt="team-img1">
+                        </figure>
+                        <div class="member-detail-box">
+                            <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
+                                <li class="d-inline-block">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="d-inline-block"><a
+                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <p data-aos="fade-up" data-aos-duration="700">Nuis aute irure dolor
+                                reprehenderit in volutae
+                                velit esse fugiat...</p>
+                            <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
+                                <a href="contact.html">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 data-aos="fade-up" data-aos-duration="700">Alice Waters</h4>
+                    <span class="d-block" data-aos="fade-up" data-aos-duration="700">Sycho Founder</span>
+                </div>
+                <div class="member-con text-center">
+                    <div class="member-img-details position-relative">
+                        <figure data-aos="fade-up" data-aos-duration="700">
+                            <img src="assets/images/team-img2.jpg" alt="team-img2">
+                        </figure>
+                        <div class="member-detail-box">
+                            <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
+                                <li class="d-inline-block">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="d-inline-block"><a
+                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <p data-aos="fade-up" data-aos-duration="700">Nuis aute irure dolor
+                                reprehenderit in volutae
+                                velit esse fugiat...</p>
+                            <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
+                                <a href="contact.html">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 data-aos="fade-up" data-aos-duration="700">Jamie Oliver</h4>
+                    <span class="d-block" data-aos="fade-up" data-aos-duration="700">Therapy Expert</span>
+                </div>
+                <div class="member-con text-center">
+                    <div class="member-img-details position-relative">
+                        <figure data-aos="fade-up" data-aos-duration="700">
+                            <img src="assets/images/team-img3.jpg" alt="team-img3">
+                        </figure>
+                        <div class="member-detail-box">
+                            <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
+                                <li class="d-inline-block">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="d-inline-block"><a
+                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <p data-aos="fade-up" data-aos-duration="700">Nuis aute irure dolor
+                                reprehenderit in volutae
+                                velit esse fugiat...</p>
+                            <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
+                                <a href="contact.html">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 data-aos="fade-up" data-aos-duration="700">Clare Smyth</h4>
+                    <span class="d-block" data-aos="fade-up" data-aos-duration="700">Sycho Founder</span>
+                </div>
+                <div class="member-con text-center">
+                    <div class="member-img-details position-relative">
+                        <figure data-aos="fade-up" data-aos-duration="700">
+                            <img src="assets/images/team-img4.jpg" alt="team-img4">
+                        </figure>
+                        <div class="member-detail-box">
+                            <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
+                                <li class="d-inline-block">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="d-inline-block"><a
+                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                            <p data-aos="fade-up" data-aos-duration="700">Nuis aute irure dolor
+                                reprehenderit in volutae
+                                velit esse fugiat...</p>
+                            <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
+                                <a href="contact.html">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 data-aos="fade-up" data-aos-duration="700">Hekim Rswana</h4>
+                    <span class="d-block" data-aos="fade-up" data-aos-duration="700">Therapy Expert</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEAM SECTION END -->
+
+
+
+
     <!-- SERVICE SECTION START -->
-    <section class="service-main-section w-100  padding-top padding-bottom ">
+    <!-- <section class="service-main-section w-100  padding-top padding-bottom ">
         <div class="container">
             <div class="generic-title text-center">
                 <span class="small-text" data-aos="fade-up" data-aos-duration="700">Services We Provide</span>
@@ -1081,14 +1428,79 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- SERVICE SECTION END -->
+
+
+
+    <!-- PROCESS SECTION START -->
+    <section class="process-main-section w-100  padding-top padding-bottom">
+        <div class="container">
+            <div class="process-inner-con">
+                <div class="process-left-sec" data-aos="fade-up" data-aos-duration="700">
+                    <figure class="mb-0">
+                        <img src="assets/images/process-left-img.jpg" alt="process-left-img">
+                    </figure>
+                </div>
+                <div class="process-right-sec">
+                    <div class="generic-title">
+                        <span class="small-text" data-aos="fade-up" data-aos-duration="700">How it Works</span>
+                        <h2 data-aos="fade-up" data-aos-duration="700">Professional Psychology
+                            Therapy You Can Choose</h2>
+                    </div>
+                    <ul class="mb-0 list-unstyled">
+                        <li data-aos="fade-up" data-aos-duration="700">
+                            <div class="process-img-sec">
+                                <figure>
+                                    <img src="assets/images/process-icon1.png" alt="process-icon1">
+                                </figure>
+                            </div>
+                            <div class="process-text-con">
+                                <h4>Talk to Us First</h4>
+                                <p>Nuis aute irure dolor reprehenderit in volutae
+                                    velit esse fugiat.</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="700">
+                            <div class="process-img-sec">
+                                <figure>
+                                    <img src="assets/images/process-icon2.png" alt="process-icon2">
+                                </figure>
+                            </div>
+                            <div class="process-text-con">
+                                <h4>Book an Appointment</h4>
+                                <p>Blandit fauce bus perce viverra sem rutrum aeu
+                                    vulputate came.</p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-duration="700">
+                            <div class="process-img-sec">
+                                <figure>
+                                    <img src="assets/images/process-icon3.png" alt="process-icon3">
+                                </figure>
+                            </div>
+                            <div class="process-text-con">
+                                <h4>Come Sit With Us</h4>
+                                <p>Maiores alias consequatur aut perferendis dolor
+                                    reus asperiores repellat.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
+                        <a href="contact.html">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROCESS SECTION END -->
+     
 
     <!-- CONTACT SECTION START -->
     <section class="w-100  contact-con position-relative">
         <div class="padding-top padding-bottom contact-inner-con position-relative">
             <div class="container">
-                <div class="contact-form ">
+                <div class="contact-form">
                     <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
                     <h2 data-aos="fade-up" data-aos-duration="700">Get an Appointment</h2>
                     <p data-aos="fade-up" data-aos-duration="700">Molestiae non recusandae itaque earum rerum sarien.
@@ -1139,7 +1551,7 @@
     </section>
     <!-- CONTACT SECTION END -->
     <!-- PROJECT SECTION START -->
-    <section class="project-main-section w-100  padding-top light-bg">
+    <!-- <section class="project-main-section w-100  padding-top light-bg">
         <div class="container">
             <div class="generic-title text-center">
                 <span class="small-text" data-aos="fade-up" data-aos-duration="700">Latest Projects</span>
@@ -1274,335 +1686,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- PROJECT SECTION END -->
-    <!-- COUNTER SECTION START -->
-    <div class="counter-section w-100 ">
-        <div class="counter-outer-layer">
-            <div class="container">
-                <div class="counter-inner-sec">
-                    <ul class="list-unstyled mb-0" data-aos="fade-up" data-aos-duration="700">
-                        <li>
-                            <figure>
-                                <img src="assets/images/counter-img1.png" alt="counter-img1">
-                            </figure>
-                            <div class="count d-inline-block">2850</div>
-                            <span class="d-block client-status">Psycologist</span>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="assets/images/counter-img2.png" alt="counter-img2">
-                            </figure>
-                            <div class="count d-inline-block">1245</div>
-                            <span class="d-block client-status">Branches</span>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="assets/images/counter-img3.png" alt="counter-img3">
-                            </figure>
-                            <div class="count d-inline-block">3358</div>
-                            <span class="d-block client-status">Patients</span>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="assets/images/counter-img4.png" alt="counter-img4">
-                            </figure>
-                            <div class="count d-inline-block">2496</div>
-                            <span class="d-block client-status">Achievements</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- COUNTER SECTION END -->
-    <!-- PROCESS SECTION START -->
-    <section class="process-main-section w-100  padding-top padding-bottom">
-        <div class="container">
-            <div class="process-inner-con">
-                <div class="process-left-sec" data-aos="fade-up" data-aos-duration="700">
-                    <figure class="mb-0">
-                        <img src="assets/images/process-left-img.jpg" alt="process-left-img">
-                    </figure>
-                </div>
-                <div class="process-right-sec">
-                    <div class="generic-title">
-                        <span class="small-text" data-aos="fade-up" data-aos-duration="700">How it Works</span>
-                        <h2 data-aos="fade-up" data-aos-duration="700">Professional Psychology
-                            Therapy You Can Choose</h2>
-                    </div>
-                    <ul class="mb-0 list-unstyled">
-                        <li data-aos="fade-up" data-aos-duration="700">
-                            <div class="process-img-sec">
-                                <figure>
-                                    <img src="assets/images/process-icon1.png" alt="process-icon1">
-                                </figure>
-                            </div>
-                            <div class="process-text-con">
-                                <h4>Talk to Us First</h4>
-                                <p>Nuis aute irure dolor reprehenderit in volutae
-                                    velit esse fugiat.</p>
-                            </div>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="700">
-                            <div class="process-img-sec">
-                                <figure>
-                                    <img src="assets/images/process-icon2.png" alt="process-icon2">
-                                </figure>
-                            </div>
-                            <div class="process-text-con">
-                                <h4>Book an Appointment</h4>
-                                <p>Blandit fauce bus perce viverra sem rutrum aeu
-                                    vulputate came.</p>
-                            </div>
-                        </li>
-                        <li data-aos="fade-up" data-aos-duration="700">
-                            <div class="process-img-sec">
-                                <figure>
-                                    <img src="assets/images/process-icon3.png" alt="process-icon3">
-                                </figure>
-                            </div>
-                            <div class="process-text-con">
-                                <h4>Come Sit With Us</h4>
-                                <p>Maiores alias consequatur aut perferendis dolor
-                                    reus asperiores repellat.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
-                        <a href="contact.html">Book Appointment</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- PROCESS SECTION END -->
-    <!-- TEAM SECTION START -->
-    <section class="team-main-section w-100  padding-top padding-bottom light-bg">
-        <div class="container">
-            <div class="generic-title text-center">
-                <span class="small-text" data-aos="fade-up" data-aos-duration="700">Team Members</span>
-                <h2 class="mb-0" data-aos="fade-up" data-aos-duration="700">Our Proffesional Team</h2>
-            </div>
-            <div class="team-inner-section">
-                <div class="member-con text-center">
-                    <div class="member-img-details position-relative">
-                        <figure data-aos="fade-up" data-aos-duration="700">
-                            <img src="assets/images/team-img1.jpg" alt="team-img1">
-                        </figure>
-                        <div class="member-detail-box">
-                            <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
-                                <li class="d-inline-block">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="d-inline-block"><a
-                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                            <p data-aos="fade-up" data-aos-duration="700">Nuis aute irure dolor
-                                reprehenderit in volutae
-                                velit esse fugiat...</p>
-                            <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
-                                <a href="contact.html">Book Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 data-aos="fade-up" data-aos-duration="700">Alice Waters</h4>
-                    <span class="d-block" data-aos="fade-up" data-aos-duration="700">Sycho Founder</span>
-                </div>
-                <div class="member-con text-center">
-                    <div class="member-img-details position-relative">
-                        <figure data-aos="fade-up" data-aos-duration="700">
-                            <img src="assets/images/team-img2.jpg" alt="team-img2">
-                        </figure>
-                        <div class="member-detail-box">
-                            <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
-                                <li class="d-inline-block">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="d-inline-block"><a
-                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                            <p data-aos="fade-up" data-aos-duration="700">Nuis aute irure dolor
-                                reprehenderit in volutae
-                                velit esse fugiat...</p>
-                            <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
-                                <a href="contact.html">Book Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 data-aos="fade-up" data-aos-duration="700">Jamie Oliver</h4>
-                    <span class="d-block" data-aos="fade-up" data-aos-duration="700">Therapy Expert</span>
-                </div>
-                <div class="member-con text-center">
-                    <div class="member-img-details position-relative">
-                        <figure data-aos="fade-up" data-aos-duration="700">
-                            <img src="assets/images/team-img3.jpg" alt="team-img3">
-                        </figure>
-                        <div class="member-detail-box">
-                            <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
-                                <li class="d-inline-block">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="d-inline-block"><a
-                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                            <p data-aos="fade-up" data-aos-duration="700">Nuis aute irure dolor
-                                reprehenderit in volutae
-                                velit esse fugiat...</p>
-                            <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
-                                <a href="contact.html">Book Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 data-aos="fade-up" data-aos-duration="700">Clare Smyth</h4>
-                    <span class="d-block" data-aos="fade-up" data-aos-duration="700">Sycho Founder</span>
-                </div>
-                <div class="member-con text-center">
-                    <div class="member-img-details position-relative">
-                        <figure data-aos="fade-up" data-aos-duration="700">
-                            <img src="assets/images/team-img4.jpg" alt="team-img4">
-                        </figure>
-                        <div class="member-detail-box">
-                            <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
-                                <li class="d-inline-block">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="d-inline-block"><a
-                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                            <p data-aos="fade-up" data-aos-duration="700">Nuis aute irure dolor
-                                reprehenderit in volutae
-                                velit esse fugiat...</p>
-                            <div class="generic-btn" data-aos="fade-up" data-aos-duration="700">
-                                <a href="contact.html">Book Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 data-aos="fade-up" data-aos-duration="700">Hekim Rswana</h4>
-                    <span class="d-block" data-aos="fade-up" data-aos-duration="700">Therapy Expert</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- TEAM SECTION END -->
-    <!-- TESTIMONIAL SECTION START -->
-    <section class="testimonial-main-sec w-100  padding-top position-relative padding-bottom">
-        <div class="container">
-            <div class="generic-title text-center mb-0">
-                <span class="d-block small-text" data-aos="fade-up" data-aos-duration="700">Testimonials</span>
-                <h2 data-aos="fade-up" data-aos-duration="700">What Our Patients are Saying</h2>
-            </div>
-            <div class="testimonial-inner-sec" data-aos="fade-up" data-aos-duration="700">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                    </ol>
-                    <div class="carousel-inner carousel-fade">
-                        <div class="carousel-item active text-center">
-                            <div class="review-details-box">
-                                <figure class="d-inline-block">
-                                    <img src="assets/images/stars-img.png" alt="stars-img">
-                                </figure>
-                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
-                                    dolores
-                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
-                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
-                                <div class="customer-status">
-                                    <h5>Jonathan Andrew</h5>
-                                    <span class="d-block">Happy Customer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <div class="review-details-box">
-                                <figure class="d-inline-block">
-                                    <img src="assets/images/stars-img.png" alt="stars-img">
-                                </figure>
-                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
-                                    dolores
-                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
-                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
-                                <div class="customer-status">
-                                    <h5>Alice Waters</h5>
-                                    <span class="d-block">Happy Customer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <div class="review-details-box">
-                                <figure class="d-inline-block">
-                                    <img src="assets/images/stars-img.png" alt="stars-img">
-                                </figure>
-                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
-                                    dolores
-                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
-                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
-                                <div class="customer-status">
-                                    <h5>Jamie Oliver</h5>
-                                    <span class="d-block">Happy Customer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <div class="review-details-box">
-                                <figure class="d-inline-block">
-                                    <img src="assets/images/stars-img.png" alt="stars-img">
-                                </figure>
-                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
-                                    dolores
-                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
-                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
-                                <div class="customer-status">
-                                    <h5>Clare Smyth</h5>
-                                    <span class="d-block">Happy Customer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item text-center">
-                            <div class="review-details-box">
-                                <figure class="d-inline-block">
-                                    <img src="assets/images/stars-img.png" alt="stars-img">
-                                </figure>
-                                <p>“Ignissimos ducimus ui blandiitis praesentium voluptatum deleniti atqui corrupti quos
-                                    dolores
-                                    aet quas molestias excepturi, sint occaesatii gnissimos ducimus molestiae non <br>
-                                    recusandae itarue earum rerum tenetur a saiente delectus.”</p>
-                                <div class="customer-status">
-                                    <h5>Hekim Rswana</h5>
-                                    <span class="d-block">Happy Customer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- TESTIMONIAL SECTION END -->
+ 
+
+  
+
     <!-- BLOG SECTION START -->
     <section class="blogs-section w-100  padding-top padding-bottom light-bg">
         <div class="container">
