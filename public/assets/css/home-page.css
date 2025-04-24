@@ -1,0 +1,1090 @@
+
+/*  technology section */
+.technology-section {
+    position: relative;
+    overflow: hidden;
+    background-color: #f8fafc;
+    padding: 60px 0;
+    z-index: 1;
+}
+
+/* Floating Shapes */
+.floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.15;
+    animation: float 8s ease-in-out infinite;
+}
+
+.shape1 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #1d9146, transparent 70%);
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.shape2 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #1c174e, transparent 70%);
+    bottom: 10%;
+    right: 5%;
+    animation-delay: 1s;
+}
+
+.shape3 {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, var(--accent), transparent 70%);
+    top: 50%;
+    right: 20%;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(20px, 20px) rotate(5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 2.5rem;
+  
+    color: #1c174e;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.heading-underline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1d9146, var(--accent));
+    margin: 10px auto 30px;
+    border-radius: 2px;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+.tab-buttons button {
+    margin: 5px;
+    padding: 12px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #1c174e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.tab-buttons button i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.tab-buttons button:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(29, 145, 70, 0.2);
+}
+
+.tab-buttons button.active {
+    background: linear-gradient(135deg, #1d9146, #25d366);
+    color: white;
+    box-shadow: 0 8px 25px rgba(29, 145, 70, 0.3);
+}
+
+/* Tab Content Section */
+.tab-content-section {
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-content-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, #1d9146, #1c174e);
+}
+
+.tab-box h3 {
+    color: #1c174e;
+
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.icon-title {
+    color: #1d9146;
+    margin-right: 10px;
+}
+
+/* Doctor Profile Tab */
+.doctor-profile-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-profile-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.doctor-profile-card:hover img {
+    transform: scale(1.03);
+}
+
+.doctor-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #1d9146;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 85%;
+    align-items: center;
+}
+
+.doctor-badge i {
+    margin-right: 8px;
+    color: var(--accent);
+}
+
+.highlight-box {
+    background-color: var(--primary-light);
+    border-left: 4px solid #1d9146;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 0 8px 8px 0;
+}
+
+.qualification-box, .specialization-box {
+    margin-bottom: 30px;
+}
+
+.qualification-box h4, .specialization-box h4 {
+    color: #1c174e;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.qualification-box h4 i, .specialization-box h4 i {
+    margin-right: 10px;
+    color: #1d9146;
+}
+
+.qualification-box ul {
+    padding-left: 20px;
+}
+
+.qualification-box li {
+    margin-bottom: 8px;
+    position: relative;
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.qualification-box li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #1d9146;
+}
+
+.specialization-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.spec-item {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.spec-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: #1d9146;
+}
+
+.spec-item i {
+    margin-right: 10px;
+    color: #1d9146;
+    font-size: 1.2rem;
+}
+
+/* Facility Tab */
+.facility-item {
+    display: flex;
+    margin-bottom: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.facility-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.facility-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1d9146, #1c174e);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.facility-content h4 {
+    color: #1c174e;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.facility-content p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.technology-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.tech-badge {
+    background-color: var(--primary-light);
+    color: #1d9146;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid rgba(29, 145, 70, 0.3);
+}
+
+/* Success Rates Tab */
+.success-metrics {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.metric-item {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 150px;
+    transition: all 0.3s ease;
+}
+
+.metric-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1d9146;
+    margin-bottom: 5px;
+}
+
+.metric-label {
+    color: #1c174e;
+    font-weight: 600;
+}
+
+.success-factors {
+    margin: 40px 0;
+}
+
+.factors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.factor-item {
+    background-color: var(--primary-light);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.factor-item i {
+    margin-right: 10px;
+    color: var(--success);
+}
+
+.patient-testimonial {
+    background-color: white;
+    border-left: 4px solid #1d9146;
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.patient-testimonial blockquote {
+    font-style: italic;
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.patient-testimonial footer {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #1c174e;
+    font-style: normal;
+}
+
+/* Pricing Tab */
+.pricing-comparison {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.comparison-card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    text-align: center;
+}
+
+.comparison-card h4 {
+    color: #1c174e;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1d9146;
+    margin: 20px 0;
+}
+
+.comparison-card ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.comparison-card li {
+    margin-bottom: 10px;
+    position: relative;
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.comparison-card li i {
+    position: absolute;
+    left: 0;
+}
+
+.comparison-card li .fa-check {
+    color: var(--success);
+}
+
+.comparison-card li .fa-times {
+    color: var(--danger);
+}
+
+.vs-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    box-shadow: none;
+}
+
+.vs-badge {
+    background: var(--accent);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+.financial-options {
+    margin-top: 40px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.option-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-light);
+}
+
+.option-item i {
+    font-size: 2rem;
+    color: #1d9146;
+    margin-bottom: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .main-heading {
+        font-size: 2rem;
+    }
+    
+    .tab-buttons button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .tab-content-section {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .technology-section {
+        padding: 40px 0;
+    }
+    
+    .main-heading {
+        font-size: 1.8rem;
+    }
+    
+    .tab-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab-buttons button {
+        width: 100%;
+        max-width: 300px;
+        margin: 5px 0;
+        justify-content: center;
+    }
+    
+    .tab-content-section {
+        padding: 25px 20px;
+    }
+    
+    .doctor-profile-card {
+        margin-bottom: 30px;
+    }
+    
+    .success-metrics {
+        flex-direction: column;
+    }
+    
+    .pricing-comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .comparison-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-heading {
+        font-size: 1.6rem;
+    }
+    
+    .tab-content-section {
+        padding: 20px 15px;
+    }
+    
+    .tab-box h3 {
+        font-size: 1.5rem;
+    }
+    
+    .facility-item {
+        flex-direction: column;
+    }
+    
+    .facility-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* liver service section */
+
+.liver-care-services {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9f5ff 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.liver-care-services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/soft-circle-scales.png');
+    opacity: 0.03;
+    pointer-events: none;
+}
+
+.liver-care-services .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.liver-care-services .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.liver-care-services .section-subtitle {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3db057;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.liver-care-services .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.liver-care-services .header-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.liver-care-services .decoration-line {
+    width: 50px;
+    height: 2px;
+    background-color: #3db057;
+}
+
+.liver-care-services .decoration-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #3db057;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.liver-care-services .section-description {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+.liver-care-services .content-area {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.liver-care-services .nav-column {
+    width: 30%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9f5ff 100%);
+    padding: 30px;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.liver-care-services .nav-item {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.liver-care-services .nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #3db057;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.liver-care-services .nav-item.active::before,
+.liver-care-services .nav-item:hover::before {
+    opacity: 1;
+}
+
+.liver-care-services .nav-item.active,
+.liver-care-services .nav-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.liver-care-services .nav-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #3db057 0%, #2d8b4d 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(61, 176, 87, 0.2);
+}
+
+.liver-care-services .nav-item:nth-child(2) .nav-icon {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+}
+
+.liver-care-services .nav-item:nth-child(3) .nav-icon {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.2);
+}
+
+.liver-care-services .nav-item:nth-child(4) .nav-icon {
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.2);
+}
+
+.liver-care-services .nav-item:nth-child(5) .nav-icon {
+    background: linear-gradient(135deg, #f39c12 0%, #d35400 100%);
+    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.2);
+}
+
+.liver-care-services .nav-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0px;
+    color: #2c3e50;
+    margin-bottom: 0px;
+}
+
+.liver-care-services .nav-content p {
+    font-size: 14px;
+    color: #7f8c8d;
+    line-height: 1.5;
+    margin-top: -2px;
+}
+
+.liver-care-services .cards-column {
+    width: 70%;
+    padding: 30px;
+    max-height: 120vh;
+    overflow-y: scroll;
+}
+
+.liver-care-services .cards-column::-webkit-scrollbar {
+    width: 8px;
+    /* Adjust the width to make it thinner */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+.liver-care-services .cards-column::-webkit-scrollbar-thumb {
+    background-color: #3f66b0;
+    /* Set the color of the thumb */
+    border-radius: 4px;
+    /* Round the corners of the thumb */
+}
+
+/* Change thumb color on hover */
+.liver-care-services .cards-column::-webkit-scrollbar-thumb:hover {
+    background-color: #3f66b0;
+    /* Darker shade when hovering */
+}
+
+/* Style the scrollbar track (the background part of the scrollbar) */
+.liver-care-services .cards-column::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Set the color of the track */
+    border-radius: 4px;
+    /* Round the corners of the track */
+}
+
+.liver-care-services .card-container {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.liver-care-services .card-container.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.liver-care-services .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.liver-care-services .card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    position: relative;
+}
+
+.liver-care-services .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.liver-care-services .card-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.liver-care-services .card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #3db057;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.liver-care-services .card-body {
+    padding: 20px;
+}
+
+.liver-care-services .card-body h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.liver-care-services .card-body p {
+    font-size: 15px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.liver-care-services .card-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #3db057;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.liver-care-services .card-link svg {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.liver-care-services .card-link:hover {
+    color: #2d8b4d;
+}
+
+.liver-care-services .card-link:hover svg {
+    transform: translateX(5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .liver-care-services .content-area {
+        flex-direction: column;
+    }
+
+    .liver-care-services .nav-column,
+    .liver-care-services .cards-column {
+        width: 100%;
+    }
+
+    .liver-care-services .nav-column {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .liver-care-services .nav-item {
+        flex: 1 1 calc(50% - 15px);
+        min-width: 0;
+
+    }
+
+    .liver-care-services .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .liver-care-services .section-title {
+        font-size: 28px;
+    }
+
+    .liver-care-services .section-description {
+        font-size: 16px;
+    }
+
+    .liver-care-services .nav-item {
+        margin-bottom: 0px;
+    }
+
+
+    .liver-care-services .nav-column {
+        flex-direction: column;
+    }
+
+    .liver-care-services .nav-item {
+        flex: 1 1 100%;
+    }
+
+    .liver-care-services .card-image {
+        height: 160px;
+    }
+
+
+
+    .liver-care-services .cards-column {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .liver-care-services .liver-care-services {
+        padding: 50px 0;
+    }
+
+    .liver-care-services .section-title {
+        font-size: 24px;
+    }
+
+    .liver-care-services .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* cta-secion */
+
+
+.about-us-section {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #eaf0e2, #f9f9f9);
+    /* Subtle gradient background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.about-text {
+    flex: 1;
+
+    color: #333;
+    line-height: 1.8;
+    padding-right: 30px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+
+    color: #1d9146;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-text i {
+    font-style: italic;
+    color: #888;
+}
+
+.cta-btn-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cta-btn {
+    font-size: 18px;
+    color: white;
+    background-color: #1d9146;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #155c34;
+    transform: scale(1.05);
+    /* Slight scale effect on hover */
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-top: 30px;
+    }
+}
