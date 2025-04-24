@@ -7,7 +7,7 @@ class Header extends HTMLElement {
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand" href="index.html">
                     <figure class="mb-0">
-                        <img src="assets/dr-shish-liver-surgeon-logo.webp" alt="logo2" style="max-width: 100px;">
+                        <img src="/assets/dr-shish-liver-surgeon-logo.webp" alt="logo2" style="max-width: 100px;">
                     </figure>
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -154,7 +154,7 @@ class Header extends HTMLElement {
                     <div class="header-contact d-flex align-items-center">
                         <div class="phone d-flex align-items-center">
                             <figure class="mb-0">
-                                <img src="assets/images/phone.png" alt="phone">
+                                <img src="/assets/images/phone.png" alt="phone">
                             </figure>
 
                         </div>
@@ -175,11 +175,10 @@ class Footer extends HTMLElement {
             <section class="footer-main-section w-100  position-relative">
         <div class="container">
             <div class="subscribe-con d-flex">
-                <h4>Subscribe To Our <br>
-                    Newsletter</h4>
+                <h4>Have Questions? Talk to Our Experts</h4>
                 <div class="form-sec">
-                    <input type="email" name="email" id="mail" placeholder="Your Email Address:">
-                    <button type="submit" id="submit" class="sign-up-btn">Sign Up Now</button>
+                 
+                    <button type="submit" id="submit" class="sign-up-btn">Contact Us</button>
                 </div>
             </div>
             <div class="footer-inner-sec">
@@ -266,5 +265,155 @@ class Footer extends HTMLElement {
         ;}}
 
 
+class Team extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+     <section class="dentists-main-section w-100  padding-top padding-bottom light-bg">
+        <div class="container">
+            <div class="generic-title text-center">
+                <span class="small-text" data-aos="fade-up" data-aos-duration="700">Team Members</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-duration="700">Meet Our Team</h2>
+            </div>
+            <div id="owl-carouseltwo" class="owl-carousel owl-theme" data-aos="fade-up" data-aos-duration="700">
+                <div class="item">
+                    <div class="dentist-box text-center">
+                        <figure class="mb-0">
+                            <img src="/assets/images/doc-1.png" alt="dentist-img1">
+                        </figure>
+                        <div class="dentist-details">
+                            <h4>Alice Waters</h4>
+                            <span class="d-block">Professional Dentist</span>
+                            <div class="social-links">
+                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                                    <li><a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a
+                                            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li class="mb-0"><a href="https://www.linkedin.com/login"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="dentist-box text-center">
+                        <figure class="mb-0">
+                            <img src="/assets/images/doc-2.png" alt="dentist-img2">
+                        </figure>
+                        <div class="dentist-details">
+                            <h4>Jamie Oliver</h4>
+                            <span class="d-block">Dentist Practitioner</span>
+                            <div class="social-links">
+                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                                    <li><a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a
+                                            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li class="mb-0"><a href="https://www.linkedin.com/login"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="dentist-box text-center">
+                        <figure class="mb-0">
+                            <img src="/assets/images/doc-3.png" alt="dentist-img3">
+                        </figure>
+                        <div class="dentist-details">
+                            <h4>Clare Smyth</h4>
+                            <span class="d-block">Assistant Doctor</span>
+                            <div class="social-links">
+                                <ul class="list-unstyled mb-0 d-flex justify-content-center">
+                                    <li><a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a
+                                            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li class="mb-0"><a href="https://www.linkedin.com/login"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+        `
+        ;}}
+
+
+class Contact extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <section class="w-100  contact-con position-relative">
+        <div class="padding-top padding-bottom contact-inner-con position-relative">
+            <div class="container">
+                <div class="contact-form">
+                    <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
+                    <h2 data-aos="fade-up" data-aos-duration="700">Get an Appointment</h2>
+                    <p data-aos="fade-up" data-aos-duration="700">Get expertise opinion from Dr Ashish George
+                    </p>
+                    <form class="form-box" method="post" id="contactpage">
+                        <ul class="list-unstyled ">
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <input type="text" name="fname" id="fname" placeholder="Your Name:">
+                                <i class="fas fa-user"></i>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <input type="email" placeholder="Email address:" name="email" id="email">
+                                <i class="fas fa-envelope"></i>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <select name="department" id="department">
+                                    <option value="department">Choose department</option>
+                                    <option value="department1">department 1</option>
+                                    <option value="department2">department 2</option>
+                                    <option value="department3">department 3</option>
+                                </select>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <select name="doctor" id="doctor">
+                                    <option value="doctor">Choose doctor</option>
+                                    <option value="doctor1">doctor 1</option>
+                                    <option value="doctor2">doctor 2</option>
+                                    <option value="doctor3">doctor 3</option>
+                                </select>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <input placeholder="Date & Time" type="date" id="date">
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="700">
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                                <i class="fas fa-phone-alt"></i>
+                            </li>
+                        </ul>
+                        <div class="submit-btn" data-aos="fade-up" data-aos-duration="700">
+                            <button type="submit" id="submit">
+                                Make an Appointment
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        `
+        ;}}
+
+
         customElements.define('main-header', Header);
 customElements.define('main-footer', Footer);
+customElements.define('main-team', Team);
+customElements.define('main-contact', Contact);
