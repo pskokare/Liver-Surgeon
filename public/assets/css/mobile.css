@@ -1549,7 +1549,7 @@
         width: 70%;
         height: 2px;
         margin: 3px 0px;
-        background: #fff;
+        background: #3f66b0;
     }
 
     .navbar-light .navbar-toggler {
@@ -2687,6 +2687,11 @@
         height: 32px;
     }
 
+
+    .navbar-light .navbar-brand figure img {
+        width: 60px;
+        margin-bottom: 10px;
+    }
     .type-img {
         width: 68px;
         height: 68px;
@@ -3400,7 +3405,7 @@
     }
 
     .about-video-box {
-        top: 23%;
+        top: 17%;
     }
 
     .contact-con form ul {

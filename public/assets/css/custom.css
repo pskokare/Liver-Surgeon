@@ -2416,7 +2416,7 @@ h5 {
 }
 
 .blog-txt-con {
-    padding: 55px 40px 35px;
+    padding: 55px 15px 35px;
 }
 
 .blog-txt-con h4 {
@@ -2489,7 +2489,15 @@ h5 {
 }
 
 .blog-txt-con p {
-    margin-bottom: 13px;
+    margin-bottom: 23px;
+    text-align: justify;
+}
+
+.blog-read-more{
+    background-color: #1d9146;
+    color: white !important;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 
 /* index2 blog section style end */
@@ -2602,6 +2610,16 @@ h5 {
     transform: translate(-49%, -50%);
     z-index: -1;
     opacity: 40%;
+}
+
+.desktop-image{
+    display: block;
+}
+
+@media (max-width:768px) {
+    .desktop-image{
+        display: none;
+    }
 }
 
 .index3-banner-image-con {

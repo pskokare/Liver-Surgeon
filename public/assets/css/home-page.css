@@ -1087,4 +1087,17 @@
     .about-image {
         margin-top: 30px;
     }
+
+    .about-text h2 {
+        font-size: 24px;
+        line-height: 1.7rem;
+    }
+
+    .about-text{
+        padding-right: 0px;
+    }
+
+    .about-text p{
+        font-size: 15px;
+    }
 }
