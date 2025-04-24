@@ -356,7 +356,7 @@ class Team extends HTMLElement {
 class Contact extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <section class="w-100  contact-con position-relative">
+       <section class="w-100  contact-con position-relative">
         <div class="padding-top padding-bottom contact-inner-con position-relative">
             <div class="container">
                 <div class="contact-form">
@@ -375,28 +375,11 @@ class Contact extends HTMLElement {
                                 <i class="fas fa-envelope"></i>
                             </li>
                             <li data-aos="fade-up" data-aos-duration="700">
-                                <select name="department" id="department">
-                                    <option value="department">Choose department</option>
-                                    <option value="department1">department 1</option>
-                                    <option value="department2">department 2</option>
-                                    <option value="department3">department 3</option>
-                                </select>
+                                <textarea type="email" placeholder="Enter your message" name="email" ></textarea>
+                                <i class="fas fa-envelope"></i>
                             </li>
-                            <li data-aos="fade-up" data-aos-duration="700">
-                                <select name="doctor" id="doctor">
-                                    <option value="doctor">Choose doctor</option>
-                                    <option value="doctor1">doctor 1</option>
-                                    <option value="doctor2">doctor 2</option>
-                                    <option value="doctor3">doctor 3</option>
-                                </select>
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="700">
-                                <input placeholder="Date & Time" type="date" id="date">
-                            </li>
-                            <li data-aos="fade-up" data-aos-duration="700">
-                                <input type="tel" name="phone" id="phone" placeholder="Phone Number">
-                                <i class="fas fa-phone-alt"></i>
-                            </li>
+                         
+                          
                         </ul>
                         <div class="submit-btn" data-aos="fade-up" data-aos-duration="700">
                             <button type="submit" id="submit">
@@ -408,7 +391,6 @@ class Contact extends HTMLElement {
             </div>
         </div>
     </section>
-    
         `
         ;}}
 

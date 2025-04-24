@@ -118,6 +118,10 @@ h5 {
     display: block;
 }
 
+
+.index3-service-section , .index2-blog-section{
+    background-image: url(/assets/images/lines-bg) !important;
+}
 .header-main-con .navbar-light .navbar-nav .nav-item.active,
 .header-main-con .navbar-light .navbar-nav .active>.nav-link {
     color: var(--accent);
@@ -746,6 +750,7 @@ h5 {
 }
 
 .form-box ul li input,
+.form-box ul li textarea,
 .form-box ul li select {
     border: none;
     font-size: 14px;
@@ -756,6 +761,10 @@ h5 {
     box-shadow: 0 0 0 1px #ebe6e4;
     padding: 10px 35px 10px 23px;
     border-radius: 5px;
+}
+
+.form-box ul li textarea{
+    min-height: 100px;
 }
 .form-box input[type=date]{
     -webkit-appearance: none;
@@ -853,7 +862,7 @@ h5 {
     display: grid;
     gap: 15px;
     margin-bottom: 30px;
-    grid-template-columns: 48.5% 48.5%;
+    grid-template-columns: 100%;
 }
 
 .contact-con .show>.btn-secondary.dropdown-toggle {
@@ -2636,7 +2645,8 @@ h5 {
     border-radius: 15px;
     padding: 37px 40px 31px;
     box-shadow: 6px 6px 83px 20px rgb(0 0 0 / 3%);
-    border: 1px solid var(--primary-color);
+    border: 1px solid #31528d;
+    background-color: #fff;
 }
 
 .service-type-box:hover {
