@@ -2,7 +2,7 @@ class Header extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
-          <div class="header-main-con w-100 ">
+         <div class="header-main-con w-100 ">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand" href="index.html">
@@ -29,7 +29,7 @@ class Header extends HTMLElement {
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
                                 <a class="dropdown-item" href="load-more.html">About Us</a>
-                                <a class="dropdown-item" href="single-blog.html">Team</a>
+                                <a class="dropdown-item" href="#">Team</a>
 
 
                             </div>
@@ -44,25 +44,25 @@ class Header extends HTMLElement {
 
 
                                 <!-- Nested Dropdown -->
-                                <div class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Liver Transplant Services</a>
+                                <div class="dropdown-submenu desktop-image">
+                                    <a class="dropdown-item dropdown-toggle" href="/liver-transplant-delhi/">Liver Transplant Services</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="shop.html"> Pediatric Liver Transplant</a>
-                                        <a class="dropdown-item" href="product-detail.html">Deceased Donor Liver
+                                        <a class="dropdown-item" href="/pediatric-liver-transplant-delhi/"> Pediatric Liver Transplant</a>
+                                        <a class="dropdown-item" href="/deceased-donor-liver-transplant-delhi/">Deceased Donor Liver
                                             Transplant</a>
-                                        <a class="dropdown-item" href="cart.html">Living Donor Liver Transplant</a>
-                                        <a class="dropdown-item" href="checkout.html">Split Liver Transplantation</a>
-                                        <a class="dropdown-item" href="checkout.html">Dual Lobe Liver
+                                        <a class="dropdown-item" href="/living-donor-liver-transplant-delhi/">Living Donor Liver Transplant</a>
+                                        <a class="dropdown-item" href="/split-liver-transplant-delhi/">Split Liver Transplantation</a>
+                                        <a class="dropdown-item" href="/dual-lobe-liver-transplant-delhi/">Dual Lobe Liver
                                             Transplantation</a>
-                                        <a class="dropdown-item" href="checkout.html">Combined liver kidney
+                                        <a class="dropdown-item" href="/combined-liver-Kidney-transplant-delhi/">Combined liver kidney
                                             transplantation</a>
-                                        <a class="dropdown-item" href="checkout.html">Post-Transplant Surveillance</a>
-                                        <a class="dropdown-item" href="checkout.html">Immunosuppressive Therapy</a>
+                                        <a class="dropdown-item" href="/post-transplant-monitoring-delhi/">Post-Transplant Surveillance</a>
+                                        <a class="dropdown-item" href="/immunosuppressive-therapy-delhi.html">Immunosuppressive Therapy</a>
 
                                     </div>
                                 </div>
 
-                                <div class="dropdown-submenu">
+                                <div class="dropdown-submenu desktop-image">
                                     <a class="dropdown-item dropdown-toggle" href="#">Liver & Hepatology Conditions</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="shop.html">Chronic Liver Disease (CLD)</a>
@@ -77,7 +77,7 @@ class Header extends HTMLElement {
                                         <a class="dropdown-item" href="shop.html">Metabolic liver diseases</a>
                                     </div>
                                 </div>
-                                <div class="dropdown-submenu">
+                                <div class="dropdown-submenu desktop-image">
                                     <a class="dropdown-item dropdown-toggle" href="#">Cancer Surgeries</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="shop.html">Liver Cancer Surgery</a>
@@ -89,7 +89,7 @@ class Header extends HTMLElement {
 
                                     </div>
                                 </div>
-                                <div class="dropdown-submenu">
+                                <div class="dropdown-submenu desktop-image">
                                     <a class="dropdown-item dropdown-toggle" href="#">Advanced HPB Procedures</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="shop.html">Ante-situm & Ex-situ Liver
@@ -106,7 +106,7 @@ class Header extends HTMLElement {
 
                                     </div>
                                 </div>
-                                <div class="dropdown-submenu">
+                                <div class="dropdown-submenu desktop-image">
                                     <a class="dropdown-item dropdown-toggle" href="#">Diagnostics & Supportive Care</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="shop.html">Diagnostics & Supportive Care</a>
@@ -118,6 +118,90 @@ class Header extends HTMLElement {
                                     </div>
                                 </div>
 
+
+                                <div class="dropdown-submenu d-md-none">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="dropdown-item" href="/liver-transplant-delhi/">Liver Transplant Services</a>
+                                        <span class="submenu-toggle d-md-none">&#x25BC;</span>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="/pediatric-liver-transplant-delhi/">Pediatric Liver Transplant</a>
+                                        <a class="dropdown-item" href="/deceased-donor-liver-transplant-delhi/">Deceased Donor Liver Transplant</a>
+                                        <a class="dropdown-item" href="/living-donor-liver-transplant-delhi/">Living Donor Liver Transplant</a>
+                                        <a class="dropdown-item" href="/split-liver-transplant-delhi/">Split Liver Transplantation</a>
+                                        <a class="dropdown-item" href="/dual-lobe-liver-transplant-delhi/">Dual Lobe Liver Transplantation</a>
+                                        <a class="dropdown-item" href="/combined-liver-Kidney-transplant-delhi/">Combined Liver Kidney Transplantation</a>
+                                        <a class="dropdown-item" href="/post-transplant-monitoring-delhi/">Post-Transplant Surveillance</a>
+                                        <a class="dropdown-item" href="/immunosuppressive-therapy-delhi/">Immunosuppressive Therapy</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="dropdown-submenu d-md-none">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <a class="dropdown-item" href="#">Liver & Hepatology Conditions</a>
+                                      <span class="submenu-toggle ">&#x25BC;</span>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="shop.html">Chronic Liver Disease (CLD)</a>
+                                      <a class="dropdown-item" href="shop.html">Acute Liver Failure (ALF)</a>
+                                      <a class="dropdown-item" href="shop.html">Hepatitis A, B, C, D, E</a>
+                                      <a class="dropdown-item" href="shop.html">Jaundice</a>
+                                      <a class="dropdown-item" href="shop.html">Fatty Liver (MASLD)</a>
+                                      <a class="dropdown-item" href="shop.html">Liver Cirrhosis</a>
+                                      <a class="dropdown-item" href="shop.html">Autoimmune Hepatitis</a>
+                                      <a class="dropdown-item" href="shop.html">Alcoholic Hepatitis</a>
+                                      <a class="dropdown-item" href="shop.html">Genetic Liver Disorders</a>
+                                      <a class="dropdown-item" href="shop.html">Metabolic Liver Diseases</a>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="dropdown-submenu d-md-none">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <a class="dropdown-item" href="#">Cancer Surgeries</a>
+                                      <span class="submenu-toggle d-md-none">&#x25BC;</span>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="shop.html">Liver Cancer Surgery</a>
+                                      <a class="dropdown-item" href="shop.html">Hepatectomy (Liver Resection)</a>
+                                      <a class="dropdown-item" href="shop.html">Gallbladder Cancer Surgery</a>
+                                      <a class="dropdown-item" href="shop.html">Pancreatic Cancer Surgery</a>
+                                      <a class="dropdown-item" href="shop.html">Stomach Cancer Surgery</a>
+                                      <a class="dropdown-item" href="shop.html">Colon & Colorectal Cancer Surgery</a>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="dropdown-submenu d-md-none">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <a class="dropdown-item" href="#">Advanced HPB Procedures</a>
+                                      <span class="submenu-toggle d-md-none">&#x25BC;</span>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="shop.html">Ante-situm & Ex-situ Liver Resection</a>
+                                      <a class="dropdown-item" href="shop.html">Portal Hypertension Surgery</a>
+                                      <a class="dropdown-item" href="shop.html">Bile Duct Injury & Reconstruction</a>
+                                      <a class="dropdown-item" href="shop.html">Chronic Pancreatitis Surgery</a>
+                                      <a class="dropdown-item" href="shop.html">Minimal Access Liver Surgery</a>
+                                      <a class="dropdown-item" href="shop.html">Robotic HPB Surgery</a>
+                                      <a class="dropdown-item" href="shop.html">Cholangiocarcinoma Surgery</a>
+                                      <a class="dropdown-item" href="shop.html">Choledochal Cyst Surgery</a>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="dropdown-submenu d-md-none">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <a class="dropdown-item" href="#">Diagnostics & Supportive Care</a>
+                                      <span class="submenu-toggle d-md-none">&#x25BC;</span>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="shop.html">Diagnostics & Supportive Care</a>
+                                      <a class="dropdown-item" href="shop.html">FibroScan & Liver Elastography</a>
+                                      <a class="dropdown-item" href="shop.html">Tumor Ablation (RFA / Microwave)</a>
+                                      <a class="dropdown-item" href="shop.html">Endoscopic Variceal Ligation (EVL)</a>
+                                      <a class="dropdown-item" href="shop.html">Nutritional & Lifestyle Counseling</a>
+                                    </div>
+                                  </div>
+                                  
 
                             </div>
 
@@ -131,7 +215,7 @@ class Header extends HTMLElement {
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
                                 <a class="dropdown-item" href="load-more.html">Pre-Transplant Evaluation</a>
-                                <a class="dropdown-item" href="single-blog.html">Post-Transplant Instructions</a>
+                                <a class="dropdown-item" href="#">Post-Transplant Instructions</a>
                                 <a class="dropdown-item" href="one-column.html">Diet & Nutrition Guide</a>
                                 <a class="dropdown-item" href="two-column.html">Recovery Timeline</a>
                                 <a class="dropdown-item" href="three-column.html">FAQs</a>
@@ -172,13 +256,13 @@ class Header extends HTMLElement {
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <section class="footer-main-section w-100  position-relative">
+      <section class="footer-main-section w-100  position-relative">
         <div class="container">
             <div class="subscribe-con d-flex">
                 <h4>Have Questions? Talk to Our Experts</h4>
                 <div class="form-sec">
-                 
-                    <button type="submit" id="submit" class="sign-up-btn">Contact Us</button>
+                
+                    <button type="submit" id="submit" class="sign-up-btn">Contact Now</button>
                 </div>
             </div>
             <div class="footer-inner-sec">
@@ -186,12 +270,10 @@ class Footer extends HTMLElement {
                     <div class="footer-logo-con">
                         <a href="index.html">
                             <figure>
-                                <img src="assets/images/logo.png" alt="logo">
+                                <img src="/assets/dr-ashish-white-logo.png" alt="logo" style="max-width: 350px;">
                             </figure>
                         </a>
-                        <p>Deleniti aeue corrupti quos dolores quas
-                            tias excepturi sint occaecati rupiditate non
-                            similique sunt incidunt...</p>
+                        <p>Led by Dr. Ashish George, with experience in 1000+ liver transplants including pediatric, acute liver failure, ABO-incompatible, and combined liver-kidney procedures.</p>
                         <div class="social-links">
                             <ul class="list-unstyled mb-0 d-flex ">
                                 <li class="d-flex justify-content-center align-items-center"><a
@@ -211,15 +293,14 @@ class Footer extends HTMLElement {
                 <div class="footer-text-boxes">
                     <h4>About Us</h4>
                     <ul class="mb-0 list-unstyled">
-                        <li class="position-relative"><a href="services.html"><i
-                                    class="fas fa-angle-right"></i>Services</a></li>
-                        <li class="position-relative"><a href="about.html"><i class="fas fa-angle-right"></i>About
-                                us</a></li>
-                        <li class="position-relative"><a href="single-blog.html"><i
+                        <li class="position-relative"><a href="#"><i
+                                    class="fas fa-angle-right"></i>About</a></li>
+                        <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Team</a></li>
+                        <li class="position-relative"><a href="#"><i
+                                    class="fas fa-angle-right"></i>Publication</a></li>
+                        <li class="position-relative"><a href="#"><i
                                     class="fas fa-angle-right"></i>Blog</a></li>
-                        <li class="position-relative"><a href="pricing.html"><i
-                                    class="fas fa-angle-right"></i>Pricing</a></li>
-                        <li class="position-relative mb-0"><a href="contact.html"><i
+                        <li class="position-relative mb-0"><a href="#"><i
                                     class="fas fa-angle-right"></i>Contact us</a>
                         </li>
                     </ul>
@@ -227,38 +308,34 @@ class Footer extends HTMLElement {
                 <div class="footer-text-boxes">
                     <h4>Our Services</h4>
                     <ul class="mb-0 list-unstyled">
-                        <li class="position-relative"><a href="services.html"><i class="fas fa-angle-right"></i>Couple
-                                Therapy</a>
+
+                        <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Liver Transplant Services</a>
                         </li>
-                        <li class="position-relative"><a href="services.html"><i class="fas fa-angle-right"></i>Family
-                                Counseling</a></li>
-                        <li class="position-relative"><a href="services.html"><i class="fas fa-angle-right"></i>Anxiety
-                                Disorder</a>
+                        <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Liver & Hapatology Conditions</a></li>
+                        <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Cancer Surgeries</a>
                         </li>
-                        <li class="position-relative"><a href="services.html"><i class="fas fa-angle-right"></i>Personal
-                                Meeting</a>
+                        <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Advance HPB Procedure</a>
                         </li>
-                        <li class="position-relative mb-0"><a href="services.html"><i
-                                    class="fas fa-angle-right"></i>Dating &
-                                Relationship</a></li>
+                        <li class="position-relative mb-0"><a href="#"><i
+                                    class="fas fa-angle-right"></i>Diagnostic & Supportive Care</a></li>
                     </ul>
                 </div>
                 <div class="footer-text-boxes">
                     <h4>Contact Info</h4>
                     <ul class="mb-0 list-unstyled">
-                        <li class="position-relative"><a href="tel:+61383766284"><i class="fas fa-phone-alt"></i>+613
-                                8376 6284</a></li>
-                        <li class="position-relative"><a href="mailto:Info@medunit.om"><i
-                                    class="fas fa-envelope"></i>Info@medunit.om</a></li>
-                        <li class="position-relative mb-0"><i class="fas fa-map-marker-alt"></i>21 King Street
-                            Melbourne,<br> 3000, Australia</li>
+                        <li class="position-relative"><a href="tel:+91 97171 69299"><i class="fas fa-phone-alt"></i>+613
+                            +91 97171 69299</a></li>
+                        <li class="position-relative"><a href="mailto:info@liversurgeons.com"><i
+                                    class="fas fa-envelope"></i>info@liversurgeons.com</a></li>
+                        <li class="position-relative mb-0"><i class="fas fa-map-marker-alt"></i>AA-299, Shaheed Udham Singh Marg, Shalimar Bagh, Delhi-110088</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <div class="copy-rihgt-sec w-100  text-center">
-        <p class="mb-0">Medunit copyright © 2023. All Rights Reserved.</p>
+
+        <div class="copy-rihgt-sec w-100  text-center">
+        <p class="mb-0">Dr Ashish Liver Surgeon copyright © 2025. All Rights Reserved.</p>
     </div>
     <a id="button"></a>
         `

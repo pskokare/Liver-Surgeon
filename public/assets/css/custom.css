@@ -715,7 +715,7 @@ h5 {
     height: 100%;
     content: "";
     position: absolute;
-    background: url(../images/contact-form.png) no-repeat;
+    background: url(../images/contact-form.webp) no-repeat;
     background-size: cover;
 }
 
@@ -1628,7 +1628,7 @@ h5 {
 .footer-inner-sec {
     display: grid;
     gap: 30px;
-    grid-template-columns: 29% 13.3% 18.6% 20%;
+    grid-template-columns: 29% 13.3% 20.6% 20%;
     justify-content: center;
 }
 
@@ -3216,10 +3216,10 @@ h5 {
 /* about us page styling start */
 /* about us banner styling */
 .sub-banner-section {
-    background: url(../images/about-banner-img.jpg) no-repeat center;
+    background: url(../images/about-us-banner-img.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 640px;
+    height: 590px;
 }
 
 .sub-banner-inner-con {
@@ -3807,6 +3807,50 @@ h5 {
 .dropdown-submenu:hover>.dropdown-menu {
     display: block;
 }
+
+
+
+
+
+/* Smooth submenu animation */
+@media (max-width: 991px) {
+
+    
+    .dropdown-submenu .dropdown-menu {
+      display: block;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-in-out;
+      padding-left: 10px;
+    }
+
+    /* .dropdown-submenu{
+        border-bottom: 0.5px solid #333;
+    } */
+    .dropdown-submenu .dropdown-item {
+        border-right: 0.5px solid #333;
+
+    }
+  
+    .dropdown-submenu.show-submenu .dropdown-menu {
+      padding-top: 5px;
+    }
+  
+    .submenu-toggle {
+      cursor: pointer;
+      font-size: 14px;
+      margin: 0px 10px;
+      
+      transition: transform 0.3s ease;
+    }
+  
+    .dropdown-submenu.show-submenu .submenu-toggle {
+      transform: rotate(180deg); /* arrow flips */
+    }
+  
+    
+
+  }
 
 .features-list {
     list-style: none;

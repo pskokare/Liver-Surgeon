@@ -60,3 +60,32 @@ tabButtons.forEach(button => {
         document.getElementById(tabId).classList.add('active');
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const submenuToggles = document.querySelectorAll(".submenu-toggle");
+
+  submenuToggles.forEach(toggle => {
+    toggle.addEventListener("click", function (e) {
+      const submenu = this.closest(".dropdown-submenu");
+      const dropdownMenu = submenu.querySelector(".dropdown-menu");
+
+      // Toggle class
+      if (submenu.classList.contains("show-submenu")) {
+        submenu.classList.remove("show-submenu");
+        dropdownMenu.style.maxHeight = null;
+      } else {
+        // Close other submenus
+        document.querySelectorAll(".dropdown-submenu").forEach(item => {
+          item.classList.remove("show-submenu");
+          item.querySelector(".dropdown-menu").style.maxHeight = null;
+        });
+
+        submenu.classList.add("show-submenu");
+        dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + "px";
+      }
+
+      e.stopPropagation();
+    });
+  });
+});

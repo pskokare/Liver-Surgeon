@@ -1100,4 +1100,8 @@
     .about-text p{
         font-size: 15px;
     }
+
+    .liver-care-services .cards-column {
+        height: 60vh;
+    }
 }
