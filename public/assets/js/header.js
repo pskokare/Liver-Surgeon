@@ -2,7 +2,7 @@ class Header extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
-         <div class="header-main-con w-100 ">
+        <div class="header-main-con w-100 ">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand" href="index.html">
@@ -28,7 +28,7 @@ class Header extends HTMLElement {
                                 About
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                                <a class="dropdown-item" href="load-more.html">About Us</a>
+                                <a class="dropdown-item" href="/about/">About Us</a>
                                 <a class="dropdown-item" href="#">Team</a>
 
 
@@ -65,43 +65,43 @@ class Header extends HTMLElement {
                                 <div class="dropdown-submenu desktop-image">
                                     <a class="dropdown-item dropdown-toggle" href="#">Liver & Hepatology Conditions</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="shop.html">Chronic Liver Disease (CLD)</a>
-                                        <a class="dropdown-item" href="shop.html"> Acute Liver Failure (ALF)</a>
-                                        <a class="dropdown-item" href="shop.html">Hepatitis A, B, C,D, E</a>
-                                        <a class="dropdown-item" href="shop.html">Jaundice</a>
-                                        <a class="dropdown-item" href="shop.html">Fatty Liver (MASLD)</a>
-                                        <a class="dropdown-item" href="shop.html">Liver Cirrhosis</a>
-                                        <a class="dropdown-item" href="shop.html">Autoimmune Hepatitis</a>
-                                        <a class="dropdown-item" href="shop.html">Alcoholic Hepatitis</a>
-                                        <a class="dropdown-item" href="shop.html">Genetic Liver Disorders</a>
-                                        <a class="dropdown-item" href="shop.html">Metabolic liver diseases</a>
+                                        <a class="dropdown-item" href="#">Chronic Liver Disease (CLD)</a>
+                                        <a class="dropdown-item" href="#"> Acute Liver Failure (ALF)</a>
+                                        <a class="dropdown-item" href="#">Hepatitis A, B, C,D, E</a>
+                                        <a class="dropdown-item" href="#">Jaundice</a>
+                                        <a class="dropdown-item" href="#">Fatty Liver (MASLD)</a>
+                                        <a class="dropdown-item" href="#">Liver Cirrhosis</a>
+                                        <a class="dropdown-item" href="#">Autoimmune Hepatitis</a>
+                                        <a class="dropdown-item" href="#">Alcoholic Hepatitis</a>
+                                        <a class="dropdown-item" href="#">Genetic Liver Disorders</a>
+                                        <a class="dropdown-item" href="#">Metabolic liver diseases</a>
                                     </div>
                                 </div>
                                 <div class="dropdown-submenu desktop-image">
                                     <a class="dropdown-item dropdown-toggle" href="#">Cancer Surgeries</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="shop.html">Liver Cancer Surgery</a>
-                                        <a class="dropdown-item" href="shop.html">Hepatectomy (Liver Resection)</a>
-                                        <a class="dropdown-item" href="shop.html">Gallbladder Cancer Surgery</a>
-                                        <a class="dropdown-item" href="shop.html">Pancreatic Cancer Surgery</a>
-                                        <a class="dropdown-item" href="shop.html">Stomach Cancer Surgery</a>
-                                        <a class="dropdown-item" href="shop.html">Colon & Colorectal Cancer Surgery</a>
+                                        <a class="dropdown-item" href="#">Liver Cancer Surgery</a>
+                                        <a class="dropdown-item" href="#">Hepatectomy (Liver Resection)</a>
+                                        <a class="dropdown-item" href="#">Gallbladder Cancer Surgery</a>
+                                        <a class="dropdown-item" href="#">Pancreatic Cancer Surgery</a>
+                                        <a class="dropdown-item" href="#">Stomach Cancer Surgery</a>
+                                        <a class="dropdown-item" href="#">Colon & Colorectal Cancer Surgery</a>
 
                                     </div>
                                 </div>
                                 <div class="dropdown-submenu desktop-image">
                                     <a class="dropdown-item dropdown-toggle" href="#">Advanced HPB Procedures</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="shop.html">Ante-situm & Ex-situ Liver
+                                        <a class="dropdown-item" href="#">Ante-situm & Ex-situ Liver
                                             Resection</a>
-                                        <a class="dropdown-item" href="shop.html">Portal Hypertension Surgery</a>
-                                        <a class="dropdown-item" href="shop.html">Bile Duct Injury & Reconstruction</a>
-                                        <a class="dropdown-item" href="shop.html">Chronic Pancreatitis Surgery</a>
-                                        <a class="dropdown-item" href="shop.html">Minimal Access Liver Surgery</a>
-                                        <a class="dropdown-item" href="shop.html">Robotic HPB Surgery</a>
-                                        <a class="dropdown-item" href="shop.html">Cholangiocarcinoma (Bile Duct Cancer)
+                                        <a class="dropdown-item" href="#">Portal Hypertension Surgery</a>
+                                        <a class="dropdown-item" href="#">Bile Duct Injury & Reconstruction</a>
+                                        <a class="dropdown-item" href="#">Chronic Pancreatitis Surgery</a>
+                                        <a class="dropdown-item" href="#">Minimal Access Liver Surgery</a>
+                                        <a class="dropdown-item" href="#">Robotic HPB Surgery</a>
+                                        <a class="dropdown-item" href="#">Cholangiocarcinoma (Bile Duct Cancer)
                                             Surgery</a>
-                                        <a class="dropdown-item" href="shop.html">Choledochal Cyst Surgery </a>
+                                        <a class="dropdown-item" href="#">Choledochal Cyst Surgery </a>
 
 
                                     </div>
@@ -109,11 +109,11 @@ class Header extends HTMLElement {
                                 <div class="dropdown-submenu desktop-image">
                                     <a class="dropdown-item dropdown-toggle" href="#">Diagnostics & Supportive Care</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="shop.html">Diagnostics & Supportive Care</a>
-                                        <a class="dropdown-item" href="shop.html">FibroScan & Liver Elastography</a>
-                                        <a class="dropdown-item" href="shop.html">Tumor Ablation (RFA / Microwave)</a>
-                                        <a class="dropdown-item" href="shop.html">Endoscopic Variceal Ligation (EVL)</a>
-                                        <a class="dropdown-item" href="shop.html">Nutritional & Lifestyle Counseling</a>
+                                        <a class="dropdown-item" href="#">Diagnostics & Supportive Care</a>
+                                        <a class="dropdown-item" href="#">FibroScan & Liver Elastography</a>
+                                        <a class="dropdown-item" href="#">Tumor Ablation (RFA / Microwave)</a>
+                                        <a class="dropdown-item" href="#">Endoscopic Variceal Ligation (EVL)</a>
+                                        <a class="dropdown-item" href="#">Nutritional & Lifestyle Counseling</a>
 
                                     </div>
                                 </div>
@@ -143,16 +143,16 @@ class Header extends HTMLElement {
                                       <span class="submenu-toggle ">&#x25BC;</span>
                                     </div>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="shop.html">Chronic Liver Disease (CLD)</a>
-                                      <a class="dropdown-item" href="shop.html">Acute Liver Failure (ALF)</a>
-                                      <a class="dropdown-item" href="shop.html">Hepatitis A, B, C, D, E</a>
-                                      <a class="dropdown-item" href="shop.html">Jaundice</a>
-                                      <a class="dropdown-item" href="shop.html">Fatty Liver (MASLD)</a>
-                                      <a class="dropdown-item" href="shop.html">Liver Cirrhosis</a>
-                                      <a class="dropdown-item" href="shop.html">Autoimmune Hepatitis</a>
-                                      <a class="dropdown-item" href="shop.html">Alcoholic Hepatitis</a>
-                                      <a class="dropdown-item" href="shop.html">Genetic Liver Disorders</a>
-                                      <a class="dropdown-item" href="shop.html">Metabolic Liver Diseases</a>
+                                      <a class="dropdown-item" href="#">Chronic Liver Disease (CLD)</a>
+                                      <a class="dropdown-item" href="#">Acute Liver Failure (ALF)</a>
+                                      <a class="dropdown-item" href="#">Hepatitis A, B, C, D, E</a>
+                                      <a class="dropdown-item" href="#">Jaundice</a>
+                                      <a class="dropdown-item" href="#">Fatty Liver (MASLD)</a>
+                                      <a class="dropdown-item" href="#">Liver Cirrhosis</a>
+                                      <a class="dropdown-item" href="#">Autoimmune Hepatitis</a>
+                                      <a class="dropdown-item" href="#">Alcoholic Hepatitis</a>
+                                      <a class="dropdown-item" href="#">Genetic Liver Disorders</a>
+                                      <a class="dropdown-item" href="#">Metabolic Liver Diseases</a>
                                     </div>
                                   </div>
                                   
@@ -162,12 +162,12 @@ class Header extends HTMLElement {
                                       <span class="submenu-toggle d-md-none">&#x25BC;</span>
                                     </div>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="shop.html">Liver Cancer Surgery</a>
-                                      <a class="dropdown-item" href="shop.html">Hepatectomy (Liver Resection)</a>
-                                      <a class="dropdown-item" href="shop.html">Gallbladder Cancer Surgery</a>
-                                      <a class="dropdown-item" href="shop.html">Pancreatic Cancer Surgery</a>
-                                      <a class="dropdown-item" href="shop.html">Stomach Cancer Surgery</a>
-                                      <a class="dropdown-item" href="shop.html">Colon & Colorectal Cancer Surgery</a>
+                                      <a class="dropdown-item" href="#">Liver Cancer Surgery</a>
+                                      <a class="dropdown-item" href="#">Hepatectomy (Liver Resection)</a>
+                                      <a class="dropdown-item" href="#">Gallbladder Cancer Surgery</a>
+                                      <a class="dropdown-item" href="#">Pancreatic Cancer Surgery</a>
+                                      <a class="dropdown-item" href="#">Stomach Cancer Surgery</a>
+                                      <a class="dropdown-item" href="#">Colon & Colorectal Cancer Surgery</a>
                                     </div>
                                   </div>
                                   
@@ -177,14 +177,14 @@ class Header extends HTMLElement {
                                       <span class="submenu-toggle d-md-none">&#x25BC;</span>
                                     </div>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="shop.html">Ante-situm & Ex-situ Liver Resection</a>
-                                      <a class="dropdown-item" href="shop.html">Portal Hypertension Surgery</a>
-                                      <a class="dropdown-item" href="shop.html">Bile Duct Injury & Reconstruction</a>
-                                      <a class="dropdown-item" href="shop.html">Chronic Pancreatitis Surgery</a>
-                                      <a class="dropdown-item" href="shop.html">Minimal Access Liver Surgery</a>
-                                      <a class="dropdown-item" href="shop.html">Robotic HPB Surgery</a>
-                                      <a class="dropdown-item" href="shop.html">Cholangiocarcinoma Surgery</a>
-                                      <a class="dropdown-item" href="shop.html">Choledochal Cyst Surgery</a>
+                                      <a class="dropdown-item" href="#">Ante-situm & Ex-situ Liver Resection</a>
+                                      <a class="dropdown-item" href="#">Portal Hypertension Surgery</a>
+                                      <a class="dropdown-item" href="#">Bile Duct Injury & Reconstruction</a>
+                                      <a class="dropdown-item" href="#">Chronic Pancreatitis Surgery</a>
+                                      <a class="dropdown-item" href="#">Minimal Access Liver Surgery</a>
+                                      <a class="dropdown-item" href="#">Robotic HPB Surgery</a>
+                                      <a class="dropdown-item" href="#">Cholangiocarcinoma Surgery</a>
+                                      <a class="dropdown-item" href="#">Choledochal Cyst Surgery</a>
                                     </div>
                                   </div>
                                   
@@ -194,11 +194,11 @@ class Header extends HTMLElement {
                                       <span class="submenu-toggle d-md-none">&#x25BC;</span>
                                     </div>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="shop.html">Diagnostics & Supportive Care</a>
-                                      <a class="dropdown-item" href="shop.html">FibroScan & Liver Elastography</a>
-                                      <a class="dropdown-item" href="shop.html">Tumor Ablation (RFA / Microwave)</a>
-                                      <a class="dropdown-item" href="shop.html">Endoscopic Variceal Ligation (EVL)</a>
-                                      <a class="dropdown-item" href="shop.html">Nutritional & Lifestyle Counseling</a>
+                                      <a class="dropdown-item" href="#">Diagnostics & Supportive Care</a>
+                                      <a class="dropdown-item" href="#">FibroScan & Liver Elastography</a>
+                                      <a class="dropdown-item" href="#">Tumor Ablation (RFA / Microwave)</a>
+                                      <a class="dropdown-item" href="#">Endoscopic Variceal Ligation (EVL)</a>
+                                      <a class="dropdown-item" href="#">Nutritional & Lifestyle Counseling</a>
                                     </div>
                                   </div>
                                   
@@ -214,25 +214,25 @@ class Header extends HTMLElement {
                                 Patient Information
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                                <a class="dropdown-item" href="load-more.html">Pre-Transplant Evaluation</a>
+                                <a class="dropdown-item" href="#">Pre-Transplant Evaluation</a>
                                 <a class="dropdown-item" href="#">Post-Transplant Instructions</a>
-                                <a class="dropdown-item" href="one-column.html">Diet & Nutrition Guide</a>
-                                <a class="dropdown-item" href="two-column.html">Recovery Timeline</a>
-                                <a class="dropdown-item" href="three-column.html">FAQs</a>
+                                <a class="dropdown-item" href="#">Diet & Nutrition Guide</a>
+                                <a class="dropdown-item" href="#">Recovery Timeline</a>
+                                <a class="dropdown-item" href="#">FAQs</a>
 
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="pricing.html">Publications & Research</a>
+                            <a class="nav-link p-0" href="#">Publications & Research</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="contact.html">Testimonials</a>
+                            <a class="nav-link p-0" href="#">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="contact.html">Blog</a>
+                            <a class="nav-link p-0" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="contact.html">Contact</a>
+                            <a class="nav-link p-0" href="/contact/">Contact</a>
                         </li>
                     </ul>
                     <div class="header-contact d-flex align-items-center">
@@ -256,7 +256,7 @@ class Header extends HTMLElement {
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-      <section class="footer-main-section w-100  position-relative">
+   <section class="footer-main-section w-100  position-relative">
         <div class="container">
             <div class="subscribe-con d-flex">
                 <h4>Have Questions? Talk to Our Experts</h4>
@@ -293,14 +293,14 @@ class Footer extends HTMLElement {
                 <div class="footer-text-boxes">
                     <h4>About Us</h4>
                     <ul class="mb-0 list-unstyled">
-                        <li class="position-relative"><a href="#"><i
+                        <li class="position-relative"><a href="/about/"><i
                                     class="fas fa-angle-right"></i>About</a></li>
                         <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Team</a></li>
                         <li class="position-relative"><a href="#"><i
                                     class="fas fa-angle-right"></i>Publication</a></li>
                         <li class="position-relative"><a href="#"><i
                                     class="fas fa-angle-right"></i>Blog</a></li>
-                        <li class="position-relative mb-0"><a href="#"><i
+                        <li class="position-relative mb-0"><a href="/contact/"><i
                                     class="fas fa-angle-right"></i>Contact us</a>
                         </li>
                     </ul>
@@ -323,7 +323,7 @@ class Footer extends HTMLElement {
                 <div class="footer-text-boxes">
                     <h4>Contact Info</h4>
                     <ul class="mb-0 list-unstyled">
-                        <li class="position-relative"><a href="tel:+91 97171 69299"><i class="fas fa-phone-alt"></i>+613
+                        <li class="position-relative"><a href="tel:+91 97171 69299"><i class="fas fa-phone-alt"></i>
                             +91 97171 69299</a></li>
                         <li class="position-relative"><a href="mailto:info@liversurgeons.com"><i
                                     class="fas fa-envelope"></i>info@liversurgeons.com</a></li>
@@ -333,8 +333,7 @@ class Footer extends HTMLElement {
             </div>
         </div>
     </section>
-
-        <div class="copy-rihgt-sec w-100  text-center">
+    <div class="copy-rihgt-sec w-100  text-center">
         <p class="mb-0">Dr Ashish Liver Surgeon copyright © 2025. All Rights Reserved.</p>
     </div>
     <a id="button"></a>

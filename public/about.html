@@ -13,14 +13,417 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>Medunit | About</title>
+    <title>Liver Surgeon | About</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/mobile.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/aos.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
     <script src="/assets/js/header.js"></script>
+
+    <style>
+        
+.finix-text h6{
+  color: #1d9146;
+  font-weight: 400;
+  font-size: 17px;
+}
+.finix-text h2 {
+  font-weight: 400;
+  font-size: 35px;
+  margin-top: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.why-choose-us h3 {
+
+  font-size: 23px;
+ 
+}
+.finix-text p {
+  color: #606060;
+  font-size: 15px;
+  line-height: 1.8rem;
+}
+.why-choose-us {
+  margin-top: 90px;
+}
+.why-choose-us .finix-text h2 {
+  font-weight: 500;
+}
+.why-choose-us .ct-btn {
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  line-height: 85px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 60px;
+  background: #fff;
+  position: absolute;
+  top: 77%;
+  right: 43%;
+}
+.why-choose-us .ct-btn::before {
+  content: "";
+  height: 85px;
+  width: 85px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #3f66b0;
+  border-radius: 50%;
+  animation: choose 1.6s ease-out infinite;
+}
+@keyframes choose{
+  0%,30%{
+      transform: scale(0);
+      opacity: 1;
+  }
+  50%{
+      transform: scale(1.5);
+      opacity: .7;
+  }
+  100%{
+      transform: scale(2);
+      opacity: 0;
+  }
+}
+.why-choose-us .ct-btn a{
+  color: #3f66b0;
+}
+.why-choose-us .feature-box {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+
+  transition: .4s;
+}
+.why-choose-us .feature-box:hover {
+  transform: translateY(-10px);
+}
+.why-choose-us .feature-box:hover .fbc-btn{
+  background: #3f66b0;
+  color: #fff;
+}
+.why-choose-us .feature-box::before {
+  content: "";
+  position: absolute;
+  top: -115px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90%;
+  height: 70%;
+  background: #1d9146;
+  border-radius: 50%;
+}
+.why-choose-us .fbc-btn {
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  line-height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #3f66b0;
+  position: relative;
+  transition: .4s;
+}
+.active-feature{
+  margin-top: -30px;
+}
+.why-choose-us .finix-text{
+  position: relative;
+}
+
+
+        .mission-card {
+          border: none;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          transition: all 0.3s ease;
+          overflow: hidden;
+          border-radius: 20px;
+          min-height: 275px;
+        }
+        
+        .mission-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .card-content {
+          height: calc(100% - 35px);
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .card-content p {
+          flex-grow: 1;
+        }
+        
+        @media (max-width: 768px) {
+          .mission-card {
+            margin: 0 10px;
+          }
+        }
+
+        .our-journey {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .our-journey .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background-color: #1d9146;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-item .timeline-icon {
+            background-color: #1d9146;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 20px;
+            z-index: 3;
+            position: relative;
+        }
+
+        .timeline-item .timeline-content {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item .timeline-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .timeline-item .timeline-content p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .timeline-item:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .timeline-item .timeline-icon {
+                margin-bottom: 10px;
+            }
+
+            .timeline-item .timeline-content {
+                max-width: 100%;
+            }
+        }
+    
+    </style>
+
+    <style>
+                .accreditations-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+        
+        .accreditations-container   .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .accreditations-container   .section-header h2 {
+            font-size: 2.5rem;
+            color: #1d9146;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .accreditations-container    .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #3f66b0;
+            border-radius: 2px;
+        }
+        
+        .accreditations-container   .section-header p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .accreditations-container    .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .accreditations-container   .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .accreditations-container   .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .accreditations-container .card-header {
+            padding: 1.5rem;
+            background: #1d9146;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        
+        .accreditations-container   .card-header i {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+        
+        .accreditations-container    .card-header h3 {
+            font-size: 1.5rem;
+    
+            color: #ffff;
+        }
+        
+        .accreditations-container  .card-body {
+            padding: 1.5rem;
+        }
+        
+        .accreditations-container   .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .accreditations-container  .badge {
+            display: flex;
+            align-items: center;
+            background: var(--light);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .accreditations-container   .badge i {
+            color: #3f66b0;
+            margin-right: 0.5rem;
+        }
+        
+        .accreditations-container   .partner-list, .award-list {
+            list-style: none;
+        }
+        
+        .accreditations-container   .partner-list li, .award-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .accreditations-container     .partner-list li:last-child, .award-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .accreditations-container   .partner-list i, .award-list i {
+            color: #3f66b0;
+            margin-right: 0.75rem;
+            margin-top: 0.2rem;
+        }
+        
+        .accreditations-container   .partner-info, .award-info {
+            flex: 1;
+        }
+        
+        .accreditations-container    .partner-name, .award-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .accreditations-container    .partner-desc, .award-org {
+            color: #333;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .accreditations-container    .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .accreditations-container  .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -45,14 +448,14 @@
                         DR Ashish George
                     </span>
                     <h1 data-aos="fade-up" data-aos-duration="700" class="aos-init aos-animate">About Liver Surgeons Hospital</h1>
-                    <p data-aos="fade-up" data-aos-duration="700" class="aos-init aos-animate">Liver Surgeons Hospital</p>
+                    <p data-aos="fade-up" data-aos-duration="700" class="aos-init aos-animate">Pioneering Excellence in Liver Care & Transplantation</p>
                 
                     <div class="banner-btns generic-btn aos-init aos-animate" data-aos="fade-up"
                         data-aos-duration="700">
 
 
-                        <a href="contact.html">Book Appointment</a>
-                        <a href="services.html">Read More</a>
+                        <a href="/contact/">Book Appointment</a>
+                        <a href="#">Read More</a>
                     </div>
                 </div>
 
@@ -66,14 +469,13 @@
             <div class="about-inner-con">
                 <div class="about-img-con">
                     <figure class="mb-0" data-aos="fade-up" data-aos-duration="700">
-                        <img src="assets/images/about-us-about-img.jpg" alt="about-us-about-img">
+                        <img src="/assets/images/liver-surgeon-about.png" alt="about-us-about-img" >
                     </figure>
                 </div>
                 <div class="about-txt-con">
                     <div class="generic-title" data-aos="fade-up" data-aos-duration="700">
                         <span class="small-text">About Us</span>
-                        <h2 class="mb-0">Therapy for How We Can
-                            Live Better Today</h2>
+                        <h2 class="mb-0">Liver Surgeons Hospital</h2>
                     </div>
                     <p data-aos="fade-up" data-aos-duration="700">At Liver Surgeons, we are Delhi's premier multispecialty hospital dedicated exclusively to liver health, transplantation, and hepatobiliary sciences.</p>
                     <p data-aos="fade-up" data-aos-duration="700"> Established in 2015, our hospital has redefined liver care in India through cutting-edge treatments, patient-centric protocols, and global collaborations. With 1,000+ successful liver transplants and a 95% survival rate, we stand as a beacon of hope for patients battling complex liver diseases, cirrhosis, and acute liver failure.</p>
@@ -86,11 +488,9 @@
             </div>
             <div class="about-special-txt" data-aos="fade-up" data-aos-duration="700">
                 <figure>
-                    <img src="assets/images/about-quote-img.png" alt="about-quote-img">
+                    <img src="/assets/images/about-quote-img.png" alt="about-quote-img">
                 </figure>
-                <h4>Ignissimos ducimus aui
-                    aet quas molestias exceuri
-                    recusandae itarue.</h4>
+                <h4>The power of community to create health is far greater than any physician, clinic or hospital.</h4>
             </div>
         </div>
     </section>
@@ -103,28 +503,28 @@
                     <ul class="list-unstyled mb-0">
                         <li data-aos="fade-up" data-aos-duration="700">
                             <figure>
-                                <img src="assets/images/counter-img1.png" alt="counter-img1">
+                                <img src="/assets/images/counter-img1.png" alt="counter-img1">
                             </figure>
                             <div class="count d-inline-block">2850</div>
                             <span class="d-block client-status">Psycologist</span>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="700">
                             <figure>
-                                <img src="assets/images/counter-img2.png" alt="counter-img2">
+                                <img src="/assets/images/counter-img2.png" alt="counter-img2">
                             </figure>
                             <div class="count d-inline-block">1245</div>
                             <span class="d-block client-status">Branches</span>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="700">
                             <figure>
-                                <img src="assets/images/counter-img3.png" alt="counter-img3">
+                                <img src="/assets/images/counter-img3.png" alt="counter-img3">
                             </figure>
                             <div class="count d-inline-block">3358</div>
                             <span class="d-block client-status">Patients</span>
                         </li>
                         <li data-aos="fade-up" data-aos-duration="700">
                             <figure>
-                                <img src="assets/images/counter-img4.png" alt="counter-img4">
+                                <img src="/assets/images/counter-img4.png" alt="counter-img4">
                             </figure>
                             <div class="count d-inline-block">2496</div>
                             <span class="d-block client-status">Achievements</span>
@@ -135,418 +535,357 @@
         </div>
     </div>
     <!-- COUNTER SECTION END -->
-    <!-- TEAM SECTION START -->
-    <section class="team-main-section w-100  padding-top padding-bottom light-bg">
+
+
+    <section class="why-choose-us">
         <div class="container">
-            <div class="generic-title text-center" data-aos="fade-up" data-aos-duration="700">
-                <span class="small-text">Team Members</span>
-                <h2 class="mb-0">Our Proffesional Team</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="finix-text">
+                <h6>Transparent process</h6>
+                <h2>Why Choose Liver Surgeons?</h2>
+                <p>World-class liver care with NABH/JCI standards, expert team, advanced ICU, affordable transplants, and 24/7 emergency support.</p>
+                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/why_choose_us.png" alt="" style="width: 100%;">
+                <div class="ct-btn">
+                  <a href="#" class=""><i class="fas fa-play-circle"></i></a>
+                </div>
+              </div>
             </div>
-            <div class="team-inner-section">
-                <div class="member-con text-center" data-aos="fade-up" data-aos-duration="700">
-                    <div class="member-img-details position-relative">
-                        <figure>
-                            <img src="assets/images/team-img1.jpg" alt="team-img1">
-                        </figure>
-                        <div class="member-detail-box">
-                            <ul class="list-unstyled">
-                                <li class="d-inline-block">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="d-inline-block"><a
-                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                            <p>Nuis aute irure dolor
-                                reprehenderit in volutae
-                                velit esse fugiat...</p>
-                            <div class="generic-btn">
-                                <a href="contact.html">Book Appointment</a>
-                            </div>
-                        </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-box mt-4">
+                    <div class="feature-box-content text-center">
+                      <div class="fbc-btn">
+                        <i class="fas fa-percent"></i>
+                      </div>
+                      <h3>NABH Accredited</h3>
+                      <p>Adhering to the highest standards of safety and quality.</p>
                     </div>
-                    <h4>Alice Waters</h4>
-                    <span class="d-block">Sycho Founder</span>
+                  </div>
                 </div>
-                <div class="member-con text-center" data-aos="fade-up" data-aos-duration="700">
-                    <div class="member-img-details position-relative">
-                        <figure>
-                            <img src="assets/images/team-img2.jpg" alt="team-img2">
-                        </figure>
-                        <div class="member-detail-box">
-                            <ul class="list-unstyled">
-                                <li class="d-inline-block">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="d-inline-block"><a
-                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                            <p>Nuis aute irure dolor
-                                reprehenderit in volutae
-                                velit esse fugiat...</p>
-                            <div class="generic-btn">
-                                <a href="contact.html">Book Appointment</a>
-                            </div>
-                        </div>
+                <div class="col-lg-6">
+                  <div class="feature-box">
+                    <div class="feature-box-content text-center">
+                      <div class="fbc-btn">
+                        <i class="fas fa-percent"></i>
+                      </div>
+                      <h3>Expert Team</h3>
+                      <p> Led by Dr. Ashish George and a multidisciplinary team of hepatologist</p>
                     </div>
-                    <h4>Jamie Oliver</h4>
-                    <span class="d-block">Therapy Expert</span>
+                  </div>
+                </div><div class="col-lg-6">
+                  <div class="feature-box">
+                    <div class="feature-box-content text-center">
+                      <div class="fbc-btn">
+                        <i class="fas fa-percent"></i>
+                      </div>
+                      <h3>Affordable Care</h3>
+                      <p>Transparent pricing with liver transplant (40% lower than private hospitals).</p>
+                    </div>
+                  </div>
+                </div><div class="col-lg-6">
+                  <div class="feature-box active-feature">
+                    <div class="feature-box-content text-center">
+                      <div class="fbc-btn">
+                        <i class="fas fa-percent"></i>
+                      </div>
+                      <h3>24/7  Care</h3>
+                      <p>Rapid response for acute liver failure, hepatic encephalopathy, and post-transplant complications.</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="member-con text-center" data-aos="fade-up" data-aos-duration="700">
-                    <div class="member-img-details position-relative">
-                        <figure>
-                            <img src="assets/images/team-img3.jpg" alt="team-img3">
-                        </figure>
-                        <div class="member-detail-box">
-                            <ul class="list-unstyled">
-                                <li class="d-inline-block">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="d-inline-block"><a
-                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                            <p>Nuis aute irure dolor
-                                reprehenderit in volutae
-                                velit esse fugiat...</p>
-                            <div class="generic-btn">
-                                <a href="contact.html">Book Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                    <h4>Clare Smyth</h4>
-                    <span class="d-block">Sycho Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+
+      <section class="py-5" style="background-color: #1d9146;">
+        <h2 class="text-center fw-bold mb-5 position-relative text-white">
+          Our Mission and Vision
+        </h2>
+      
+        <div class="row justify-content-center align-items-center gy-4 gx-md-4 w-100">
+      
+          <div class=" col-md-5  mb-3">
+            <div class="bg-white rounded-5 p-4 position-relative h-100 mission-card">
+              <div class="position-absolute top-0 start-50 translate-middle  text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; font-size: 1.75rem; background-color: #3f66b0;">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <div class="card-content pt-5 px-3 pb-3">
+                <h3 class="mb-4 fw-semibold text-center">Our Mission</h3>
+                <p class="text-muted mb-0 text-start">
+                  To provide accessible, world-class liver care through innovation, collaboration, and compassion. We aim to empower patients with life-saving treatments while advancing liver health through research and community education.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class=" col-md-5  mb-3">
+            <div class="bg-white rounded-5 p-4 position-relative h-100 mission-card">
+              <div class="position-absolute top-0 start-50 translate-middle  text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px; font-size: 1.75rem; background-color: #3f66b0;">
+                <i class="fas fa-eye"></i>
+              </div>
+              <div class="card-content pt-5 px-3 pb-3">
+                <h3 class="mb-4 fw-semibold text-center">Our Vision</h3>
+                <p class="text-muted mb-0 text-start">
+                  To become Asia's most trusted liver care destination by 2030, pioneering breakthroughs in transplantation, regenerative medicine, and AI-driven diagnostics.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+
+
+
+      <section class="about-main-section padding-top w-100  position-relative  padding-bottom">
+        <div class="container position-relative">
+            <div class="about-inner-con">
+                <div class="about-img-con aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
+                    <figure class="mb-0">
+                        <img src="/assets/images/about-dr-ashish-george.webp" alt="about-img" style="max-width: 487px; border-radius: 10px;">
+                    </figure>
                 </div>
-                <div class="member-con text-center" data-aos="fade-up" data-aos-duration="700">
-                    <div class="member-img-details position-relative">
-                        <figure>
-                            <img src="assets/images/team-img4.jpg" alt="team-img4">
-                        </figure>
-                        <div class="member-detail-box">
-                            <ul class="list-unstyled">
-                                <li class="d-inline-block">
-                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="d-inline-block"><a
-                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li class="d-inline-block"><a href="https://www.linkedin.com/login"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                            <p>Nuis aute irure dolor
-                                reprehenderit in volutae
-                                velit esse fugiat...</p>
-                            <div class="generic-btn">
-                                <a href="contact.html">Book Appointment</a>
-                            </div>
-                        </div>
+                <div class="about-txt-con">
+                    <div class="generic-title">
+                        <span class="small-text aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">Leadership</span>
+                        <h2 class="mb-0 aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">Dr. Ashish George</h2>
                     </div>
-                    <h4>Hekim Rswana</h4>
-                    <span class="d-block">Therapy Expert</span>
+                    <p data-aos="fade-up" data-aos-duration="700" class="aos-init aos-animate"><strong style="color: #333;">Principal Consultant & Unit Head – Liver Transplantation</strong></p>
+                    <p data-aos="fade-up" data-aos-duration="700" class="aos-init aos-animate">With over 15 years of experience in liver transplantation and Hepato Pancreatic Biliary surgery (HPB), Dr. George has played a pivotal role in numerous life-saving surgeries, including pediatric and adult liver transplants, complex hepatobiliary surgeries</p>
+
+
+                    <ul class="list-unstyled">
+                        <li><strong>Credentials: </strong>M.Ch. (AIIMS), Fellowship in Liver Transplantation.</li>
+                        <li><strong>Expertise</strong>: 15+ years in complex adult/pediatric transplants, split-liver techniques, and ex-situ resections.</li>
+                        <li><strong>Awards</strong>: "Best Liver Transplant Surgeon in North India" (2023) – Times Health.</li>
+
+                    </ul>
+                    <div class="generic-btn">
+                        <a href="javascript:void(0);" id="toggleReadMore">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        
+
+
+        </div>
+
+       
+     
+       
+    </section>
+
+    <section class="our-journey" style="background-image: url('/assets/images/lines-bg');">
+        <div class="container">
+            <h2 class="section-title">Milestones</h2>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-building"></i> <!-- Icon for founding -->
+                    </div>
+                    <div class="timeline-content">
+                        <h3>1,200+</h3>
+                        <p>Liver Transplants | 98% 1-year Graft Survival Rate</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-sync-alt"></i> <!-- Icon for rebranding -->
+                    </div>
+                    <div class="timeline-content">
+                        <h3>First in India</h3>
+                        <p>to perform robotic dual-lobe liver resection (2021).</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-trophy"></i> <!-- Icon for recognition -->
+                    </div>
+                    <div class="timeline-content">
+                        <h3>50+</h3>
+                        <p>peer-reviewed publications in journals like the Journal of Hepatology and Transplantation.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- TEAM SECTION END -->
+
+
+    <div class="accreditations-container">
+        <div class="section-header">
+            <h2>Accreditations & Partnerships</h2>
+            <p>Recognized for excellence in healthcare and collaborative innovation</p>
+        </div>
+        
+        <div class="grid">
+            <!-- Certifications Card -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-award"></i>
+                    <h3>Certifications</h3>
+                </div>
+                <div class="card-body">
+                    <div class="badge-container">
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            NABH Certified
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-globe"></i>
+                            JCI Certified
+                        </div>
+                    </div>
+                    <p>Our facility meets the highest international standards for healthcare quality and patient safety.</p>
+                </div>
+            </div>
+            
+            <!-- Collaborations Card -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Collaborations</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="partner-list">
+                        <li>
+                            <i class="fas fa-hospital"></i>
+                            <div class="partner-info">
+                                <div class="partner-name">European Liver Transplant Registry</div>
+                                <div class="partner-desc">International research partnership</div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-heartbeat"></i>
+                            <div class="partner-info">
+                                <div class="partner-name">National Liver Foundation (India)</div>
+                                <div class="partner-desc">National awareness initiative</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Awards Card -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Awards</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="award-list">
+                        <li>
+                            <i class="fas fa-medal"></i>
+                            <div class="award-info">
+                                <div class="award-title">Excellence in Viral Hepatitis Management</div>
+                                <div class="award-org">WHO Alliance</div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-star"></i>
+                            <div class="award-info">
+                                <div class="award-title">Best Liver Hospital in Delhi</div>
+                                <div class="award-org">Healthcare Asia Awards</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- CONTACT SECTION START -->
-    <section class="w-100  about-contact-con index3-contact-con contact-con position-relative padding-top padding-bottom">
-        <div class="container">
-            <div class="contact-width-box">
-                <div class="contact-inner-con">
-                    <div class="contact-image-con" data-aos="fade-up" data-aos-duration="700">
-                        <figure class="mb-0">
-                            <img src="assets/images/about-contact-img.jpg" alt="about-contact-img">
-                        </figure>
-                    </div>
-                    <div class="contact-form ">
-                        <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
-                        <h2 data-aos="fade-up" data-aos-duration="700">Get an Appointment</h2>
-                        <p data-aos="fade-up" data-aos-duration="700">Molestiae non recusandae itaque earum rerum
-                            sarien.</p>
-                        <form class="form-box" method="post" id="contactpage">
-                            <ul class="list-unstyled ">
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="text" name="fname" id="fname" placeholder="Your Name:">
-                                    <i class="fas fa-user"></i>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="email" placeholder="Email address:" name="email" id="email">
-                                    <i class="fas fa-envelope"></i>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <select name="department" id="department">
-                                        <option value="department">Choose department</option>
-                                        <option value="department1">department 1</option>
-                                        <option value="department2">department 2</option>
-                                        <option value="department3">department 3</option>
-                                    </select>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <select name="doctor" id="doctor">
-                                        <option value="doctor">Choose doctor</option>
-                                        <option value="doctor1">doctor 1</option>
-                                        <option value="doctor2">doctor 2</option>
-                                        <option value="doctor3">doctor 3</option>
-                                    </select>
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <input placeholder="Date & Time" type="date" id="date">
-                                </li>
-                                <li data-aos="fade-up" data-aos-duration="700">
-                                    <input type="tel" name="phone" id="phone" placeholder="Phone Number">
-                                    <i class="fas fa-phone-alt"></i>
-                                </li>
-                            </ul>
-                            <div class="submit-btn" data-aos="fade-up" data-aos-duration="700">
-                                <button type="submit" id="submit">
-                                    Make an Appointment
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   <main-contact></main-contact>
     <!-- CONTACT SECTION END -->
-    <!-- BLOG SECTION START -->
-    <section class="blogs-section w-100  padding-top padding-bottom light-bg">
+
+
+    <section class="index2-blog-section w-100  padding-top padding-bottom light-bg">
         <div class="container">
             <div class="generic-title text-center">
                 <span class="small-text d-block" data-aos="fade-up" data-aos-duration="700">Articles & Tips</span>
                 <h2 data-aos="fade-up" data-aos-duration="700">Latest News & Blogs</h2>
             </div>
-            <div class="blogs-inner-con" data-aos="fade-up" data-aos-duration="700">
-                <div id="owl-carouselfour" class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="blog-box">
-                            <div class="blog-first-img blog-img-box"></div>
-                            <div class="blog-details">
-                                <span class="d-block"><i class="fas fa-calendar-alt"></i> Mar 20, 2021</span>
-                                <h4><a href="single-blog.html">Reiciendis volutaibus
-                                        maiores alias</a></h4>
-                                <p>Debitis aut rerum nec sitatoe
-                                    bus saerue eveniet...</p>
-                                <a href="single-blog.html">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
+            <div class="index2-blog-inner-con owl-carousel owl-theme" id="owl-carouselone">
+            <div class="item">
+                <div class="index2-blog-box" data-aos="fade-up" data-aos-duration="700">
+                    <div class="blog-top-image position-relative">
+                        <figure class="mb-0">
+                            <img src="/assets/images/blod-1.png" alt="index2-blog-img1">
+                        </figure>
+                        <div class="publish-date">22 <span class="d-block">March</span></div>
                     </div>
-                    <div class="item">
-                        <div class="blog-box">
-                            <div class="blog-second-img blog-img-box"></div>
-                            <div class="blog-details">
-                                <span class="d-block"><i class="fas fa-calendar-alt"></i> Feb 14, 2022</span>
-                                <h4><a href="single-blog.html">Duis aute irure dolor
-                                        in reprehenderit</a></h4>
-                                <p>Debitis aut rerum nec sitatoe
-                                    bus saerue eveniet...</p>
-                                <a href="single-blog.html">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-box">
-                            <div class="blog-third-img blog-img-box"></div>
-                            <div class="blog-details">
-                                <span class="d-block"><i class="fas fa-calendar-alt"></i> Jun 07, 2022</span>
-                                <h4><a href="single-blog.html">Riusmod tempor incidun
-                                        aut labore</a></h4>
-                                <p>Debitis aut rerum nec sitatoe
-                                    bus saerue eveniet...</p>
-                                <a href="single-blog.html">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-box">
-                            <div class="blog-first-img blog-img-box"></div>
-                            <div class="blog-details">
-                                <span class="d-block"><i class="fas fa-calendar-alt"></i> Mar 20, 2021</span>
-                                <h4><a href="single-blog.html">Reiciendis volutaibus
-                                        maiores alias</a></h4>
-                                <p>Debitis aut rerum nec sitatoe
-                                    bus saerue eveniet...</p>
-                                <a href="single-blog.html">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-box">
-                            <div class="blog-second-img blog-img-box"></div>
-                            <div class="blog-details">
-                                <span class="d-block"><i class="fas fa-calendar-alt"></i> Feb 14, 2022</span>
-                                <h4><a href="single-blog.html">Duis aute irure dolor
-                                        in reprehenderit</a></h4>
-                                <p>Debitis aut rerum nec sitatoe
-                                    bus saerue eveniet...</p>
-                                <a href="single-blog.html">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-box">
-                            <div class="blog-third-img blog-img-box"></div>
-                            <div class="blog-details">
-                                <span class="d-block"><i class="fas fa-calendar-alt"></i> Jun 07, 2022</span>
-                                <h4><a href="single-blog.html">Riusmod tempor incidun
-                                        aut labore</a></h4>
-                                <p>Debitis aut rerum nec sitatoe
-                                    bus saerue eveniet...</p>
-                                <a href="single-blog.html">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-box">
-                            <div class="blog-first-img blog-img-box"></div>
-                            <div class="blog-details">
-                                <span class="d-block"><i class="fas fa-calendar-alt"></i> Mar 20, 2021</span>
-                                <h4><a href="single-blog.html">Reiciendis volutaibus
-                                        maiores alias</a></h4>
-                                <p>Debitis aut rerum nec sitatoe
-                                    bus saerue eveniet...</p>
-                                <a href="single-blog.html">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-box">
-                            <div class="blog-second-img blog-img-box"></div>
-                            <div class="blog-details">
-                                <span class="d-block"><i class="fas fa-calendar-alt"></i> Feb 14, 2022</span>
-                                <h4><a href="single-blog.html">Duis aute irure dolor
-                                        in reprehenderit</a></h4>
-                                <p>Debitis aut rerum nec sitatoe
-                                    bus saerue eveniet...</p>
-                                <a href="single-blog.html">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-box">
-                            <div class="blog-third-img blog-img-box"></div>
-                            <div class="blog-details">
-                                <span class="d-block"><i class="fas fa-calendar-alt"></i> Jun 07, 2022</span>
-                                <h4><a href="single-blog.html">Riusmod tempor incidun
-                                        aut labore</a></h4>
-                                <p>Debitis aut rerum nec sitatoe
-                                    bus saerue eveniet...</p>
-                                <a href="single-blog.html">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- BLOG SECTION END -->
-    <!-- FOOTER SECTION START -->
-    <section class="footer-main-section w-100  position-relative">
-        <div class="container">
-            <div class="subscribe-con d-flex">
-                <h4>Subscribe To Our <br>
-                    Newsletter</h4>
-                <div class="form-sec">
-                    <input type="email" name="email" id="mail" placeholder="Your Email Address:">
-                    <button type="submit" id="submit" class="sign-up-btn">Sign Up Now</button>
-                </div>
-            </div>
-            <div class="footer-inner-sec">
-                <div class="footer-boxes">
-                    <div class="footer-logo-con">
-                        <a href="index.html">
-                            <figure>
-                                <img src="assets/images/logo.png" alt="logo">
-                            </figure>
+                    <div class="blog-txt-con">
+                        <a href="#">
+                            <h4>Liver Transplantation: What Every Patient Should Know</h4>
                         </a>
-                        <p>Deleniti aeue corrupti quos dolores quas
-                            tias excepturi sint occaecati rupiditate non
-                            similique sunt incidunt...</p>
-                        <div class="social-links">
-                            <ul class="list-unstyled mb-0 d-flex ">
-                                <li class="d-flex justify-content-center align-items-center"><a
-                                        href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="d-flex justify-content-center align-items-center"><a
-                                        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li class="d-flex justify-content-center align-items-center"><a
-                                        href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1"><i
-                                            class="fab fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
+                        <p>This blog outlines the key facts about liver transplantation—from candidacy and preparation to post-operative care. Guided by the expertise of Dr. Ashish George</p>
+                        <a href="#" class="blog-read-more">Read More<i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>
-                <div class="footer-text-boxes">
-                    <h4>About Us</h4>
-                    <ul class="mb-0 list-unstyled">
-                        <li class="position-relative"><a href="services.html"><i
-                                    class="fas fa-angle-right"></i>Services</a></li>
-                        <li class="position-relative"><a href="about.html"><i class="fas fa-angle-right"></i>About
-                                us</a></li>
-                        <li class="position-relative"><a href="single-blog.html"><i
-                                    class="fas fa-angle-right"></i>Blog</a></li>
-                        <li class="position-relative"><a href="pricing.html"><i
-                                    class="fas fa-angle-right"></i>Pricing</a></li>
-                        <li class="position-relative mb-0"><a href="contact.html"><i
-                                    class="fas fa-angle-right"></i>Contact us</a>
-                        </li>
-                    </ul>
+            </div>
+            <div class="item">
+                <div class="index2-blog-box" data-aos="fade-up" data-aos-duration="700">
+                    <div class="blog-top-image position-relative">
+                        <figure class="mb-0">
+                            <img src="/assets/images/blog-2.png" alt="index2-blog-img2">
+                        </figure>
+                        <div class="publish-date">16 <span class="d-block">June</span></div>
+                    </div>
+                    <div class="blog-txt-con">
+                        <a href="#">
+                            <h4>Behind the Scalpel: A Day in the Life of a Liver Transplant Surgeon</h4>
+                        </a>
+                        <p>Go beyond the OR and explore the daily routine, challenges, and rewards of being a liver transplant surgeon. This post gives readers a glimpse into ...</p>
+                        <a href="#" class="blog-read-more">Read More<i class="fas fa-angle-right"></i></a>
+                    </div>
                 </div>
-                <div class="footer-text-boxes">
-                    <h4>Our Services</h4>
-                    <ul class="mb-0 list-unstyled">
-                        <li class="position-relative"><a href="services.html"><i class="fas fa-angle-right"></i>Couple
-                                Therapy</a>
-                        </li>
-                        <li class="position-relative"><a href="services.html"><i class="fas fa-angle-right"></i>Family
-                                Counseling</a></li>
-                        <li class="position-relative"><a href="services.html"><i class="fas fa-angle-right"></i>Anxiety
-                                Disorder</a>
-                        </li>
-                        <li class="position-relative"><a href="services.html"><i class="fas fa-angle-right"></i>Personal
-                                Meeting</a>
-                        </li>
-                        <li class="position-relative mb-0"><a href="services.html"><i
-                                    class="fas fa-angle-right"></i>Dating &
-                                Relationship</a></li>
-                    </ul>
+            </div>
+            <div class="item">
+                <div class="index2-blog-box" data-aos="fade-up" data-aos-duration="700">
+                    <div class="blog-top-image position-relative">
+                        <figure class="mb-0">
+                            <img src="/assets/images/blog-3.png" alt="index2-blog-img3">
+                        </figure>
+                        <div class="publish-date">09 <span class="d-block">April</span></div>
+                    </div>
+                    <div class="blog-txt-con">
+                        <a href="#">
+                            <h4>Advancements in Liver Surgery: The Future is Here</h4>
+                        </a>
+                        <p> This article explores recent innovations in transplant techniques, organ preservation, and minimally invasive approaches—highlighting how surgeons like ...</p>
+                        <a href="#" class="blog-read-more">Read More<i class="fas fa-angle-right"></i></a>
+                    </div>
                 </div>
-                <div class="footer-text-boxes">
-                    <h4>Contact Info</h4>
-                    <ul class="mb-0 list-unstyled">
-                        <li class="position-relative"><a href="tel:+61383766284"><i class="fas fa-phone-alt"></i>+613
-                                8376 6284</a></li>
-                        <li class="position-relative"><a href="mailto:Info@medunit.om"><i
-                                    class="fas fa-envelope"></i>Info@medunit.om</a></li>
-                        <li class="position-relative mb-0"><i class="fas fa-map-marker-alt"></i>21 King Street
-                            Melbourne,<br> 3000, Australia</li>
-                    </ul>
-                </div>
+            </div>
             </div>
         </div>
     </section>
-    <div class="copy-rihgt-sec w-100  text-center">
-        <p class="mb-0">Medunit copyright © 2023. All Rights Reserved.</p>
-    </div>
-    <a id="button"></a>
+
+  
+    <!-- FOOTER SECTION START -->
+   <main-footer></main-footer>
     <!-- FOOTER SECTION END -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/jquery.validate.js"></script>
-    <script src="assets/js/contact-form.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/owl.carousel.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/jquery.validate.js"></script>
+    <script src="/assets/js/contact-form.js"></script>
+    <script src="/assets/js/custom.js"></script>
     <script>
         $(window).on('load', function(){ 
         // Preloader

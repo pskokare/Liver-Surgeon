@@ -119,8 +119,12 @@ h5 {
 }
 
 
-.index3-service-section , .index2-blog-section{
+.index3-service-section{
     background-image: url(/assets/images/lines-bg) !important;
+}
+
+.index2-blog-section .index2-blog-box{
+    border: solid 1px #31528d;
 }
 .header-main-con .navbar-light .navbar-nav .nav-item.active,
 .header-main-con .navbar-light .navbar-nav .active>.nav-link {
@@ -147,7 +151,9 @@ h5 {
 }
 
 
-
+.banner-txt-section{
+    line-height: 15px;
+}
 
 .header-main-con .navbar-light .navbar-nav .nav-link {
     color: var(--secondary-color);
@@ -229,7 +235,7 @@ h5 {
 /* header style */
 /* banner style */
 .banner-main-section {
-    background: url(../images/Home-01-bg.jpg) no-repeat top;
+    background: url(../Banner-liver-without-text.jpg) no-repeat top;
     height: 1050px;
     position: relative;
     background-size: cover;
@@ -238,7 +244,7 @@ h5 {
 
 .banner-main-section::after {
     content: "";
-    background: rgba(29, 145, 70, 0.7);
+    /* background: rgba(29, 145, 70, 0.7); */
     position: absolute;
     left: 0;
     top: 0;
@@ -726,7 +732,7 @@ h5 {
     content: "";
     width: 333px;
     height: 329px;
-    background: url(../images/shape-img.png) no-repeat;
+    /* background: url(../images/shape-img.png) no-repeat; */
     position: absolute;
    
 }
@@ -3338,8 +3344,24 @@ h5 {
 .service-banner {
     background: url(../images/services-banner-img.jpg) no-repeat center;
     background-size: cover;
+    position: relative;
     height: 590px;
 }
+
+
+/* Add Overlay */
+.service-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right, rgba(32,180,134,0.7), rgba(0,123,255,0.7));
+    z-index: 1;
+}
+
+
 
 /* service page styling end */
 /* project page styling start */
@@ -3987,3 +4009,5 @@ h5 {
         width: 100%;
     }
 }
+
+
