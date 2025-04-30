@@ -3548,6 +3548,7 @@ h5 {
     color: var(--secondary-color);
     padding: 0;
     white-space: normal;
+    text-align: left;
 }
 
 .faq-inner-section .btn-link:hover {

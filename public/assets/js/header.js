@@ -471,7 +471,77 @@ class Contact extends HTMLElement {
         ;}}
 
 
+class LiverHepatologySidebar extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+         <div class="specialty-sidebar">
+                        <div class="sidebar-header">
+                            <h5>
+                                <i class="fas fa-liver" style="margin-right: 10px;"></i>Liver & Hepatology Conditions
+                            </h5>
+                        </div>
+                        <div class="sidebar-menu" style="padding: 15px;">
+                            <ul class="nav flex-column specialty-list">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="chronic-liver-disease.html">
+                                        <i class="fas fa-heartbeat mr-2"></i>Chronic Liver Disease 
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="acute-liver-failure.html">
+                                        <i class="fas fa-exclamation-triangle mr-2"></i>Acute Liver Failure 
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="hepatitis.html">
+                                        <i class="fas fa-virus mr-2"></i>Hepatitis A, B, C, D, E
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="jaundice.html">
+                                        <i class="fas fa-tint mr-2"></i>Jaundice
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="fatty-liver.html">
+                                        <i class="fas fa-apple-alt mr-2"></i>Fatty Liver (MASLD)
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="liver-cirrhosis.html">
+                                        <i class="fas fa-scar mr-2"></i>Liver Cirrhosis
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="autoimmune-hepatitis.html">
+                                        <i class="fas fa-shield-virus mr-2"></i>Autoimmune Hepatitis
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="alcoholic-hepatitis.html">
+                                        <i class="fas fa-wine-glass-alt mr-2"></i>Alcoholic Hepatitis
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="genetic-liver-disorders.html">
+                                        <i class="fas fa-dna mr-2"></i>Genetic Liver Disorders
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="metabolic-liver-diseases.html">
+                                        <i class="fas fa-cogs mr-2"></i>Metabolic Liver Diseases
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+        `
+        ;}}
+
+
         customElements.define('main-header', Header);
 customElements.define('main-footer', Footer);
 customElements.define('main-team', Team);
 customElements.define('main-contact', Contact);
+customElements.define('liverhepatology-sidebar', LiverHepatologySidebar);
