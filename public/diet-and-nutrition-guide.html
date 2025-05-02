@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Liver Surgeon | Diet and Nutrition</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/aos.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/css/home-page.css">
+    <link rel="stylesheet" href="/assets/css/service-page.css">
+    <script src="/assets/js/header.js"></script>
+
+
+      
+  <style>
+    /* Modern Base Styles */
+    .food-avoidance-section {
+      background: #f0f5fd;
+      padding: 4rem 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    
+    .red-underline {
+      border-bottom: 3px solid #ff4757;
+      padding-bottom: 2px;
+    }
+    
+    .subtitle {
+      color: #666;
+      font-size: 1.1rem;
+    }
+    
+    /* Card Grid Layout */
+    .avoidance-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+    
+    .food-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      position: relative;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-top: 4px solid #1d9146;
+      margin-top: 10px;
+    }
+    
+    .food-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    }
+    
+    .warning-badge {
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: #ff4757;
+      color: white;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    
+    .food-icon {
+      max-width: 60px;
+      height: 60px;
+      margin: 0 auto 15px;
+      display: block;
+      filter: grayscale(30%);
+    }
+    
+    .food-card h3 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    
+    .food-examples {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+    
+    .food-examples li {
+      color: #555;
+      margin-bottom: 5px;
+      position: relative;
+    }
+    
+    .food-examples li:before {
+      content: "•";
+      color: #ff4757;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    
+    .danger-reason {
+      background: #ffecec;
+      padding: 8px 12px;
+      border-radius: 6px;
+      color: #d63031;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .danger-reason i {
+      margin-right: 8px;
+    }
+    
+    .alcohol-card {
+      border-top-color: #d63031;
+      background: #fff0f0;
+    }
+    
+    .absolute-ban {
+      background: #d63031;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      text-align: center;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .absolute-ban i {
+      margin-right: 6px;
+    }
+    
+    .medical-disclaimer {
+      background: #f1f8fe;
+      border-left: 4px solid #3498db;
+      padding: 20px;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .medical-disclaimer i {
+      color: #3498db;
+      font-size: 1.5rem;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    
+    .medical-disclaimer p {
+      color: #2c3e50;
+      margin: 0;
+      line-height: 1.6;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .avoidance-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .avoidance-cards {
+        grid-template-columns: 1fr;
+      }
+      
+      .section-header h2 {
+        font-size: 2rem;
+      }
+      
+      .medical-disclaimer {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .medical-disclaimer i {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+  .daily-meal  table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+   .daily-meal th {
+      background-color: #1d9146;
+      color: #ffffff;
+      padding: 12px 15px;
+      font-size: 18px;
+      text-align: left;
+    }
+
+  .daily-meal  td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+      color: #333333;
+      font-size: 16px;
+    }
+
+  .daily-meal  tr:nth-child(even) td {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover td {
+      background-color: #f1f1f1;
+    }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="loader-mask">
+        <div class="loader">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Preloader -->
+    <!-- HEADER START-->
+   <main-header></main-header>
+    <!-- HEADER END -->
+    <!-- BANNER SECTION START -->
+    <section class="sub-banner-section w-100  d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="banner-inner-con">
+                <div class="banner-txt-section">
+                    <span class="small-txt position-relative aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="700">
+                        Dr Ashish George
+                    </span>
+                    <h1 data-aos="fade-up" data-aos-duration="700" class="aos-init aos-animate">Diet & Nutrition Guide After Liver Transplant – Fuel Your Recovery</h1>
+                    <p data-aos="fade-up" data-aos-duration="700" class="aos-init aos-animate">Nutrition plays a critical role in your recovery after a liver transplant.
+                    </p>
+                
+                    <div class="banner-btns generic-btn aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="700">
+
+
+                        <a href="/contact/">Book Appointment</a>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <section class="about-us-section">
+        <div class="container">
+            <div class="about-content">
+                <!-- Left Section: Text Content -->
+                <div class="about-text aos-init aos-animate" data-aos="fade-right" data-aos-duration="700">
+                    <h2>Diet and Nutrition</h2>
+                    <p>
+                        Nutrition plays a critical role in your recovery after a liver transplant. At Liver Surgeons, Delhi’s leading liver care center, we provide personalized dietary guidelines to ensure that your new liver stays healthy, strong, and functional for life.A well-balanced diet helps you heal faster, strengthens your immune system, manages your weight, and reduces the risk of infections and complications.
+                    </p>
+
+                  
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION START -->
+
+
+
+    <section class="why-choose-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="finix-text">
+                <h6>Importance Od Proper Diet</h6>
+                <h2>Why Is a Proper Diet Important After Liver Transplant?</h2>
+               
+                <img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/why_choose_us.png" alt="" style="width: 100%;">
+                <div class="ct-btn">
+                  <a href="#" class=""><i class="fas fa-play-circle"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-box mt-4">
+                    <div class="feature-box-content text-center">
+                      <div class="fbc-btn">
+                        <i class="fas fa-percent"></i>
+                      </div>
+                      <h3>Supports</h3>
+                      <p>Supports healing and tissue repair</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-box">
+                    <div class="feature-box-content text-center">
+                      <div class="fbc-btn">
+                        <i class="fas fa-percent"></i>
+                      </div>
+                      <h3>Expert Team</h3>
+                      <p> Helps prevent organ rejection and infections.</p>
+                    </div>
+                  </div>
+                </div><div class="col-lg-6">
+                  <div class="feature-box">
+                    <div class="feature-box-content text-center">
+                      <div class="fbc-btn">
+                        <i class="fas fa-percent"></i>
+                      </div>
+                      <h3>Manages</h3>
+                      <p>Manages side effects of immunosuppressive medications.</p>
+                    </div>
+                  </div>
+                </div><div class="col-lg-6">
+                  <div class="feature-box active-feature">
+                    <div class="feature-box-content text-center">
+                      <div class="fbc-btn">
+                        <i class="fas fa-percent"></i>
+                      </div>
+                      <h3>Promotes</h3>
+                      <p>Promotes overall well-being and long-term health.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        .service-slider2{
+            min-height: 300px;
+        }
+      </style>
+
+      <section class="service-main-section w-100 padding-top padding-bottom">
+        <div class="container">
+            <div class="generic-title text-center">
+                <span class="small-text" data-aos="fade-up" data-aos-duration="700">Post-Transplant Nutrition</span>
+                <h2 class="mb-0" data-aos="fade-up" data-aos-duration="700">Key Dietary Guidelines After Liver Transplant</h2>
+            </div>
+            <div class="index2-service-slider" data-aos="fade-up" data-aos-duration="700">
+                <div id="owl-carouselone" class="owl-carousel owl-theme">
+                    <!-- High-Protein Diet -->
+                    <div class="item">
+                        <div class="service-slider2 text-center">
+                            <figure class="d-inline-block">
+                                <i class="fas fa-drumstick-bite service-icon-2"></i>
+                            </figure>
+                            <h4>High-Protein Diet</h4>
+                            <p>Supports wound healing and immune recovery with eggs, fish, chicken, lean meats, lentils, and dairy products.</p>
+                            
+                        </div>
+                    </div>
+    
+                    <!-- Low-Sodium Foods -->
+                    <div class="item">
+                        <div class="service-slider2 text-center">
+                            <figure class="d-inline-block">
+                                <i class="fas fa-ban service-icon-2"></i>
+                            </figure>
+                            <h4>Low-Sodium Foods</h4>
+                            <p>Prevents fluid retention and kidney stress by avoiding processed foods, canned items, pickles, and salty snacks.</p>
+                            
+                        </div>
+                    </div>
+    
+                    <!-- Manage Sugar Intake -->
+                    <div class="item">
+                        <div class="service-slider2 text-center">
+                            <figure class="d-inline-block">
+                                <i class="fas fa-candy-cane service-icon-2"></i>
+                            </figure>
+                            <h4>Manage Sugar Intake</h4>
+                            <p>Counteracts medication-induced blood sugar spikes by minimizing sweets, desserts, and refined carbohydrates.</p>
+                            
+                        </div>
+                    </div>
+    
+                    <!-- Stay Hydrated -->
+                    <div class="item">
+                        <div class="service-slider2 text-center">
+                            <figure class="d-inline-block">
+                                <i class="fas fa-tint service-icon-2"></i>
+                            </figure>
+                            <h4>Stay Hydrated</h4>
+                            <p>Supports kidney/liver function with proper hydration while observing fluid restrictions if prescribed.</p>
+                            
+                        </div>
+                    </div>
+    
+                    <!-- Food Safety -->
+                    <div class="item">
+                        <div class="service-slider2 text-center">
+                            <figure class="d-inline-block">
+                                <i class="fas fa-shield-alt service-icon-2"></i>
+                            </figure>
+                            <h4>Food Safety</h4>
+                            <p>Reduces infection risk through well-cooked foods, thorough washing, and avoiding raw/street foods.</p>
+                            
+                        </div>
+                    </div>
+    
+                    <!-- Immune-Boosting Foods -->
+                    <div class="item">
+                        <div class="service-slider2 text-center">
+                            <figure class="d-inline-block">
+                                <i class="fas fa-apple-alt service-icon-2"></i>
+                            </figure>
+                            <h4>Immune-Boosting Foods</h4>
+                            <p>Includes fresh fruits, leafy greens, nuts and seeds to strengthen immune defenses.</p>
+                            
+                        </div>
+                    </div>
+    
+                    <!-- Limit Fat Intake -->
+                    <div class="item">
+                        <div class="service-slider2 text-center">
+                            <figure class="d-inline-block">
+                                <i class="fas fa-hamburger service-icon-2"></i>
+                            </figure>
+                            <h4>Limit Fat Intake</h4>
+                            <p>Prevents cardiovascular issues by choosing healthy fats and avoiding fried/processed foods.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ <!-- COUNTER SECTION START -->
+ <div class="counter-section w-100 ">
+    <div class="counter-outer-layer">
+        <div class="container">
+            <div class="counter-inner-sec">
+                <ul class="list-unstyled mb-0">
+                    <li data-aos="fade-up" data-aos-duration="700">
+                        <figure>
+                            <img src="/assets/images/counter-img1.png" alt="counter-img1">
+                        </figure>
+                        <div class="count d-inline-block">2850</div>
+                        <span class="d-block client-status">Psycologist</span>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="700">
+                        <figure>
+                            <img src="/assets/images/counter-img2.png" alt="counter-img2">
+                        </figure>
+                        <div class="count d-inline-block">1245</div>
+                        <span class="d-block client-status">Branches</span>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="700">
+                        <figure>
+                            <img src="/assets/images/counter-img3.png" alt="counter-img3">
+                        </figure>
+                        <div class="count d-inline-block">3358</div>
+                        <span class="d-block client-status">Patients</span>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="700">
+                        <figure>
+                            <img src="/assets/images/counter-img4.png" alt="counter-img4">
+                        </figure>
+                        <div class="count d-inline-block">2496</div>
+                        <span class="d-block client-status">Achievements</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- COUNTER SECTION END -->
+
+    <section class="supplements-section padding-top padding-bottom">
+        <div class="container">
+            <div class="generic-title text-center">
+         
+                <h2 class="mb-0" data-aos="fade-up" data-aos-duration="700">Key Dietary Guidelines After Liver Transplant</h2>
+            </div>
+    
+            <div class="supplements-container">
+                <div class="supplements-content">
+                    <p class="supplements-intro">
+                        Sometimes, your doctor may recommend vitamin or mineral supplements such as:
+                    </p>
+    
+                    <div class="supplements-grid">
+                        <!-- Supplement Item 1 -->
+                        <div class="supplement-item">
+                            <div class="supplement-icon">
+                                <i class="fas fa-bone"></i>
+                            </div>
+                            <div class="supplement-text">
+                                <h3>Calcium & Vitamin D</h3>
+                                <p>To protect bone health and prevent osteoporosis</p>
+                            </div>
+                        </div>
+    
+                        <!-- Supplement Item 2 -->
+                        <div class="supplement-item">
+                            <div class="supplement-icon">
+                                <i class="fas fa-capsules"></i>
+                            </div>
+                            <div class="supplement-text">
+                                <h3>Multivitamins</h3>
+                                <p>Comprehensive nutrient support for overall recovery</p>
+                            </div>
+                        </div>
+    
+                        <!-- Supplement Item 3 -->
+                        <div class="supplement-item">
+                            <div class="supplement-icon">
+                                <i class="fas fa-magnet"></i>
+                            </div>
+                            <div class="supplement-text">
+                                <h3>Iron Supplements</h3>
+                                <p>Only if blood tests indicate deficiency</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="supplement-warning">
+                        <div class="warning-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="warning-text">
+                            <strong>Important Note:</strong> Never start supplements without medical advice. Some can interact dangerously with your transplant medications.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="food-avoidance-section">
+        <div class="container">
+          <div class="section-header">
+            <h2><span class="red-underline">Foods to Avoid</span> After Liver Transplant</h2>
+            <p class="subtitle">Protect your new liver by eliminating these risky foods</p>
+          </div>
+      
+          <div class="avoidance-cards">
+            <!-- Card 1 -->
+
+            <div id="owl-carouselfour" class="owl-carousel owl-theme">
+
+                <div class="item">
+                    <div class="food-card">
+                        <div class="warning-badge">!</div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Raw seafood" class="food-icon">
+                        <h3>Raw Seafood</h3>
+                        <ul class="food-examples">
+                          <li>Sushi</li>
+                          <li>Oysters</li>
+                          <li>Sashimi</li>
+                        </ul>
+                        <div class="danger-reason">
+                          <i class="fas fa-bacteria"></i> Risk of bacterial infection
+                        </div>
+                      </div>
+                </div>
+
+                <div class="item">
+                      <!-- Card 2 -->
+            <div class="food-card">
+                <div class="warning-badge">!</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046851.png" alt="Undercooked meat" class="food-icon">
+                <h3>Undercooked Meat</h3>
+                <ul class="food-examples">
+                  <li>Rare steaks</li>
+                  <li>Runny eggs</li>
+                  <li>Raw poultry</li>
+                </ul>
+                <div class="danger-reason">
+                  <i class="fas fa-skull-crossbones"></i> Foodborne illness risk
+                </div>
+              </div>
+                </div>
+
+                <div class="item">
+  <!-- Card 3 -->
+  <div class="food-card alcohol-card">
+    <div class="warning-badge">X</div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3174/3174827.png" alt="Alcohol" class="food-icon">
+    <h3>Alcohol</h3>
+    <div class="absolute-ban">
+      <i class="fas fa-ban"></i> STRICTLY PROHIBITED
+    </div>
+    <div class="danger-reason">
+      <i class="fas fa-heart-broken"></i> Liver damage risk
+    </div>
+  </div>
+                </div>
+
+                <div class="item">
+       <!-- Card 4 -->
+       <div class="food-card">
+        <div class="warning-badge">!</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/2664/2664511.png" alt="Unpasteurized dairy" class="food-icon">
+        <h3>Unpasteurized Dairy</h3>
+        <ul class="food-examples">
+          <li>Raw milk</li>
+          <li>Soft cheeses</li>
+          <li>Unpasteurized yogurt</li>
+        </ul>
+        <div class="danger-reason">
+          <i class="fas fa-biohazard"></i> May contain harmful bacteria
+        </div>
+      </div>
+                </div>
+
+                <div class="item">
+            <!-- Card 5 -->
+            <div class="food-card">
+                <div class="warning-badge">!</div>
+                <img src="https://cdn-icons-png.flaticon.com/512/2909/2909808.png" alt="Grapefruit" class="food-icon">
+                <h3>Grapefruit</h3>
+                <ul class="food-examples">
+                  <li>Fresh grapefruit</li>
+                  <li>Grapefruit juice</li>
+                  <li>Products containing it</li>
+                </ul>
+                <div class="danger-reason">
+                  <i class="fas fa-pills"></i> Medication interference
+                </div>
+              </div>
+                </div>
+            </div>
+           
+      
+          
+      
+          
+      
+     
+      
+
+          </div>
+      
+          <div class="medical-disclaimer">
+            <i class="fas fa-stethoscope"></i>
+            <p>These restrictions are crucial for preventing infections and protecting your transplanted liver. Always follow your transplant team's specific dietary advice.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="daily-meal padding-top padding-bottom">
+
+
+        <div class="generic-title text-center">
+         
+            <h2 class="mb-0" data-aos="fade-up" data-aos-duration="700">Key Dietary Guidelines After Liver Transplant</h2>
+        </div>
+        <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Meal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Time"><i class="fas fa-sun icon" style="color: #f39c12;"></i>Breakfast</td>
+                <td data-label="Meal">Boiled eggs + whole grain toast + fresh fruit</td>
+              </tr>
+              <tr>
+                <td data-label="Time"><i class="fas fa-apple-alt icon" style="color: #27ae60;"></i>Mid-Morning Snack</td>
+                <td data-label="Meal">Handful of nuts (almonds/walnuts)</td>
+              </tr>
+              <tr>
+                <td data-label="Time"><i class="fas fa-drumstick-bite icon" style="color: #e67e22;"></i>Lunch</td>
+                <td data-label="Meal">Grilled chicken/fish + steamed vegetables + brown rice</td>
+              </tr>
+              <tr>
+                <td data-label="Time"><i class="fas fa-ice-cream icon" style="color: #9b59b6;"></i>Evening Snack</td>
+                <td data-label="Meal">Yogurt + seasonal fruits</td>
+              </tr>
+              <tr>
+                <td data-label="Time"><i class="fas fa-moon icon" style="color: #34495e;"></i>Dinner</td>
+                <td data-label="Meal">Dal (lentils) + chapati + cooked spinach</td>
+              </tr>
+            </tbody>
+          </table>
+
+    </section>
+
+
+   
+
+
+
+    
+
+      
+
+
+
+  
+    <!-- CONTACT SECTION START -->
+   <main-contact></main-contact>
+    <!-- CONTACT SECTION END -->
+
+
+    <section class="index2-blog-section w-100  padding-top padding-bottom light-bg">
+        <div class="container">
+            <div class="generic-title text-center">
+                <span class="small-text d-block" data-aos="fade-up" data-aos-duration="700">Articles & Tips</span>
+                <h2 data-aos="fade-up" data-aos-duration="700">Latest News & Blogs</h2>
+            </div>
+            <div class="index2-blog-inner-con owl-carousel owl-theme" id="owl-carouseltwo">
+            <div class="item">
+                <div class="index2-blog-box" data-aos="fade-up" data-aos-duration="700">
+                    <div class="blog-top-image position-relative">
+                        <figure class="mb-0">
+                            <img src="/assets/images/blod-1.png" alt="index2-blog-img1">
+                        </figure>
+                        <div class="publish-date">22 <span class="d-block">March</span></div>
+                    </div>
+                    <div class="blog-txt-con">
+                        <a href="#">
+                            <h4>Liver Transplantation: What Every Patient Should Know</h4>
+                        </a>
+                        <p>This blog outlines the key facts about liver transplantation—from candidacy and preparation to post-operative care. Guided by the expertise of Dr. Ashish George</p>
+                        <a href="#" class="blog-read-more">Read More<i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="index2-blog-box" data-aos="fade-up" data-aos-duration="700">
+                    <div class="blog-top-image position-relative">
+                        <figure class="mb-0">
+                            <img src="/assets/images/blog-2.png" alt="index2-blog-img2">
+                        </figure>
+                        <div class="publish-date">16 <span class="d-block">June</span></div>
+                    </div>
+                    <div class="blog-txt-con">
+                        <a href="#">
+                            <h4>Behind the Scalpel: A Day in the Life of a Liver Transplant Surgeon</h4>
+                        </a>
+                        <p>Go beyond the OR and explore the daily routine, challenges, and rewards of being a liver transplant surgeon. This post gives readers a glimpse into ...</p>
+                        <a href="#" class="blog-read-more">Read More<i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="index2-blog-box" data-aos="fade-up" data-aos-duration="700">
+                    <div class="blog-top-image position-relative">
+                        <figure class="mb-0">
+                            <img src="/assets/images/blog-3.png" alt="index2-blog-img3">
+                        </figure>
+                        <div class="publish-date">09 <span class="d-block">April</span></div>
+                    </div>
+                    <div class="blog-txt-con">
+                        <a href="#">
+                            <h4>Advancements in Liver Surgery: The Future is Here</h4>
+                        </a>
+                        <p> This article explores recent innovations in transplant techniques, organ preservation, and minimally invasive approaches—highlighting how surgeons like ...</p>
+                        <a href="#" class="blog-read-more">Read More<i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- FOOTER SECTION START -->
+   <main-footer></main-footer>
+    <!-- FOOTER SECTION END -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/owl.carousel.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/jquery.validate.js"></script>
+    <script src="/assets/js/contact-form.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <script>
+        $(window).on('load', function(){ 
+        // Preloader
+        $('.loader').fadeOut();
+        $('.loader-mask').delay(350).fadeOut('slow');
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var btn = $('#button');
+         
+         $(window).scroll(function() {
+           if ($(window).scrollTop() > 300) {
+           btn.addClass('show');
+         }
+          else {
+           btn.removeClass('show');
+         }
+         });
+         btn.on('click', function(e) {
+         e.preventDefault();
+         $('html, body').animate({scrollTop:0}, '300');
+       });
+    </script>
+    <script>
+        $('#owl-carouselone').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                500: {
+                    items: 2,
+                    margin: 15
+                },
+                600: {
+                    items: 3,
+                    margin: 15
+                },
+                1000: {
+                    items: 3
+                },
+                1400: {
+                    items: 3
+                },
+                1600: {
+                    items: 3
+                }
+            }
+        })
+        $('#owl-carouseltwo').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                500: {
+                    items: 2,
+                    margin: 15
+                },
+                600: {
+                    items: 3,
+                    margin: 15
+                },
+                700: {
+                    items: 3,
+                    margin: 15
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        $('#owl-carouselfour').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                500: {
+                    items: 2,
+                    margin: 15
+                },
+                600: {
+                    items: 2,
+                    margin: 15
+                },
+                700: {
+                    items: 2,
+                    margin: 15
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+    <script>
+        AOS.init();
+        function lightbox_open() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            //   window.scrollTo(0, 0);
+            document.getElementById('light').style.display = 'block';
+            document.getElementById('fade1').style.display = 'block';
+            lightBoxVideo.play();
+        }
+
+        function lightbox_close() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            document.getElementById('light').style.display = 'none';
+            document.getElementById('fade1').style.display = 'none';
+            lightBoxVideo.pause();
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            var counters = $(".count");
+            var countersQuantity = counters.length;
+            var counter = [];
+
+            for (i = 0; i < countersQuantity; i++) {
+                counter[i] = parseInt(counters[i].innerHTML);
+            }
+
+            var count = function (start, value, id) {
+                var localStart = start;
+                setInterval(function () {
+                    if (localStart < value) {
+                        localStart++;
+                        counters[id].innerHTML = localStart;
+                    }
+                }, 40);
+            }
+
+            for (j = 0; j < countersQuantity; j++) {
+                count(0, counter[j], j);
+            }
+        });
+
+
+
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 3300,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

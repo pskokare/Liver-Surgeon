@@ -2,7 +2,7 @@ class Header extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
-        <div class="header-main-con w-100 ">
+           <div class="header-main-con w-100 ">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand" href="index.html">
@@ -63,18 +63,18 @@ class Header extends HTMLElement {
                                 </div>
 
                                 <div class="dropdown-submenu desktop-image">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Liver & Hepatology Conditions</a>
+                                    <a class="dropdown-item dropdown-toggle" href="/liver-hepatology-conditions-delhi/">Liver & Hepatology Conditions</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Chronic Liver Disease (CLD)</a>
-                                        <a class="dropdown-item" href="#"> Acute Liver Failure (ALF)</a>
-                                        <a class="dropdown-item" href="#">Hepatitis A, B, C,D, E</a>
-                                        <a class="dropdown-item" href="#">Jaundice</a>
-                                        <a class="dropdown-item" href="#">Fatty Liver (MASLD)</a>
-                                        <a class="dropdown-item" href="#">Liver Cirrhosis</a>
-                                        <a class="dropdown-item" href="#">Autoimmune Hepatitis</a>
-                                        <a class="dropdown-item" href="#">Alcoholic Hepatitis</a>
-                                        <a class="dropdown-item" href="#">Genetic Liver Disorders</a>
-                                        <a class="dropdown-item" href="#">Metabolic liver diseases</a>
+                                        <a class="dropdown-item" href="/chronic-liver-diseases-delhi/">Chronic Liver Disease (CLD)</a>
+                                        <a class="dropdown-item" href="/acute-liver-failure-treatment-delhi/"> Acute Liver Failure (ALF)</a>
+                                        <a class="dropdown-item" href="/hepatitis-treatment-delhi/">Hepatitis A, B, C,D, E</a>
+                                        <a class="dropdown-item" href="/jaundice-treatment-delhi/">Jaundice</a>
+                                        <a class="dropdown-item" href="/fatty-liver-treatment-delhi/">Fatty Liver (MASLD)</a>
+                                        <a class="dropdown-item" href="/liver-cirrhosis-treatment-delhi/">Liver Cirrhosis</a>
+                                        <a class="dropdown-item" href="/autoimmune-hepatitis-treatment-delhi/">Autoimmune Hepatitis</a>
+                                        <a class="dropdown-item" href="/alcoholic-hepatitis-treatment-delhi/">Alcoholic Hepatitis</a>
+                                        <a class="dropdown-item" href="/genetic-liver-disorders-delhi/">Genetic Liver Disorders</a>
+                                        <a class="dropdown-item" href="/metabolic-liver-diseases-treatment-delhi/">Metabolic liver diseases</a>
                                     </div>
                                 </div>
                                 <div class="dropdown-submenu desktop-image">
@@ -139,20 +139,20 @@ class Header extends HTMLElement {
 
                                 <div class="dropdown-submenu d-md-none">
                                     <div class="d-flex justify-content-between align-items-center">
-                                      <a class="dropdown-item" href="#">Liver & Hepatology Conditions</a>
+                                      <a class="dropdown-item" href="/liver-hepatology-conditions-delhi/">Liver & Hepatology Conditions</a>
                                       <span class="submenu-toggle ">&#x25BC;</span>
                                     </div>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#">Chronic Liver Disease (CLD)</a>
-                                      <a class="dropdown-item" href="#">Acute Liver Failure (ALF)</a>
-                                      <a class="dropdown-item" href="#">Hepatitis A, B, C, D, E</a>
-                                      <a class="dropdown-item" href="#">Jaundice</a>
-                                      <a class="dropdown-item" href="#">Fatty Liver (MASLD)</a>
-                                      <a class="dropdown-item" href="#">Liver Cirrhosis</a>
-                                      <a class="dropdown-item" href="#">Autoimmune Hepatitis</a>
-                                      <a class="dropdown-item" href="#">Alcoholic Hepatitis</a>
-                                      <a class="dropdown-item" href="#">Genetic Liver Disorders</a>
-                                      <a class="dropdown-item" href="#">Metabolic Liver Diseases</a>
+                                        <a class="dropdown-item" href="/chronic-liver-diseases-delhi/">Chronic Liver Disease (CLD)</a>
+                                        <a class="dropdown-item" href="/acute-liver-failure-treatment-delhi/"> Acute Liver Failure (ALF)</a>
+                                        <a class="dropdown-item" href="/hepatitis-treatment-delhi/">Hepatitis A, B, C,D, E</a>
+                                        <a class="dropdown-item" href="/jaundice-treatment-delhi/">Jaundice</a>
+                                        <a class="dropdown-item" href="/fatty-liver-treatment-delhi/">Fatty Liver (MASLD)</a>
+                                        <a class="dropdown-item" href="/liver-cirrhosis-treatment-delhi/">Liver Cirrhosis</a>
+                                        <a class="dropdown-item" href="/autoimmune-hepatitis-treatment-delhi/">Autoimmune Hepatitis</a>
+                                        <a class="dropdown-item" href="/alcoholic-hepatitis-treatment-delhi/">Alcoholic Hepatitis</a>
+                                        <a class="dropdown-item" href="/genetic-liver-disorders-delhi/">Genetic Liver Disorders</a>
+                                        <a class="dropdown-item" href="/metabolic-liver-diseases-treatment-delhi/">Metabolic liver diseases</a>
                                     </div>
                                   </div>
                                   
