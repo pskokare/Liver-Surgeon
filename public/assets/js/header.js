@@ -78,15 +78,14 @@ class Header extends HTMLElement {
                                     </div>
                                 </div>
                                 <div class="dropdown-submenu desktop-image">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Cancer Surgeries</a>
+                                    <a class="dropdown-item dropdown-toggle" href="/cancer-surgeries-delhi/">Cancer Surgeries</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Liver Cancer Surgery</a>
-                                        <a class="dropdown-item" href="#">Hepatectomy (Liver Resection)</a>
-                                        <a class="dropdown-item" href="#">Gallbladder Cancer Surgery</a>
-                                        <a class="dropdown-item" href="#">Pancreatic Cancer Surgery</a>
-                                        <a class="dropdown-item" href="#">Stomach Cancer Surgery</a>
-                                        <a class="dropdown-item" href="#">Colon & Colorectal Cancer Surgery</a>
-
+                                      <a class="dropdown-item" href="/liver-cancer-surgery-delhi/">Liver Cancer Surgery</a>
+                                      <a class="dropdown-item" href="/hepatectomy-liver-resection-delhi">Hepatectomy (Liver Resection)</a>
+                                      <a class="dropdown-item" href="/gallbladder-cancer-surgery-delhi/">Gallbladder Cancer Surgery</a>
+                                      <a class="dropdown-item" href="/pancreatic-cancer-surgery-delhi/">Pancreatic Cancer Surgery</a>
+                                      <a class="dropdown-item" href="/stomach-cancer-surgery-delhi/">Stomach Cancer Surgery</a>
+                                      <a class="dropdown-item" href="/colon-colorectal-cancer-surgery-delhi/">Colon & Colorectal Cancer Surgery</a>
                                     </div>
                                 </div>
                                 <div class="dropdown-submenu desktop-image">
@@ -158,16 +157,16 @@ class Header extends HTMLElement {
                                   
                                   <div class="dropdown-submenu d-md-none">
                                     <div class="d-flex justify-content-between align-items-center">
-                                      <a class="dropdown-item" href="#">Cancer Surgeries</a>
+                                      <a class="dropdown-item" href="/cancer-surgeries-delhi/">Cancer Surgeries</a>
                                       <span class="submenu-toggle d-md-none">&#x25BC;</span>
                                     </div>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#">Liver Cancer Surgery</a>
-                                      <a class="dropdown-item" href="#">Hepatectomy (Liver Resection)</a>
-                                      <a class="dropdown-item" href="#">Gallbladder Cancer Surgery</a>
-                                      <a class="dropdown-item" href="#">Pancreatic Cancer Surgery</a>
-                                      <a class="dropdown-item" href="#">Stomach Cancer Surgery</a>
-                                      <a class="dropdown-item" href="#">Colon & Colorectal Cancer Surgery</a>
+                                      <a class="dropdown-item" href="/liver-cancer-surgery-delhi/">Liver Cancer Surgery</a>
+                                      <a class="dropdown-item" href="/hepatectomy-liver-resection-delhi">Hepatectomy (Liver Resection)</a>
+                                      <a class="dropdown-item" href="/gallbladder-cancer-surgery-delhi/">Gallbladder Cancer Surgery</a>
+                                      <a class="dropdown-item" href="/pancreatic-cancer-surgery-delhi/">Pancreatic Cancer Surgery</a>
+                                      <a class="dropdown-item" href="/stomach-cancer-surgery-delhi/">Stomach Cancer Surgery</a>
+                                      <a class="dropdown-item" href="/colon-colorectal-cancer-surgery-delhi/">Colon & Colorectal Cancer Surgery</a>
                                     </div>
                                   </div>
                                   

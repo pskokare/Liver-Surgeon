@@ -235,7 +235,7 @@ h5 {
 /* header style */
 /* banner style */
 .banner-main-section {
-    background: url(../Banner-liver-without-text.jpg) no-repeat top;
+    background: url(../Banner-liver-without-text.webp) no-repeat top;
     height: 1050px;
     position: relative;
     background-size: cover;
@@ -3285,6 +3285,17 @@ h5 {
     border-radius: 25px;
 }
 
+.about-inner-con>.about-img-con> figure{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.about-inner-con>.about-img-con> figure> img{
+    height: 555px;
+    width: 500px;
+}
+
 .about-special-txt h4 {
     font-style: italic;
     margin-bottom: 0;
@@ -3881,13 +3892,14 @@ h5 {
     margin: 0;
 }
 
+
 .features-list li {
     font-size: 16px;
 
     position: relative;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: #ffff;
+    color:#fff;
     padding-left: 30px;
 }
 
@@ -3902,10 +3914,45 @@ h5 {
 }
 
 
+.features-list-mobile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+
+.features-list-mobile li {
+    font-size: 16px;
+
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color:#1d9146;
+    padding-left: 30px;
+}
+
+.features-list-mobile li::before {
+    content: "✓";
+    color:#1d9146;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    /* Checkmark size */
+}
+
+
+
 @media(max-width:967px) {
     .dropdown-submenu>.dropdown-menu {
         left: 0%;
     }
+
+    .features-list-mobile{
+        display: block;
+    }
+
 }
 
 /* Initially hide the 'more' content */

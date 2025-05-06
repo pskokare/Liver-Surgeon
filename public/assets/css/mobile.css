@@ -3738,6 +3738,11 @@
         margin: 0 auto;
     }
 
+    .about-inner-con>.about-img-con> figure> img{
+        width: 100%;
+        height: fit-content;
+    }
+
     .about-txt-con {
         text-align: center;
     }
