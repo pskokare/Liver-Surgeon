@@ -2,7 +2,7 @@ class Header extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
-           <div class="header-main-con w-100 ">
+              <div class="header-main-con w-100 ">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand" href="index.html">
@@ -214,11 +214,11 @@ class Header extends HTMLElement {
                                 Patient Information
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                                <a class="dropdown-item" href="#">Pre-Transplant Evaluation</a>
-                                <a class="dropdown-item" href="#">Post-Transplant Instructions</a>
-                                <a class="dropdown-item" href="#">Diet & Nutrition Guide</a>
-                                <a class="dropdown-item" href="#">Recovery Timeline</a>
-                                <a class="dropdown-item" href="#">FAQs</a>
+                                <a class="dropdown-item" href="/pre-transplant-evaluation/">Pre-Transplant Evaluation</a>
+                                <a class="dropdown-item" href="/post-transplant-instructions/">Post-Transplant Instructions</a>
+                                <a class="dropdown-item" href="/diet-and-nutrition-guide/">Diet & Nutrition Guide</a>
+                                <a class="dropdown-item" href="/liver-transplant-recovery-timeline/">Recovery Timeline</a>
+                                <a class="dropdown-item" href="/faq/">FAQs</a>
 
                             </div>
                         </li>

@@ -845,3 +845,734 @@ margin-bottom: 10px;
           .about-text p{
               font-size: 17px;
           }
+
+
+          .steps-section {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           background-color: #e8f5e9;
+            padding: 40px 20px;
+            background-image: url('https://highyield.in/assets/images/background/bg_footer.png');
+          }
+      
+          .steps-section   .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+          }
+      
+          .steps-section  .section-header h2 {
+            font-size: 2.5rem;
+            color: #00695c;
+          }
+      
+          .steps-section   .section-header span {
+            color: #2e7d32;
+          }
+      
+          .steps-section   .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: auto;
+          }
+      
+          .steps-section   .timeline::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #43a047;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+          }
+      
+          .steps-section  .step-card {
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+          }
+      
+          .steps-section   .step-card .card-content {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+          }
+      
+          .steps-section  .step-card .icon {
+            position: absolute;
+            top: 20px;
+            width: 42px;
+            height: 42px;
+            background-color: #43a047;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            z-index: 2;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          }
+      
+          .steps-section  .left .icon {
+            right: -22px;
+          }
+      
+          .steps-section     .right .icon {
+            left: -22px;
+          }
+      
+          .steps-section   .step-card.left {
+            left: 0;
+            text-align: left;
+          }
+      
+          .steps-section   .step-card.right {
+            left: 50%;
+            text-align: left;
+          }
+      
+          .steps-section  .card-content h3 {
+            margin-top: 0;
+            font-size: 23px;
+            font-weight: bold;
+            color: #00695c;
+          }
+      
+          .steps-section   .card-content h3 span {
+            font-size: 0.9rem;
+            color: #2e7d32;
+          }
+      
+          .steps-section  .card-content ul {
+            margin: 15px 0;
+            padding-left: 20px;
+          }
+      
+          .steps-section  .card-content ul li {
+            line-height: 1.6;
+            color: #333;
+          }
+      
+          .steps-section   .phase-goal {
+            background-color: rgba(76, 175, 80, 0.1);
+            padding: 10px 15px;
+            border-left: 4px solid #2e7d32;
+            color: #2e7d32;
+            font-weight: 600;
+            border-radius: 4px;
+          }
+      
+          .steps-section   .step-card::after {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background-color: #43a047;
+            border: 3px solid white;
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+          }
+      
+          .steps-section   .step-card.left::after {
+            right: -9px;
+          }
+      
+          .steps-section  .step-card.right::after {
+            left: -9px;
+          }
+      
+          /* Mobile Styles */
+          @media screen and (max-width: 768px) {
+            .steps-section  .timeline::before {
+              left: 20px;
+              transform: none;
+            }
+      
+            .steps-section   .step-card {
+              width: 100%;
+              padding-left: 60px;
+              padding-right: 20px;
+              margin-bottom: 30px;
+            }
+      
+            .steps-section   .step-card.left,
+            .steps-section   .step-card.right {
+              left: 0;
+              text-align: left;
+            }
+      
+            .steps-section  .step-card .icon {
+              left: 6%;
+              top: 15px;
+              transform: translateX(-50%);
+            }
+      
+            .steps-section   .step-card::after {
+              display: none;
+            }
+          }
+
+
+          
+
+    .recovery-timeline {
+        background: linear-gradient(135deg, #f8faff 0%, #f0f5ff 100%);
+        padding: 4rem 0;
+        font-family: 'Inter', -apple-system, sans-serif;
+      }
+      
+    
+      .recovery-timeline .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+      }
+      
+      .recovery-timeline  .section-title span {
+        color: #006da8;
+        position: relative;
+      }
+      
+      .recovery-timeline  .section-title span:after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background: rgba(40, 167, 69, 0.3);
+        z-index: -1;
+        border-radius: 3px;
+      }
+      
+      .recovery-timeline   .section-subtitle {
+        text-align: center;
+        color: #6b7280;
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+      }
+      
+      /* Table Container */
+      .recovery-timeline  .timeline-table-container {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        background: white;
+        padding: 2px;
+      }
+      
+      /* Modern Table Design */
+      .recovery-timeline  .timeline-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: white;
+      }
+      
+      .recovery-timeline  .timeline-table th {
+        background: linear-gradient(to right, #006da8, #005a8c);
+        color: white;
+        padding: 16px 20px;
+        text-align: left;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+        position: sticky;
+        top: 0;
+      }
+      
+      .recovery-timeline  .timeline-table td {
+        padding: 20px;
+        border-bottom: 1px solid #f1f5f9;
+        vertical-align: top;
+      }
+      
+      .recovery-timeline  .timeline-table tr:last-child td {
+        border-bottom: none;
+      }
+      
+      .recovery-timeline  .timeline-table tr:hover {
+        background: rgba(0, 109, 168, 0.03);
+      }
+      
+      /* Column Specific Styles */
+      .recovery-timeline  .time-col {
+        width: 15%;
+      }
+      
+      .recovery-timeline  .focus-col {
+        width: 65%;
+      }
+      
+      .recovery-timeline  .status-col {
+        width: 20%;
+      }
+      
+      /* Time Badge */
+      .recovery-timeline  .time-badge {
+        background-color: rgba(0, 109, 168, 0.1);
+        color: #006da8;
+        padding: 8px 12px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: inline-block;
+        min-width: 80px;
+        text-align: center;
+      }
+      
+      /* Focus Items */
+      .recovery-timeline   .focus-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        color: #4b5563;
+      }
+      
+      .recovery-timeline  .focus-item:last-child {
+        margin-bottom: 0;
+      }
+      
+      .recovery-timeline  .focus-item i {
+        margin-right: 12px;
+        color: #006da8;
+        width: 20px;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+      
+      /* Phase Tags */
+      .recovery-timeline  .phase-tag {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      
+      .recovery-timeline  .critical {
+        background: rgba(220, 38, 38, 0.1);
+        color: #dc2626;
+      }
+      
+      .recovery-timeline  .recovery {
+        background: rgba(234, 88, 12, 0.1);
+        color: #ea580c;
+      }
+      
+      .recovery-timeline  .transition {
+        background: rgba(202, 138, 4, 0.1);
+        color: #ca8a04;
+      }
+      
+      .recovery-timeline  .rebuilding {
+        background: rgba(22, 163, 74, 0.1);
+        color: #16a34a;
+      }
+      
+      .recovery-timeline  .independence {
+        background: rgba(37, 99, 235, 0.1);
+        color: #2563eb;
+      }
+      
+      .recovery-timeline  .maintenance {
+        background: rgba(124, 58, 237, 0.1);
+        color: #7c3aed;
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .recovery-timeline   .timeline-table-container {
+          overflow-x: auto;
+        }
+        
+        .recovery-timeline   .timeline-table {
+          min-width: 700px;
+        }
+        
+        .recovery-timeline   .section-title {
+          font-size: 2rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .recovery-timeline   .section-title {
+          font-size: 1.8rem;
+        }
+        
+        .recovery-timeline  .section-subtitle {
+          font-size: 1rem;
+        }
+      }
+
+
+
+      .evaluation-outcome {
+        padding: 4rem 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+      }
+    
+      .evaluation-outcome  .outcome-wrapper {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+      }
+      
+      .evaluation-outcome  .outcome-image {
+        flex: 1;
+        min-height: 400px;
+        background: #e0f2fe;
+      }
+      
+      .evaluation-outcome  .outcome-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      
+      .evaluation-outcome   .outcome-content {
+        flex: 1;
+        padding: 3rem;
+      }
+      
+      .evaluation-outcome  h2 {
+        color: #2c3e50;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .evaluation-outcome  .divider {
+        width: 60px;
+        height: 4px;
+        background: linear-gradient(to right, #28a745, #006da8);
+        margin-bottom: 2rem;
+      }
+      
+      .evaluation-outcome  .outcome-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      
+      .evaluation-outcome  .outcome-list li {
+        display: flex;
+        margin-bottom: 2rem;
+        align-items: flex-start;
+      }
+      
+      .evaluation-outcome  .outcome-list li:last-child {
+        margin-bottom: 0;
+      }
+      
+      .evaluation-outcome   .icon-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        flex-shrink: 0;
+        font-size: 1.2rem;
+        color: white;
+      }
+      
+      .evaluation-outcome   .approved {
+        background-color: #28a745;
+      }
+      
+      .evaluation-outcome  .optimization {
+        background-color: #ffc107;
+      }
+      
+      .evaluation-outcome  .alternative {
+        background-color: #6c757d;
+      }
+      
+      .evaluation-outcome  .list-content h3 {
+        margin: 0 0 0.5rem 0;
+        color: #2c3e50;
+        font-size: 1.2rem;
+      }
+      
+      .evaluation-outcome  .list-content p {
+        margin: 0;
+        color: #6b7280;
+        line-height: 1.6;
+      }
+      
+      @media (max-width: 900px) {
+        .evaluation-outcome  .outcome-wrapper {
+          flex-direction: column;
+        }
+        
+        .evaluation-outcome   .outcome-image {
+          width: 100%;
+          min-height: 300px;
+        }
+        
+        .evaluation-outcome  .outcome-content {
+          padding: 2rem;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .evaluation-outcome  .outcome-list li {
+          flex-direction: column;
+        }
+        
+        .evaluation-outcome  .icon-circle {
+          margin-bottom: 15px;
+          margin-right: 0;
+        }
+        
+        .evaluation-outcome   h2 {
+          font-size: 1.8rem;
+        }
+      }
+
+
+      .lifelong-care-section {
+        padding: 4rem 0;
+        /* background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%); */
+        font-family: 'Inter', sans-serif;
+      }
+    
+      .lifelong-care-section  .care-card {
+        background: white;
+        border-radius: 16px;
+        padding: 3rem;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 109, 168, 0.1);
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(0, 109, 168, 0.1);
+      }
+      
+      .lifelong-care-section  .infinity-icon {
+        font-size: 3rem;
+        color: #006da8;
+        margin-bottom: 1rem;
+        animation: pulse 2s infinite;
+      }
+      
+      .lifelong-care-section  h2 {
+        color: #2c3e50;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      
+      .lifelong-care-section .divider {
+        width: 60px;
+        height: 4px;
+        background: linear-gradient(to right, #28a745, #006da8);
+        margin: 1rem auto 2rem;
+        border-radius: 2px;
+      }
+      
+      .lifelong-care-section .care-message {
+        color: #4b5563;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+      }
+      
+      .lifelong-care-section .partnership-graphic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+      }
+      
+      .lifelong-care-section  .patient-icon {
+        font-size: 2.5rem;
+      }
+      
+      .lifelong-care-section .team-icon {
+        font-size: 2.5rem;
+      }
+      
+      .lifelong-care-section .connection-line {
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(to right, #28a745, #006da8);
+        margin: 0 20px;
+        position: relative;
+      }
+      
+      .lifelong-care-section .connection-line:before {
+        content: '❤️';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.2rem;
+      }
+      
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+      
+      @media (max-width: 768px) {
+        .lifelong-care-section .care-card {
+          padding: 2rem;
+        }
+        
+        .lifelong-care-section  h2 {
+          font-size: 1.8rem;
+        }
+        
+        .lifelong-care-section   .connection-line {
+          width: 60px;
+        }
+      }
+
+
+      .patient-tips-section {
+        padding: 4rem 0;
+        background: #E8F5E9;
+        font-family: 'Inter', sans-serif;
+      }
+      
+     
+      .patient-tips-section .tips-card {
+        background: white;
+        border-radius: 16px;
+        padding: 3rem;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 109, 168, 0.1);
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(0, 109, 168, 0.1);
+      }
+      
+      .patient-tips-section .tip-icon {
+        font-size: 3rem;
+        color: #006da8;
+        margin-bottom: 1rem;
+        animation: pulse 2s infinite;
+      }
+      
+      .patient-tips-section  h2 {
+        color: #2c3e50;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      
+      .patient-tips-section  .divider {
+        width: 60px;
+        height: 4px;
+        background: linear-gradient(to right, #28a745, #006da8);
+        margin: 1rem auto 2rem;
+        border-radius: 2px;
+      }
+      
+      .patient-tips-section  .tips-list {
+        padding: 0;
+        margin: 0 auto 2rem;
+        max-width: 600px;
+        text-align: left;
+        list-style: none;
+      }
+      
+      .patient-tips-section  .tips-list li {
+        display: flex;
+        margin-bottom: 1.5rem;
+        align-items: flex-start;
+      }
+      
+      .patient-tips-section .tip-bullet {
+        background: #006da8;
+        color: white;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+      
+      .patient-tips-section .tip-content {
+        color: #4b5563;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding-top: 3px;
+      }
+      
+      .patient-tips-section .partnership-graphic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+      }
+      
+      .patient-tips-section  .patient-icon {
+        font-size: 2.5rem;
+      }
+      
+      .team-icon {
+        font-size: 2.5rem;
+      }
+      
+      .patient-tips-section  .connection-line {
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(to right, #28a745, #006da8);
+        margin: 0 20px;
+        position: relative;
+      }
+      
+      .patient-tips-section .connection-line:before {
+        content: '❤️';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.2rem;
+      }
+      
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+      
+      @media (max-width: 768px) {
+        .patient-tips-section   .tips-card {
+          padding: 2rem;
+        }
+        
+        .patient-tips-section   h2 {
+          font-size: 1.8rem;
+        }
+        
+        .patient-tips-section  .connection-line {
+          width: 60px;
+        }
+        
+        .patient-tips-section   .tip-content {
+          font-size: 1rem;
+        }
+      }
