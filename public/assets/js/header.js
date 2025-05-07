@@ -103,13 +103,13 @@ class Header extends HTMLElement {
                                     </div>
                                 </div>
                                 <div class="dropdown-submenu desktop-image">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Diagnostics & Supportive Care</a>
+                                    <a class="dropdown-item dropdown-toggle" href="/diagnostics-supportive-care-delhi/">Diagnostics & Supportive Care</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Diagnostics & Supportive Care</a>
-                                        <a class="dropdown-item" href="#">FibroScan & Liver Elastography</a>
-                                        <a class="dropdown-item" href="#">Tumor Ablation (RFA / Microwave)</a>
-                                        <a class="dropdown-item" href="#">Endoscopic Variceal Ligation (EVL)</a>
-                                        <a class="dropdown-item" href="#">Nutritional & Lifestyle Counseling</a>
+                                        <a class="dropdown-item" href="/liver-biopsy-delhi/">Liver Biopsy</a>
+                                        <a class="dropdown-item" href="/fibroscan-liver-elastography-delhi/">FibroScan & Liver Elastography</a>
+                                        <a class="dropdown-item" href="/tumor-ablation-delhi/">Tumor Ablation (RFA / Microwave)</a>
+                                        <a class="dropdown-item" href="/endoscopic-variceal-ligation-delhi/">Endoscopic Variceal Ligation (EVL)</a>
+                                        <a class="dropdown-item" href="/nutritional-lifestyle-counseling-delhi/">Nutritional & Lifestyle Counseling</a>
 
                                     </div>
                                 </div>
@@ -187,15 +187,15 @@ class Header extends HTMLElement {
                                   
                                   <div class="dropdown-submenu d-md-none">
                                     <div class="d-flex justify-content-between align-items-center">
-                                      <a class="dropdown-item" href="#">Diagnostics & Supportive Care</a>
+                                      <a class="dropdown-item" href="/diagnostics-supportive-care-delhi/">Diagnostics & Supportive Care</a>
                                       <span class="submenu-toggle d-md-none">&#x25BC;</span>
                                     </div>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#">Diagnostics & Supportive Care</a>
-                                      <a class="dropdown-item" href="#">FibroScan & Liver Elastography</a>
-                                      <a class="dropdown-item" href="#">Tumor Ablation (RFA / Microwave)</a>
-                                      <a class="dropdown-item" href="#">Endoscopic Variceal Ligation (EVL)</a>
-                                      <a class="dropdown-item" href="#">Nutritional & Lifestyle Counseling</a>
+                                      <a class="dropdown-item" href="/liver-biopsy-delhi/">Liver Biopsy</a>
+                                        <a class="dropdown-item" href="/fibroscan-liver-elastography-delhi/">FibroScan & Liver Elastography</a>
+                                        <a class="dropdown-item" href="/tumor-ablation-delhi/">Tumor Ablation (RFA / Microwave)</a>
+                                        <a class="dropdown-item" href="/endoscopic-variceal-ligation-delhi/">Endoscopic Variceal Ligation (EVL)</a>
+                                        <a class="dropdown-item" href="/nutritional-lifestyle-counseling-delhi/">Nutritional & Lifestyle Counseling</a>
                                     </div>
                                   </div>
                                   
