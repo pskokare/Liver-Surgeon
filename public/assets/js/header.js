@@ -89,20 +89,17 @@ class Header extends HTMLElement {
                                     </div>
                                 </div>
                                 <div class="dropdown-submenu desktop-image">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Advanced HPB Procedures</a>
+                                    <a class="dropdown-item dropdown-toggle" href="/advanced-hpb-procedures-delhi/">Advanced HPB Procedures</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Ante-situm & Ex-situ Liver
+                                        <a class="dropdown-item" href="/ante-situm-ex-situ-liver-resection-delhi/">Ante-situm & Ex-situ Liver
                                             Resection</a>
-                                        <a class="dropdown-item" href="#">Portal Hypertension Surgery</a>
-                                        <a class="dropdown-item" href="#">Bile Duct Injury & Reconstruction</a>
-                                        <a class="dropdown-item" href="#">Chronic Pancreatitis Surgery</a>
-                                        <a class="dropdown-item" href="#">Minimal Access Liver Surgery</a>
-                                        <a class="dropdown-item" href="#">Robotic HPB Surgery</a>
-                                        <a class="dropdown-item" href="#">Cholangiocarcinoma (Bile Duct Cancer)
+                                        <a class="dropdown-item" href="/portal-hypertension-surgery-delhi/">Portal Hypertension Surgery</a>
+                                        <a class="dropdown-item" href="/bile-duct-injury-reconstruction-delhi/">Bile Duct Injury & Reconstruction</a>
+                                        <a class="dropdown-item" href="/chronic-pancreatitis-surgery-delhi/">Chronic Pancreatitis Surgery</a>
+                                        <a class="dropdown-item" href="/minimal-access-liver-surgery-delhi/">Minimal Access Liver Surgery</a>
+                                        <a class="dropdown-item" href="/robotic-hpb-surgery-delhi/">Robotic HPB Surgery</a>
+                                        <a class="dropdown-item" href="/cholangiocarcinoma-bile-duct-cancer-surgery-delhi/">Cholangiocarcinoma (Bile Duct Cancer)
                                             Surgery</a>
-                                        <a class="dropdown-item" href="#">Choledochal Cyst Surgery </a>
-
-
                                     </div>
                                 </div>
                                 <div class="dropdown-submenu desktop-image">
@@ -172,18 +169,19 @@ class Header extends HTMLElement {
                                   
                                   <div class="dropdown-submenu d-md-none">
                                     <div class="d-flex justify-content-between align-items-center">
-                                      <a class="dropdown-item" href="#">Advanced HPB Procedures</a>
+                                      <a class="dropdown-item" href="/advanced-hpd-procedures-delhi/">Advanced HPB Procedures</a>
                                       <span class="submenu-toggle d-md-none">&#x25BC;</span>
                                     </div>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#">Ante-situm & Ex-situ Liver Resection</a>
-                                      <a class="dropdown-item" href="#">Portal Hypertension Surgery</a>
-                                      <a class="dropdown-item" href="#">Bile Duct Injury & Reconstruction</a>
-                                      <a class="dropdown-item" href="#">Chronic Pancreatitis Surgery</a>
-                                      <a class="dropdown-item" href="#">Minimal Access Liver Surgery</a>
-                                      <a class="dropdown-item" href="#">Robotic HPB Surgery</a>
-                                      <a class="dropdown-item" href="#">Cholangiocarcinoma Surgery</a>
-                                      <a class="dropdown-item" href="#">Choledochal Cyst Surgery</a>
+                                      <a class="dropdown-item" href="/ante-situm-ex-situ-liver-resection-delhi/">Ante-situm & Ex-situ Liver
+                                            Resection</a>
+                                        <a class="dropdown-item" href="/portal-hypertension-surgery-delhi/">Portal Hypertension Surgery</a>
+                                        <a class="dropdown-item" href="/bile-duct-injury-reconstruction-delhi/">Bile Duct Injury & Reconstruction</a>
+                                        <a class="dropdown-item" href="/chronic-pancreatitis-surgery-delhi/">Chronic Pancreatitis Surgery</a>
+                                        <a class="dropdown-item" href="/minimal-access-liver-surgery-delhi/">Minimal Access Liver Surgery</a>
+                                        <a class="dropdown-item" href="/robotic-hpb-surgery-delhi/">Robotic HPB Surgery</a>
+                                        <a class="dropdown-item" href="/cholangiocarcinoma-bile-duct-cancer-surgery-delhi/">Cholangiocarcinoma (Bile Duct Cancer)
+                                            Surgery</a>
                                     </div>
                                   </div>
                                   
