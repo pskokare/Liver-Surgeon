@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block standard backend folders (This now applies to EVERYONE)
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Sitemap Location
+Sitemap: https://liversurgeons.com/sitemap.xml

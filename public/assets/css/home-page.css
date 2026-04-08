@@ -53,7 +53,6 @@
 /* Main Heading */
 .main-heading {
     font-size: 2.5rem;
-  
     color: #1c174e;
     margin-bottom: 20px;
     position: relative;
@@ -784,7 +783,7 @@
 .liver-care-services .cards-column {
     width: 70%;
     padding: 30px;
-    max-height: 120vh;
+    max-height: 140vh;
     overflow-y: scroll;
 }
 

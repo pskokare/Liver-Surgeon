@@ -227,7 +227,7 @@
             }
 
             .service-tabs .d-flex {
-                flex-wrap: nowrap !important;
+                flex-wrap: wrap !important;
             }
         }
 
@@ -1574,5 +1574,12 @@ margin-bottom: 10px;
         
         .patient-tips-section   .tip-content {
           font-size: 1rem;
+        }
+      }
+
+      @media (min-width: 1600px) {
+        .counter-inner-sec figure img{
+          max-width: 56px;
+          height: 56px;
         }
       }

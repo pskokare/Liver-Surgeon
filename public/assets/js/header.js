@@ -28,181 +28,186 @@ class Header extends HTMLElement {
                                 About
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                                <a class="dropdown-item" href="/about/">About Us</a>
-                                <a class="dropdown-item" href="#">Team</a>
+                                <a class="dropdown-item" href="/about">About Us</a>
+                                <a class="dropdown-item" href="./dr-ashish-george-liver-transplant-surgeon-delhi">Dr. Ashish George</a>
 
 
                             </div>
                         </li>
 
-                        <li class="nav-item dropdown">
+                         <li class="nav-item dropdown" id="services-dropdown-navitem">
                             <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown5" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Services
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
 
-
-                                <!-- Nested Dropdown -->
-                                <div class="dropdown-submenu desktop-image">
-                                    <a class="dropdown-item dropdown-toggle" href="/liver-transplant-delhi/">Liver Transplant Services</a>
+                                <!-- Desktop (5 main categories with submenus) -->
+                                <div class="dropdown-submenu desktop-image d-none d-md-block">
+                                    <a class="dropdown-item dropdown-toggle" href="/liver-transplant-delhi">Liver Transplant Services</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="/pediatric-liver-transplant-delhi/"> Pediatric Liver Transplant</a>
-                                        <a class="dropdown-item" href="/deceased-donor-liver-transplant-delhi/">Deceased Donor Liver
-                                            Transplant</a>
-                                        <a class="dropdown-item" href="/living-donor-liver-transplant-delhi/">Living Donor Liver Transplant</a>
-                                        <a class="dropdown-item" href="/split-liver-transplant-delhi/">Split Liver Transplantation</a>
-                                        <a class="dropdown-item" href="/dual-lobe-liver-transplant-delhi/">Dual Lobe Liver
-                                            Transplantation</a>
-                                        <a class="dropdown-item" href="/combined-liver-Kidney-transplant-delhi/">Combined liver kidney
-                                            transplantation</a>
-                                        <a class="dropdown-item" href="/post-transplant-monitoring-delhi/">Post-Transplant Surveillance</a>
-                                        <a class="dropdown-item" href="/immunosuppressive-therapy-delhi.html">Immunosuppressive Therapy</a>
-
+                                        <a class="dropdown-item" href="/pediatric-liver-transplant-delhi">Pediatric Liver Transplant</a>
+                                        <a class="dropdown-item" href="/deceased-donor-liver-transplant-delhi">Deceased Donor Liver Transplant</a>
+                                        <a class="dropdown-item" href="/living-donor-liver-transplant-delhi">Living Donor Liver Transplant</a>
+                                        <a class="dropdown-item" href="/split-liver-transplant-delhi">Split Liver Transplantation</a>
+                                        <a class="dropdown-item" href="/dual-lobe-liver-transplant-delhi">Dual Lobe Liver Transplantation</a>
+                                        <a class="dropdown-item" href="/combined-liver-kidney-transplant-delhi">Combined liver kidney transplantation</a>
+                                        <a class="dropdown-item" href="/post-transplant-monitoring-delhi">Post-Transplant Surveillance</a>
+                                        <a class="dropdown-item" href="/immunosuppressive-therapy-delhi">Immunosuppressive Therapy</a>
                                     </div>
                                 </div>
-
-                                <div class="dropdown-submenu desktop-image">
-                                    <a class="dropdown-item dropdown-toggle" href="/liver-hepatology-conditions-delhi/">Liver & Hepatology Conditions</a>
+                                <div class="dropdown-submenu desktop-image d-none d-md-block">
+                                    <a class="dropdown-item dropdown-toggle" href="/liver-hepatology-conditions-delhi">Liver & Hepatology Conditions</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="/chronic-liver-diseases-delhi/">Chronic Liver Disease (CLD)</a>
-                                        <a class="dropdown-item" href="/acute-liver-failure-treatment-delhi/"> Acute Liver Failure (ALF)</a>
-                                        <a class="dropdown-item" href="/hepatitis-treatment-delhi/">Hepatitis A, B, C,D, E</a>
-                                        <a class="dropdown-item" href="/jaundice-treatment-delhi/">Jaundice</a>
-                                        <a class="dropdown-item" href="/fatty-liver-treatment-delhi/">Fatty Liver (MASLD)</a>
-                                        <a class="dropdown-item" href="/liver-cirrhosis-treatment-delhi/">Liver Cirrhosis</a>
-                                        <a class="dropdown-item" href="/autoimmune-hepatitis-treatment-delhi/">Autoimmune Hepatitis</a>
-                                        <a class="dropdown-item" href="/alcoholic-hepatitis-treatment-delhi/">Alcoholic Hepatitis</a>
-                                        <a class="dropdown-item" href="/genetic-liver-disorders-delhi/">Genetic Liver Disorders</a>
-                                        <a class="dropdown-item" href="/metabolic-liver-diseases-treatment-delhi/">Metabolic liver diseases</a>
+                                        <a class="dropdown-item" href="/chronic-liver-diseases-delhi">Chronic Liver Disease (CLD)</a>
+                                        <a class="dropdown-item" href="/acute-liver-failure-treatment-delhi">Acute Liver Failure (ALF)</a>
+                                        <a class="dropdown-item" href="/hepatitis-treatment-delhi">Hepatitis A, B, C, D, E</a>
+                                        <a class="dropdown-item" href="/hepatitis-b-c-treatment-delhi">Hepatitis B & C Treatment</a>                                        <a class="dropdown-item" href="/jaundice-treatment-delhi">Jaundice</a>
+                                        <a class="dropdown-item" href="/fatty-liver-treatment-delhi">Fatty Liver (MASLD)</a>
+                                        <a class="dropdown-item" href="/liver-cirrhosis-treatment-delhi">Liver Cirrhosis</a>
+                                        <a class="dropdown-item" href="/autoimmune-hepatitis-treatment-delhi">Autoimmune Hepatitis</a>
+                                        <a class="dropdown-item" href="/alcoholic-hepatitis-treatment-delhi">Alcoholic Hepatitis</a>
+                                        <a class="dropdown-item" href="/genetic-liver-disorders-delhi">Genetic Liver Disorders</a>
+                                        <a class="dropdown-item" href="/metabolic-liver-diseases-treatment-delhi">Metabolic liver diseases</a>
                                     </div>
                                 </div>
-                                <div class="dropdown-submenu desktop-image">
-                                    <a class="dropdown-item dropdown-toggle" href="/cancer-surgeries-delhi/">Cancer Surgeries</a>
+                                <div class="dropdown-submenu desktop-image d-none d-md-block">
+                                    <a class="dropdown-item dropdown-toggle" href="/cancer-surgeries-delhi">Cancer Surgeries</a>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="/liver-cancer-surgery-delhi/">Liver Cancer Surgery</a>
-                                      <a class="dropdown-item" href="/hepatectomy-liver-resection-delhi">Hepatectomy (Liver Resection)</a>
-                                      <a class="dropdown-item" href="/gallbladder-cancer-surgery-delhi/">Gallbladder Cancer Surgery</a>
-                                      <a class="dropdown-item" href="/pancreatic-cancer-surgery-delhi/">Pancreatic Cancer Surgery</a>
-                                      <a class="dropdown-item" href="/stomach-cancer-surgery-delhi/">Stomach Cancer Surgery</a>
-                                      <a class="dropdown-item" href="/colon-colorectal-cancer-surgery-delhi/">Colon & Colorectal Cancer Surgery</a>
+                                        <a class="dropdown-item" href="/liver-cancer-surgery-delhi">Liver Cancer Surgery</a>
+                                        <a class="dropdown-item" href="/hepatectomy-liver-resection-delhi">Hepatectomy (Liver Resection)</a>
+                                        <a class="dropdown-item" href="/gallbladder-cancer-surgery-delhi">Gallbladder Cancer Surgery</a>
+                                        <a class="dropdown-item" href="/pancreatic-cancer-surgery-delhi">Pancreatic Cancer Surgery</a>
+                                        <a class="dropdown-item" href="/stomach-cancer-surgery-delhi">Stomach Cancer Surgery</a>
+                                        <a class="dropdown-item" href="/colon-colorectal-cancer-surgery-delhi">Colon & Colorectal Cancer Surgery</a>
                                     </div>
                                 </div>
-                                <div class="dropdown-submenu desktop-image">
-                                    <a class="dropdown-item dropdown-toggle" href="/advanced-hpb-procedures-delhi/">Advanced HPB Procedures</a>
+                                <div class="dropdown-submenu desktop-image d-none d-md-block">
+                                    <a class="dropdown-item dropdown-toggle" href="/advanced-hpb-procedures-delhi">Advanced HPB Procedures</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="/ante-situm-ex-situ-liver-resection-delhi/">Ante-situm & Ex-situ Liver
-                                            Resection</a>
-                                        <a class="dropdown-item" href="/portal-hypertension-surgery-delhi/">Portal Hypertension Surgery</a>
-                                        <a class="dropdown-item" href="/bile-duct-injury-reconstruction-delhi/">Bile Duct Injury & Reconstruction</a>
-                                        <a class="dropdown-item" href="/chronic-pancreatitis-surgery-delhi/">Chronic Pancreatitis Surgery</a>
-                                        <a class="dropdown-item" href="/minimal-access-liver-surgery-delhi/">Minimal Access Liver Surgery</a>
-                                        <a class="dropdown-item" href="/robotic-hpb-surgery-delhi/">Robotic HPB Surgery</a>
-                                        <a class="dropdown-item" href="/cholangiocarcinoma-bile-duct-cancer-surgery-delhi/">Cholangiocarcinoma (Bile Duct Cancer)
-                                            Surgery</a>
+                                        <a class="dropdown-item" href="/ante-situm-ex-situ-liver-resection-delhi">Ante-situm & Ex-situ Liver Resection</a>
+                                        <a class="dropdown-item" href="/portal-hypertension-surgery-delhi">Portal Hypertension Surgery</a>
+                                        <a class="dropdown-item" href="/bile-duct-injury-reconstruction-delhi">Bile Duct Injury & Reconstruction</a>
+                                        <a class="dropdown-item" href="/chronic-pancreatitis-surgery-delhi">Chronic Pancreatitis Surgery</a>
+                                        <a class="dropdown-item" href="/minimal-access-liver-surgery-delhi">Minimal Access Liver Surgery</a>
+                                        <a class="dropdown-item" href="/robotic-hpb-surgery-delhi">Robotic HPB Surgery</a>
+                                        <a class="dropdown-item" href="/cholangiocarcinoma-bile-duct-cancer-surgery-delhi">Cholangiocarcinoma (Bile Duct Cancer) Surgery</a>
                                     </div>
                                 </div>
-                                <div class="dropdown-submenu desktop-image">
-                                    <a class="dropdown-item dropdown-toggle" href="/diagnostics-supportive-care-delhi/">Diagnostics & Supportive Care</a>
+                                <div class="dropdown-submenu desktop-image d-none d-md-block">
+                                    <a class="dropdown-item dropdown-toggle" href="/diagnostics-supportive-care-delhi">Diagnostics & Supportive Care</a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="/liver-biopsy-delhi/">Liver Biopsy</a>
-                                        <a class="dropdown-item" href="/fibroscan-liver-elastography-delhi/">FibroScan & Liver Elastography</a>
-                                        <a class="dropdown-item" href="/tumor-ablation-delhi/">Tumor Ablation (RFA / Microwave)</a>
-                                        <a class="dropdown-item" href="/endoscopic-variceal-ligation-delhi/">Endoscopic Variceal Ligation (EVL)</a>
-                                        <a class="dropdown-item" href="/nutritional-lifestyle-counseling-delhi/">Nutritional & Lifestyle Counseling</a>
-
+                                        <a class="dropdown-item" href="/liver-biopsy-delhi">Liver Biopsy</a>
+                                        <a class="dropdown-item" href="/fibroscan-liver-elastography-delhi">FibroScan & Liver Elastography</a>
+                                        <a class="dropdown-item" href="/tumor-ablation-delhi">Tumor Ablation (RFA / Microwave)</a>
+                                        <a class="dropdown-item" href="/endoscopic-variceal-ligation-delhi">Endoscopic Variceal Ligation (EVL)</a>
+                                        <a class="dropdown-item" href="/nutritional-lifestyle-counseling-delhi">Nutritional & Lifestyle Counseling</a>
                                     </div>
                                 </div>
-
-
-                                <div class="dropdown-submenu d-md-none">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <a class="dropdown-item" href="/liver-transplant-delhi/">Liver Transplant Services</a>
-                                        <span class="submenu-toggle d-md-none">&#x25BC;</span>
+                                <!-- Mobile version -->
+                                <div class="mobile-services-submenu d-md-none">
+                                    <div class="services-main-category">
+                                        <div class="services-header d-flex justify-content-between align-items-center" data-target="#mobileService1">
+                                            <span>Liver Transplant Services</span>
+                                            <span class="services-toggle">&#x25BC;</span>
+                                        </div>
+                                        <ul class="services-list" id="mobileService1">
+                                            <li><a class="dropdown-item" href="/pediatric-liver-transplant-delhi">Pediatric Liver Transplant</a></li>
+                                            <li><a class="dropdown-item" href="/deceased-donor-liver-transplant-delhi">Deceased Donor Liver Transplant</a></li>
+                                            <li><a class="dropdown-item" href="/living-donor-liver-transplant-delhi">Living Donor Liver Transplant</a></li>
+                                            <li><a class="dropdown-item" href="/split-liver-transplant-delhi">Split Liver Transplantation</a></li>
+                                            <li><a class="dropdown-item" href="/dual-lobe-liver-transplant-delhi">Dual Lobe Liver Transplantation</a></li>
+                                            <li><a class="dropdown-item" href="/combined-liver-kidney-transplant-delhi">Combined liver kidney transplantation</a></li>
+                                            <li><a class="dropdown-item" href="/post-transplant-monitoring-delhi">Post-Transplant Surveillance</a></li>
+                                            <li><a class="dropdown-item" href="/immunosuppressive-therapy-delhi">Immunosuppressive Therapy</a></li>
+                                        </ul>
                                     </div>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="/pediatric-liver-transplant-delhi/">Pediatric Liver Transplant</a>
-                                        <a class="dropdown-item" href="/deceased-donor-liver-transplant-delhi/">Deceased Donor Liver Transplant</a>
-                                        <a class="dropdown-item" href="/living-donor-liver-transplant-delhi/">Living Donor Liver Transplant</a>
-                                        <a class="dropdown-item" href="/split-liver-transplant-delhi/">Split Liver Transplantation</a>
-                                        <a class="dropdown-item" href="/dual-lobe-liver-transplant-delhi/">Dual Lobe Liver Transplantation</a>
-                                        <a class="dropdown-item" href="/combined-liver-Kidney-transplant-delhi/">Combined Liver Kidney Transplantation</a>
-                                        <a class="dropdown-item" href="/post-transplant-monitoring-delhi/">Post-Transplant Surveillance</a>
-                                        <a class="dropdown-item" href="/immunosuppressive-therapy-delhi/">Immunosuppressive Therapy</a>
+                                    <div class="services-main-category">
+                                        <div class="services-header d-flex justify-content-between align-items-center" data-target="#mobileService2">
+                                            <span>Liver & Hepatology Conditions</span>
+                                            <span class="services-toggle">&#x25BC;</span>
+                                        </div>
+                                        <ul class="services-list" id="mobileService2">
+                                            <li><a class="dropdown-item" href="/chronic-liver-diseases-delhi">Chronic Liver Disease (CLD)</a></li>
+                                            <li><a class="dropdown-item" href="/acute-liver-failure-treatment-delhi">Acute Liver Failure (ALF)</a></li>
+                                            <li><a class="dropdown-item" href="/hepatitis-treatment-delhi">Hepatitis A, B, C, D, E</a></li>
+                                            <li><a class="dropdown-item" href="/hepatitis-treatment-delhi">Hepatitis B & C Treatment</a></li>
+                                            <li><a class="dropdown-item" href="/jaundice-treatment-delhi">Jaundice</a></li>
+                                            <li><a class="dropdown-item" href="/fatty-liver-treatment-delhi">Fatty Liver (MASLD)</a></li>
+                                            <li><a class="dropdown-item" href="/liver-cirrhosis-treatment-delhi">Liver Cirrhosis</a></li>
+                                            <li><a class="dropdown-item" href="/autoimmune-hepatitis-treatment-delhi">Autoimmune Hepatitis</a></li>
+                                            <li><a class="dropdown-item" href="/alcoholic-hepatitis-treatment-delhi">Alcoholic Hepatitis</a></li>
+                                            <li><a class="dropdown-item" href="/genetic-liver-disorders-delhi">Genetic Liver Disorders</a></li>
+                                            <li><a class="dropdown-item" href="/metabolic-liver-diseases-treatment-delhi">Metabolic liver diseases</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="services-main-category">
+                                        <div class="services-header d-flex justify-content-between align-items-center" data-target="#mobileService3">
+                                            <span>Cancer Surgeries</span>
+                                            <span class="services-toggle">&#x25BC;</span>
+                                        </div>
+                                        <ul class="services-list" id="mobileService3">
+                                            <li><a class="dropdown-item" href="/liver-cancer-surgery-delhi">Liver Cancer Surgery</a></li>
+                                            <li><a class="dropdown-item" href="/hepatectomy-liver-resection-delhi">Hepatectomy (Liver Resection)</a></li>
+                                            <li><a class="dropdown-item" href="/gallbladder-cancer-surgery-delhi">Gallbladder Cancer Surgery</a></li>
+                                            <li><a class="dropdown-item" href="/pancreatic-cancer-surgery-delhi">Pancreatic Cancer Surgery</a></li>
+                                            <li><a class="dropdown-item" href="/stomach-cancer-surgery-delhi">Stomach Cancer Surgery</a></li>
+                                            <li><a class="dropdown-item" href="/colon-colorectal-cancer-surgery-delhi">Colon & Colorectal Cancer Surgery</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="services-main-category">
+                                        <div class="services-header d-flex justify-content-between align-items-center" data-target="#mobileService4">
+                                            <span>Advanced HPB Procedures</span>
+                                            <span class="services-toggle">&#x25BC;</span>
+                                        </div>
+                                        <ul class="services-list" id="mobileService4">
+                                            <li><a class="dropdown-item" href="/ante-situm-ex-situ-liver-resection-delhi">Ante-situm & Ex-situ Liver Resection</a></li>
+                                            <li><a class="dropdown-item" href="/portal-hypertension-surgery-delhi">Portal Hypertension Surgery</a></li>
+                                            <li><a class="dropdown-item" href="/bile-duct-injury-reconstruction-delhi">Bile Duct Injury & Reconstruction</a></li>
+                                            <li><a class="dropdown-item" href="/chronic-pancreatitis-surgery-delhi">Chronic Pancreatitis Surgery</a></li>
+                                            <li><a class="dropdown-item" href="/minimal-access-liver-surgery-delhi">Minimal Access Liver Surgery</a></li>
+                                            <li><a class="dropdown-item" href="/robotic-hpb-surgery-delhi">Robotic HPB Surgery</a></li>
+                                            <li><a class="dropdown-item" href="/cholangiocarcinoma-bile-duct-cancer-surgery-delhi">Cholangiocarcinoma (Bile Duct Cancer) Surgery</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="services-main-category">
+                                        <div class="services-header d-flex justify-content-between align-items-center" data-target="#mobileService5">
+                                            <span>Diagnostics & Supportive Care</span>
+                                            <span class="services-toggle">&#x25BC;</span>
+                                        </div>
+                                        <ul class="services-list" id="mobileService5">
+                                            <li><a class="dropdown-item" href="/liver-biopsy-delhi">Liver Biopsy</a></li>
+                                            <li><a class="dropdown-item" href="/fibroscan-liver-elastography-delhi">FibroScan & Liver Elastography</a></li>
+                                            <li><a class="dropdown-item" href="/tumor-ablation-delhi">Tumor Ablation (RFA / Microwave)</a></li>
+                                            <li><a class="dropdown-item" href="/endoscopic-variceal-ligation-delhi">Endoscopic Variceal Ligation (EVL)</a></li>
+                                            <li><a class="dropdown-item" href="/nutritional-lifestyle-counseling-delhi">Nutritional & Lifestyle Counseling</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-
-
-                                <div class="dropdown-submenu d-md-none">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                      <a class="dropdown-item" href="/liver-hepatology-conditions-delhi/">Liver & Hepatology Conditions</a>
-                                      <span class="submenu-toggle ">&#x25BC;</span>
-                                    </div>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="/chronic-liver-diseases-delhi/">Chronic Liver Disease (CLD)</a>
-                                        <a class="dropdown-item" href="/acute-liver-failure-treatment-delhi/"> Acute Liver Failure (ALF)</a>
-                                        <a class="dropdown-item" href="/hepatitis-treatment-delhi/">Hepatitis A, B, C,D, E</a>
-                                        <a class="dropdown-item" href="/jaundice-treatment-delhi/">Jaundice</a>
-                                        <a class="dropdown-item" href="/fatty-liver-treatment-delhi/">Fatty Liver (MASLD)</a>
-                                        <a class="dropdown-item" href="/liver-cirrhosis-treatment-delhi/">Liver Cirrhosis</a>
-                                        <a class="dropdown-item" href="/autoimmune-hepatitis-treatment-delhi/">Autoimmune Hepatitis</a>
-                                        <a class="dropdown-item" href="/alcoholic-hepatitis-treatment-delhi/">Alcoholic Hepatitis</a>
-                                        <a class="dropdown-item" href="/genetic-liver-disorders-delhi/">Genetic Liver Disorders</a>
-                                        <a class="dropdown-item" href="/metabolic-liver-diseases-treatment-delhi/">Metabolic liver diseases</a>
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="dropdown-submenu d-md-none">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                      <a class="dropdown-item" href="/cancer-surgeries-delhi/">Cancer Surgeries</a>
-                                      <span class="submenu-toggle d-md-none">&#x25BC;</span>
-                                    </div>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="/liver-cancer-surgery-delhi/">Liver Cancer Surgery</a>
-                                      <a class="dropdown-item" href="/hepatectomy-liver-resection-delhi">Hepatectomy (Liver Resection)</a>
-                                      <a class="dropdown-item" href="/gallbladder-cancer-surgery-delhi/">Gallbladder Cancer Surgery</a>
-                                      <a class="dropdown-item" href="/pancreatic-cancer-surgery-delhi/">Pancreatic Cancer Surgery</a>
-                                      <a class="dropdown-item" href="/stomach-cancer-surgery-delhi/">Stomach Cancer Surgery</a>
-                                      <a class="dropdown-item" href="/colon-colorectal-cancer-surgery-delhi/">Colon & Colorectal Cancer Surgery</a>
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="dropdown-submenu d-md-none">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                      <a class="dropdown-item" href="/advanced-hpd-procedures-delhi/">Advanced HPB Procedures</a>
-                                      <span class="submenu-toggle d-md-none">&#x25BC;</span>
-                                    </div>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="/ante-situm-ex-situ-liver-resection-delhi/">Ante-situm & Ex-situ Liver
-                                            Resection</a>
-                                        <a class="dropdown-item" href="/portal-hypertension-surgery-delhi/">Portal Hypertension Surgery</a>
-                                        <a class="dropdown-item" href="/bile-duct-injury-reconstruction-delhi/">Bile Duct Injury & Reconstruction</a>
-                                        <a class="dropdown-item" href="/chronic-pancreatitis-surgery-delhi/">Chronic Pancreatitis Surgery</a>
-                                        <a class="dropdown-item" href="/minimal-access-liver-surgery-delhi/">Minimal Access Liver Surgery</a>
-                                        <a class="dropdown-item" href="/robotic-hpb-surgery-delhi/">Robotic HPB Surgery</a>
-                                        <a class="dropdown-item" href="/cholangiocarcinoma-bile-duct-cancer-surgery-delhi/">Cholangiocarcinoma (Bile Duct Cancer)
-                                            Surgery</a>
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="dropdown-submenu d-md-none">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                      <a class="dropdown-item" href="/diagnostics-supportive-care-delhi/">Diagnostics & Supportive Care</a>
-                                      <span class="submenu-toggle d-md-none">&#x25BC;</span>
-                                    </div>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="/liver-biopsy-delhi/">Liver Biopsy</a>
-                                        <a class="dropdown-item" href="/fibroscan-liver-elastography-delhi/">FibroScan & Liver Elastography</a>
-                                        <a class="dropdown-item" href="/tumor-ablation-delhi/">Tumor Ablation (RFA / Microwave)</a>
-                                        <a class="dropdown-item" href="/endoscopic-variceal-ligation-delhi/">Endoscopic Variceal Ligation (EVL)</a>
-                                        <a class="dropdown-item" href="/nutritional-lifestyle-counseling-delhi/">Nutritional & Lifestyle Counseling</a>
-                                    </div>
-                                  </div>
-                                  
-
                             </div>
-
-
+                            <!-- CUSTOM JS for multi-level mobile dropdown -->
+                            <style>
+    @media (max-width: 767.98px) {
+        .mobile-services-submenu .services-list {
+            display: none !important;
+            padding-left: 1.5rem !important;
+        }
+        .mobile-services-submenu .services-list.show {
+            display: block !important;
+        }
+        .services-header {
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+            padding: .6rem 1rem;
+            background: #fff;
+            font-weight: 500;
+        }
+        .mobile-services-submenu .services-list li {
+            border: 0;
+        }
+    }
+</style>
+                        
                         </li>
 
                         <li class="nav-item dropdown">
@@ -211,31 +216,30 @@ class Header extends HTMLElement {
                                 Patient Information
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                                <a class="dropdown-item" href="/pre-transplant-evaluation/">Pre-Transplant Evaluation</a>
-                                <a class="dropdown-item" href="/post-transplant-instructions/">Post-Transplant Instructions</a>
-                                <a class="dropdown-item" href="/diet-and-nutrition-guide/">Diet & Nutrition Guide</a>
-                                <a class="dropdown-item" href="/liver-transplant-recovery-timeline/">Recovery Timeline</a>
-                                <a class="dropdown-item" href="/faq/">FAQs</a>
+                                <a class="dropdown-item" href="/pre-transplant-evaluation">Pre-Transplant Evaluation</a>
+                                <a class="dropdown-item" href="/post-transplant-instructions">Post-Transplant Instructions</a>
+                                <a class="dropdown-item" href="/diet-and-nutrition-guide">Diet & Nutrition Guide</a>
+                                <a class="dropdown-item" href="/liver-transplant-recovery-timeline">Recovery Timeline</a>
+                                <a class="dropdown-item" href="/liver-transplant-cost-delhi">Liver Transplant Cost India 2026</a>
+                                <a class="dropdown-item" href="/faq">FAQs</a>
 
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="#">Publications & Research</a>
+                            <a class="nav-link p-0" href="/news">Publications & Research</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="/blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0" href="#">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="/contact/">Contact</a>
+                            <a class="nav-link p-0" href="/contact">Contact</a>
                         </li>
                     </ul>
                     <div class="header-contact d-flex align-items-center">
                         <div class="phone d-flex align-items-center">
                             <figure class="mb-0">
-                                <img src="/assets/images/phone.png" alt="phone">
+                                <a a href="tel:+91 93101 39800"><img  loading="lazy" src="/assets/images/phone.png" alt="phone"></a>
                             </figure>
 
                         </div>
@@ -259,7 +263,7 @@ class Footer extends HTMLElement {
                 <h4>Have Questions? Talk to Our Experts</h4>
                 <div class="form-sec">
                 
-                    <button type="submit" id="submit" class="sign-up-btn">Contact Now</button>
+                    <a href="/contact" id="submit" class="sign-up-btn">Contact Now</a>
                 </div>
             </div>
             <div class="footer-inner-sec">
@@ -274,13 +278,13 @@ class Footer extends HTMLElement {
                         <div class="social-links">
                             <ul class="list-unstyled mb-0 d-flex ">
                                 <li class="d-flex justify-content-center align-items-center"><a
-                                        href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                                        href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
                                 </li>
                                 <li class="d-flex justify-content-center align-items-center"><a
                                         href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
                                             class="fab fa-twitter"></i></a></li>
                                 <li class="d-flex justify-content-center align-items-center"><a
-                                        href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1"><i
+                                        href="https://www.instagram.com/liversurgeonsdelhi"><i
                                             class="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
@@ -290,14 +294,14 @@ class Footer extends HTMLElement {
                 <div class="footer-text-boxes">
                     <h4>About Us</h4>
                     <ul class="mb-0 list-unstyled">
-                        <li class="position-relative"><a href="/about/"><i
+                        <li class="position-relative"><a href="/about"><i
                                     class="fas fa-angle-right"></i>About</a></li>
-                        <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Team</a></li>
+                                                <li class="position-relative"><a href="./dr-ashish-george-liver-transplant-surgeon-delhi"><i class="fas fa-angle-right"></i>Dr. Ashish George</a></li>
                         <li class="position-relative"><a href="#"><i
                                     class="fas fa-angle-right"></i>Publication</a></li>
                         <li class="position-relative"><a href="#"><i
                                     class="fas fa-angle-right"></i>Blog</a></li>
-                        <li class="position-relative mb-0"><a href="/contact/"><i
+                        <li class="position-relative mb-0"><a href="/contact"><i
                                     class="fas fa-angle-right"></i>Contact us</a>
                         </li>
                     </ul>
@@ -306,34 +310,80 @@ class Footer extends HTMLElement {
                     <h4>Our Services</h4>
                     <ul class="mb-0 list-unstyled">
 
-                        <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Liver Transplant Services</a>
+                       <li class="position-relative"><a href="/liver-transplant-delhi"><i class="fas fa-angle-right"></i>Liver Transplant Services</a>
                         </li>
-                        <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Liver & Hapatology Conditions</a></li>
-                        <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Cancer Surgeries</a>
+                        <li class="position-relative"><a href="/liver-hepatology-conditions-delhi"><i class="fas fa-angle-right"></i>Liver & Hepatology Conditions</a></li>
+                        <li class="position-relative"><a href="/cancer-surgeries-delhi"><i class="fas fa-angle-right"></i>Cancer Surgeries</a>
                         </li>
-                        <li class="position-relative"><a href="#"><i class="fas fa-angle-right"></i>Advance HPB Procedure</a>
+                        <li class="position-relative"><a href="/advanced-hpb-procedures-delhi"><i class="fas fa-angle-right"></i>Advance HPB Procedure</a>
                         </li>
-                        <li class="position-relative mb-0"><a href="#"><i
+                        <li class="position-relative mb-0"><a href="/diagnostics-supportive-care-delhi"><i
                                     class="fas fa-angle-right"></i>Diagnostic & Supportive Care</a></li>
                     </ul>
                 </div>
                 <div class="footer-text-boxes">
                     <h4>Contact Info</h4>
                     <ul class="mb-0 list-unstyled">
-                        <li class="position-relative"><a href="tel:+91 97171 69299"><i class="fas fa-phone-alt"></i>
-                            +91 97171 69299</a></li>
+                        <li class="position-relative"><a href="tel:+91 93101 39800"><i class="fas fa-phone-alt"></i>
+                            +91 93101 39800</a></li>
                         <li class="position-relative"><a href="mailto:info@liversurgeons.com"><i
                                     class="fas fa-envelope"></i>info@liversurgeons.com</a></li>
-                        <li class="position-relative mb-0"><i class="fas fa-map-marker-alt"></i>AA-299, Shaheed Udham Singh Marg, Shalimar Bagh, Delhi-110088</li>
+                        <li class="position-relative mb-0"><i class="fas fa-map-marker-alt"></i>Fortis Hospital, Shalimar Bagh, Delhi-110088</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <div class="copy-rihgt-sec w-100  text-center">
-        <p class="mb-0">Dr Ashish Liver Surgeon copyright © 2025. All Rights Reserved.</p>
+        <p class="mb-0">Dr Ashish Liver Surgeon copyright © 2026. All Rights Reserved.</p>
     </div>
     <a id="button"></a>
+
+    <!-- Sticky WhatsApp Icon for Desktop Start -->
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            right: 30px;
+            bottom: 60px;
+            z-index: 9999;
+            display: none;
+        }
+        .whatsapp-float a {
+            display: flex;
+            align-items: center;
+            background: #25d366;
+            color: #fff;
+            padding: 15px;
+            border-radius: 30px;
+            font-size: 24px;
+            box-shadow: 0 2px 10px rgba(37,211,102,0.2);
+            transition: background .2s;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .whatsapp-float a:hover {
+            background: #128c7e;
+            color: #fff;
+            text-decoration: none;
+        }
+        .whatsapp-float .whatsapp-icon {
+            font-size: 40px;
+            
+        }
+        /* Show only on desktop */
+        @media (min-width: 992px) {
+            .whatsapp-float {
+                display: block;
+            }
+        }
+    </style>
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919310139800" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+            
+        </a>
+    </div>
+    <!-- Sticky WhatsApp Icon for Desktop End -->
         `
         ;}}
 
@@ -358,7 +408,7 @@ class Team extends HTMLElement {
                             <span class="d-block">Professional Dentist</span>
                             <div class="social-links">
                                 <ul class="list-unstyled mb-0 d-flex justify-content-center">
-                                    <li><a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                                    <li><a href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                     <li><a
                                             href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
@@ -381,7 +431,7 @@ class Team extends HTMLElement {
                             <span class="d-block">Dentist Practitioner</span>
                             <div class="social-links">
                                 <ul class="list-unstyled mb-0 d-flex justify-content-center">
-                                    <li><a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                                    <li><a href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                     <li><a
                                             href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
@@ -404,7 +454,7 @@ class Team extends HTMLElement {
                             <span class="d-block">Assistant Doctor</span>
                             <div class="social-links">
                                 <ul class="list-unstyled mb-0 d-flex justify-content-center">
-                                    <li><a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                                    <li><a href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                     <li><a
                                             href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i
@@ -435,7 +485,7 @@ class Contact extends HTMLElement {
                 <div class="contact-form">
                     <span class="sub-txt d-block" data-aos="fade-up" data-aos-duration="700">Book With Us Now</span>
                     <h2 data-aos="fade-up" data-aos-duration="700">Get an Appointment</h2>
-                    <p data-aos="fade-up" data-aos-duration="700">Get expertise opinion from Dr Ashish George
+                    <p data-aos="fade-up" data-aos-duration="700" style="text-align:justify">Get expertise opinion from Dr Ashish George
                     </p>
                     <form class="form-box" method="post" id="contactpage">
                         <ul class="list-unstyled ">
@@ -480,52 +530,52 @@ class LiverHepatologySidebar extends HTMLElement {
                         <div class="sidebar-menu" style="padding: 15px;">
                             <ul class="nav flex-column specialty-list">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="chronic-liver-disease.html">
+                                    <a class="nav-link" href="chronic-liver-disease">
                                         <i class="fas fa-heartbeat mr-2"></i>Chronic Liver Disease 
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="acute-liver-failure.html">
+                                    <a class="nav-link" href="acute-liver-failure">
                                         <i class="fas fa-exclamation-triangle mr-2"></i>Acute Liver Failure 
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="hepatitis.html">
+                                    <a class="nav-link" href="hepatitis">
                                         <i class="fas fa-virus mr-2"></i>Hepatitis A, B, C, D, E
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="jaundice.html">
+                                    <a class="nav-link" href="jaundice">
                                         <i class="fas fa-tint mr-2"></i>Jaundice
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="fatty-liver.html">
+                                    <a class="nav-link" href="fatty-liver">
                                         <i class="fas fa-apple-alt mr-2"></i>Fatty Liver (MASLD)
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="liver-cirrhosis.html">
-                                        <i class="fas fa-scar mr-2"></i>Liver Cirrhosis
+                                    <a class="nav-link" href="liver-cirrhosis">
+                                        <i class="fas fa-procedures mr-2"></i>Liver Cirrhosis
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="autoimmune-hepatitis.html">
+                                    <a class="nav-link" href="autoimmune-hepatitis">
                                         <i class="fas fa-shield-virus mr-2"></i>Autoimmune Hepatitis
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="alcoholic-hepatitis.html">
+                                    <a class="nav-link" href="alcoholic-hepatitis">
                                         <i class="fas fa-wine-glass-alt mr-2"></i>Alcoholic Hepatitis
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="genetic-liver-disorders.html">
+                                    <a class="nav-link" href="genetic-liver-disorders">
                                         <i class="fas fa-dna mr-2"></i>Genetic Liver Disorders
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="metabolic-liver-diseases.html">
+                                    <a class="nav-link" href="metabolic-liver-diseases">
                                         <i class="fas fa-cogs mr-2"></i>Metabolic Liver Diseases
                                     </a>
                                 </li>
@@ -542,3 +592,88 @@ customElements.define('main-footer', Footer);
 customElements.define('main-team', Team);
 customElements.define('main-contact', Contact);
 customElements.define('liverhepatology-sidebar', LiverHepatologySidebar);
+
+document.addEventListener('DOMContentLoaded', function(){
+    function isMobile() {
+        return window.matchMedia('(max-width: 767.98px)').matches;
+    }
+    // Hide all lists initially (mobile only)
+    function hideAllMobileServiceLists(){
+        if(isMobile()){
+            document.querySelectorAll('.services-list').forEach(function(list){
+                list.classList.remove('show');
+            });
+            document.querySelectorAll('.services-toggle').forEach(function(toggle){
+                toggle.innerHTML = '&#x25BC;';
+            });
+        }
+    }
+    hideAllMobileServiceLists();
+
+    // Toggle for main categories in mobile view
+    document.querySelectorAll('.services-header').forEach(function(header){
+        header.addEventListener('click', function(e){
+            if(isMobile()){
+                var targetId = header.getAttribute('data-target');
+                var sublist = document.querySelector(targetId);
+
+                // Hide all other
+                document.querySelectorAll('.services-list').forEach(function(l){
+                    if(l !== sublist){
+                        l.classList.remove('show');
+                    }
+                });
+                document.querySelectorAll('.services-toggle').forEach(function(t){
+                    if(header.querySelector('.services-toggle') !== t){
+                        t.innerHTML = '&#x25BC;';
+                    }
+                });
+
+                if(sublist.classList.contains('show')){
+                    sublist.classList.remove('show');
+                    header.querySelector('.services-toggle').innerHTML = '&#x25BC;';
+                }else{
+                    sublist.classList.add('show');
+                    header.querySelector('.services-toggle').innerHTML = '&#x25B2;';
+                }
+            }
+        });
+    });
+
+    // Prevent mobile dropdown from closing when clicking or tapping inside the submenu
+    var servicesDropdown = document.getElementById('services-dropdown-navitem');
+    if(servicesDropdown){
+        var dropdownMenu = servicesDropdown.querySelector('.dropdown-menu');
+        dropdownMenu.addEventListener('click', function(e){
+            if(isMobile()){
+                e.stopPropagation();
+            }
+        });
+    }
+
+    // Also ensure toggling on mobile does not close menu
+    // If bootstrap is handling closing on click (data-toggle dropdown), we prevent default only for mobile
+    var servicesLink = document.getElementById('navbarDropdown5');
+    if (servicesLink) {
+        servicesLink.addEventListener('click', function(e) {
+            if (isMobile()) {
+                e.preventDefault();
+                // Force show the menu
+                var parentLi = servicesLink.closest('.dropdown');
+                if (parentLi) {
+                    var menu = parentLi.querySelector('.dropdown-menu');
+                    if(menu && !menu.classList.contains('show')){
+                        // Simulate bootstrap .show class if closed
+                        menu.classList.add('show');
+                        parentLi.classList.add('show');
+                        servicesLink.setAttribute('aria-expanded', 'true');
+                    }
+                }
+            }
+        });
+    }
+
+    // On resize, reset
+    window.addEventListener('resize', hideAllMobileServiceLists);
+});
+
