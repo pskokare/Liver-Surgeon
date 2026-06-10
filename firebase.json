@@ -7,11 +7,12 @@
       "**/node_modules/**"
     ],
     "cleanUrls": true,
-    "trailingSlash": true,
-    "rewrites": [
+    "trailingSlash": false,
+    "redirects": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/blog",
+        "destination": "/blogs",
+        "type": 301
       }
     ]
   }
