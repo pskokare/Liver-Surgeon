@@ -27,7 +27,7 @@
     <script src="/assets/js/header.js"   ></script>
     <link rel="stylesheet" href="/assets/css/service-page.css">
 
-    <script type="application/ld+json">
+    <!-- <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": ["MedicalOrganization", "Hospital"],
@@ -125,11 +125,48 @@
             }
           }
           
-    </script>
+    </script> -->
 
-    <style>
-
-
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Liver Surgeons Hospital",
+  "url": "https://liversurgeons.com/liver-hepatology-conditions-delhi",
+  "image": "https://liversurgeons.com/path-to-image.jpg",
+  "telephone": "+91XXXXXXXXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Delhi",
+    "addressRegion": "Delhi",
+    "addressCountry": "IN"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "120",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Patient"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "reviewBody": "Good experience with the liver care team."
+    }
+  ]
+}
+</script>
+   <style>
 
         /* Base Styles */
         .dentists-main-section{
@@ -143,7 +180,9 @@
 
     </style>
 <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y8LWDEY8Y"></script>
+                                        
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Y8LWDEY8Y"></script>
    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -151,6 +190,8 @@
 
       gtag('config', 'G-0Y8LWDEY8Y');
    </script>
+
+
 </head>
 
 <body>

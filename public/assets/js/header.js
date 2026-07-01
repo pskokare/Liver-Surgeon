@@ -51,7 +51,7 @@ class Header extends HTMLElement {
                                         <a class="dropdown-item" href="/living-donor-liver-transplant-delhi">Living Donor Liver Transplant</a>
                                         <a class="dropdown-item" href="/split-liver-transplant-delhi">Split Liver Transplantation</a>
                                         <a class="dropdown-item" href="/dual-lobe-liver-transplant-delhi">Dual Lobe Liver Transplantation</a>
-                                        <a class="dropdown-item" href="/combined-liver-kidney-transplant-delhi">Combined liver kidney transplantation</a>
+                                        <a class="dropdown-item" href="/combined-liver-Kidney-transplant-delhi">Combined liver kidney transplantation</a>
                                         <a class="dropdown-item" href="/post-transplant-monitoring-delhi">Post-Transplant Surveillance</a>
                                         <a class="dropdown-item" href="/immunosuppressive-therapy-delhi">Immunosuppressive Therapy</a>
                                     </div>
@@ -117,7 +117,7 @@ class Header extends HTMLElement {
                                             <li><a class="dropdown-item" href="/living-donor-liver-transplant-delhi">Living Donor Liver Transplant</a></li>
                                             <li><a class="dropdown-item" href="/split-liver-transplant-delhi">Split Liver Transplantation</a></li>
                                             <li><a class="dropdown-item" href="/dual-lobe-liver-transplant-delhi">Dual Lobe Liver Transplantation</a></li>
-                                            <li><a class="dropdown-item" href="/combined-liver-kidney-transplant-delhi">Combined liver kidney transplantation</a></li>
+                                            <li><a class="dropdown-item" href="/combined-liver-Kidney-transplant-delhi">Combined liver kidney transplantation</a></li>
                                             <li><a class="dropdown-item" href="/post-transplant-monitoring-delhi">Post-Transplant Surveillance</a></li>
                                             <li><a class="dropdown-item" href="/immunosuppressive-therapy-delhi">Immunosuppressive Therapy</a></li>
                                         </ul>
@@ -328,7 +328,8 @@ class Footer extends HTMLElement {
                             +91 93101 39800</a></li>
                         <li class="position-relative"><a href="mailto:info@liversurgeons.com"><i
                                     class="fas fa-envelope"></i>info@liversurgeons.com</a></li>
-                        <li class="position-relative mb-0"><i class="fas fa-map-marker-alt"></i>Fortis Hospital, Shalimar Bagh, Delhi-110088</li>
+                        <li class="position-relative"><i class="fas fa-map-marker-alt"></i>Fortis Hospital, Shalimar Bagh, Delhi-110088</li>
+                        <li class="position-relative mb-0"><a href="/sitemap.html"><i class="fas fa-sitemap"></i>Sitemap</a></li>
                     </ul>
                 </div>
             </div>

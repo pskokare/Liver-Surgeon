@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1800px) {
     .header-main-con .navbar-nav {
-        gap: 14px;
+        gap: 30px;
         margin-right: 20px;
     }
 
@@ -175,7 +175,7 @@
 
 @media only screen and (max-width: 1600px) {
     .container-fluid {
-        padding: 0 12%;
+        padding: 0 8%;
     }
 
     .banner-main-section {
@@ -388,7 +388,7 @@
 
 @media only screen and (max-width: 1400px) {
     .container-fluid {
-        padding: 0 6%;
+        padding: 0 4%;
     }
 
     .banner-images-con figure:first-child img {
@@ -770,7 +770,7 @@
     }
 
     .header-main-con .navbar-nav {
-        gap: 13px;
+        gap: 25px;
         margin-right: 20px;
     }
     .header-contact .phone {
@@ -779,18 +779,18 @@
         margin-right: 5px;
     }
     .container-fluid {
-        padding: 0 6%;
+        padding: 0 4%;
     }
     /* project page responsive end */
 }
 
 @media only screen and (max-width: 1199px) {
     .container-fluid {
-        padding: 0 2%;
+        padding: 0 1%;
     }
 
     .header-main-con .navbar-nav {
-        gap: 9px;
+        gap: 20px;
         margin-right: 10px;
     }
     .cart-box a:first-child {
@@ -1574,7 +1574,7 @@
     }
 
     .header-main-con .navbar-nav {
-        gap: 12px;
+        gap: 22px;
         margin-right: 0;
         padding: 20px 20px 0;
     }
@@ -1762,7 +1762,7 @@
     }
 
     .generic-title {
-        margin-bottom: 25px;
+        margin-top: 30px;
     }
 
     .service-main-section {
